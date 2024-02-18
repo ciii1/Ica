@@ -2,11 +2,13 @@ import parser
 import indexer
 import query
 import sys
+import os
+import glob
 
 documents_file_path = "data/"
 
 if len(sys.argv) < 2:
-    print("Usage: Ica [mode]")
+    print(f"Usage: {sys.argv[0]} [mode]")
     print("Modes:")
     print("\trun: run the program")
     print("\tindex: read the .doc files and save the indexed documents into .pkl files in data/")
@@ -17,14 +19,17 @@ mode = sys.argv[1]
 
 if mode == "run":
     indexer.load(documents_file_path)
-    query = ""
-    while query != "exit":
-        input_query = input("ica$ ")
+    input_query = ""
+    while True:
+        input_query = input("ica>>>")
+        if input_query == "@exit":
+            print("Bye.")
+            break
         res_docs = query.query(input_query)
         if len(res_docs) == 0:
             print("")
         else:
-            res_docs[0]
+            print(indexer.get_doc(res_docs[0].index))
 
 elif mode == "index": 
     file_pattern = os.path.join(documents_file_path, f"*.doc")

@@ -2,6 +2,7 @@ from parser import Node
 from parser import NodeType
 import re
 import os
+import pickle
 
 __indices = {}
 """
@@ -66,17 +67,17 @@ def clear():
 def save(path):
     global __indices
     global __docs
-    with open(os.join(path, "index.pkl"), 'wb') as file:
+    with open(os.path.join(path, "index.pkl"), 'wb') as file:
         pickle.dump(__indices, file)
-    with open(os.join(path, "docs.pkl"), 'wb') as file:
+    with open(os.path.join(path, "docs.pkl"), 'wb') as file:
         pickle.dump(__docs, file)
 
 def load(path):
     global __indices
     global __docs
-    with open(os.join(path, "index.pkl"), 'rb') as file:
+    with open(os.path.join(path, "index.pkl"), 'rb') as file:
         __indices = pickle.load(file)
-    with open(os.join(path, "docs.pkl"), 'rb') as file:
+    with open(os.path.join(path, "docs.pkl"), 'rb') as file:
         __docs = pickle.load(file)
 
 def get_doc(index):
