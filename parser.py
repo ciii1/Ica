@@ -64,4 +64,3 @@ def parse(text):
         line_num += 2
         char_num = 0
     return output
-
