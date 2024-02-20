@@ -22,7 +22,7 @@ if mode == "run":
     input_query = ""
     while True:
         input_query = input("ica>>>")
-        if input_query == "@exit":
+        if input_query == "!exit":
             print("Bye.")
             break
         res_docs = query.query(input_query)

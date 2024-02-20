@@ -9,7 +9,7 @@ import parser
 import query
 from query import ResDocs
 
-class test_parser(unittest.TestCase):
+class test_query(unittest.TestCase):
     def test_query_basic(self):
         indexer.clear()
 
@@ -17,7 +17,7 @@ class test_parser(unittest.TestCase):
         indexer.index(parsed)
         res = query.query('help i\'m having seizure')
         self.assertEqual(res, [
-            ResDocs(0, 0.5) #help = 1, I'm = /2, having = /2, seizure = 1
+            ResDocs(0, 0.4880952380952381) #help = 1, I'm = /2, having = /2, seizure = 1 divided by some proximity stuff
         ])
 
     def test_query_freqs(self):
@@ -27,7 +27,7 @@ class test_parser(unittest.TestCase):
         indexer.index(parsed)
         res = query.query('help i\'m having seizure')
         self.assertEqual(res, [
-            ResDocs(0, 2.0) #help = 1, I'm = /2, having = 1, seizure = 2
+            ResDocs(0, 1.952090270070292) #help = 1, I'm = /2, having = 1, seizure = 2 divided by some proximity stuff
         ])
 
     def test_query_freqs_div(self):
@@ -37,7 +37,7 @@ class test_parser(unittest.TestCase):
         indexer.index(parsed)
         res = query.query('help i\'m having seizure unrelated shit')
         self.assertEqual(res, [
-            ResDocs(0, 0.5) #help = 1, I'm = /2, having = 1, seizure = 2, unrelated = /2, shit = /2
+            ResDocs(0, 0.488022567517573) #help = 1, I'm = /2, having = 1, seizure = 2, unrelated = /2, shit = /2
         ])
 
     def test_query_multi_docs(self):
@@ -51,9 +51,39 @@ class test_parser(unittest.TestCase):
         indexer.index(parsed)
         res = query.query('help i\'m having seizure')
         self.assertEqual(res, [
-            ResDocs(0, 2.0), #help = 1, I'm = /2, having = 1, seizure = 2
-            ResDocs(1, 0.25) #help = /2, I'm = /2, having = /2, seizure = 2
+            ResDocs(0, 1.952090270070292), #help = 1, I'm = /2, having = 1, seizure = 2 divided by some proximity thing
+            ResDocs(1, 0.25) #help = /2, I'm = /2, having = /2, seizure = 2 not divided by proximity because only one token exists
         ])
+
+    def test_query_case_insensitive(self):
+        indexer.clear()
+
+        parsed = parser.parse("""
+            {die}
+        """)
+        indexer.index(parsed)
+        res = query.query('DIE')
+        self.assertEqual(res, [
+            ResDocs(0, 1/1.3) #DiE = (D,E)1 / (i)1.1
+        ])
+
+    def test_query_proximity(self):
+        indexer.clear()
+
+        parsed = parser.parse("""
+            {hello how are you}
+            \n===\n
+            {hello you are how}
+        """)
+        indexer.index(parsed)
+        res = query.query('hello you')
+        self.assertEqual(res[0].index, 1)
+
+    def test_normalize_distance(self):
+        self.assertEqual(0.123, query.normalize_distance(123))
+
+    def test_normalize_distance2(self):
+        self.assertEqual(0, query.normalize_distance(0))
 
 if __name__ == '__main__':
     unittest.main()

@@ -1,13 +1,16 @@
 from parser import Node
 from parser import NodeType
+from dataclasses import dataclass
 import re
 import os
 import pickle
 
-__indices = {}
+__indexes = {}
 """
 the global inverted index
 """
+
+__case_insensitive_indexes = {}
 
 #FIXME: use sqlite for this
 __docs = []
@@ -15,8 +18,13 @@ __docs = []
 the documents/response templates
 """
 
+@dataclass
+class IndexValue:
+    freq: int
+    positions: list[int]
+
 def index(ast):
-    global __indices
+    global __indexes
     global __docs
 
     for doc in ast:
@@ -30,16 +38,25 @@ def index(ast):
                 keywords += extract_keywords(token.text)
             elif token._type == NodeType.CONTENT:
                 curr_doc += token.text
-        append_indices(keywords, len(__docs))
         __docs.append(curr_doc)
+        append_indexes(keywords, len(__docs)-1)
 
-def append_indices(keywords, doc_index):
-    global __indices
+def append_indexes(keywords, doc_index):
+    global __indexes
+    global __case_insensitive_indexes
+    global __docs
 
+    pos = 0
     for keyword in keywords:
-        __indices.setdefault(keyword, {})
-        __indices[keyword].setdefault(doc_index, 0)
-        __indices[keyword][doc_index] += 1
+        __indexes.setdefault(keyword, {})
+        __indexes[keyword].setdefault(doc_index, IndexValue(freq=0, positions=[]))
+        __indexes[keyword][doc_index].freq += 1
+        __indexes[keyword][doc_index].positions.append(pos)
+        normalized_keyword = keyword.lower()
+        __case_insensitive_indexes.setdefault(normalized_keyword, [])
+        if keyword not in __case_insensitive_indexes[normalized_keyword]:
+            __case_insensitive_indexes[normalized_keyword].append(keyword)
+        pos += 1
 
 #FIXME: also remove words like and, then, etc. except if it's in the "header" or something
 def extract_keywords(text):
@@ -52,33 +69,46 @@ def extract_keywords(text):
     return out
 
 def get_index(index):
-    global __indices
+    global __indexes
     try: 
-        return __indices[index]
+        return __indexes[index]
+    except KeyError:
+        return None
+
+def get_case_insensitive_index(normalized_index):
+    global __case_insensitive_indexes
+    try: 
+        return __case_insensitive_indexes[normalized_index]
     except KeyError:
         return None
 
 def clear():
-    global __indices
+    global __indexes
     global __docs
-    __indices = {}
+    __indexes = {}
     __docs = []
 
 def save(path):
-    global __indices
+    global __indexes
     global __docs
+    global __case_insensitive_indexes
     with open(os.path.join(path, "index.pkl"), 'wb') as file:
-        pickle.dump(__indices, file)
+        pickle.dump(__indexes, file)
     with open(os.path.join(path, "docs.pkl"), 'wb') as file:
         pickle.dump(__docs, file)
+    with open(os.path.join(path, "ci_index.pkl"), 'wb') as file:
+        pickle.dump(__case_insensitive_indexes, file)
 
 def load(path):
-    global __indices
+    global __indexes
     global __docs
+    global __case_insensitive_indexes
     with open(os.path.join(path, "index.pkl"), 'rb') as file:
-        __indices = pickle.load(file)
+        __indexes = pickle.load(file)
     with open(os.path.join(path, "docs.pkl"), 'rb') as file:
         __docs = pickle.load(file)
+    with open(os.path.join(path, "ci_index.pkl"), 'rb') as file:
+        __case_insensitive_indexes = pickle.load(file)
 
 def get_doc(index):
     global __docs
