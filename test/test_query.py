@@ -79,6 +79,42 @@ class test_query(unittest.TestCase):
         res = query.query('hello you')
         self.assertEqual(res[0].index, 1)
 
+    def test_query_fuzzy_search(self):
+        indexer.clear()
+
+        parsed = parser.parse("""
+            {hello death is coming}
+            \n===\n
+            {hello dead is coming}
+        """)
+        indexer.index(parsed)
+        res = query.query('deatd')
+        self.assertEqual(res[0].index, 0)
+
+    def test_query_fuzzy_search2(self):
+        indexer.clear()
+
+        parsed = parser.parse("""
+            {hello deaths is coming}
+            \n===\n
+            {hello dextrametorphan is coming}
+        """)
+        indexer.index(parsed)
+        res = query.query('dekstrametorfan')
+        self.assertEqual(res[0].index, 1)
+
+    def test_query_fuzzy_search_failing(self):
+        indexer.clear()
+
+        parsed = parser.parse("""
+            {hello death is coming}
+            \n===\n
+            {hello dead is coming}
+        """)
+        indexer.index(parsed)
+        res = query.query('dttd')
+        self.assertEqual(res, [])
+
     def test_normalize_distance(self):
         self.assertEqual(0.123, query.normalize_distance(123))
 

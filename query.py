@@ -1,6 +1,7 @@
 from dataclasses import dataclass
 from parser import NodeType
 import Levenshtein
+import math
 import re
 import indexer
 
@@ -145,7 +146,7 @@ def calculate_most_matching_index(keyword):
                 min_score = score
 
     #is below the minimum levenshtein distance 
-    if min_score > (0.4 * len(keyword)):
+    if min_score > math.ceil(len(keyword) / 3) - 1:
         return None
 
     return IndexCalculationRes(best_match, normalize_distance(min_score))
