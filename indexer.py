@@ -67,7 +67,7 @@ def append_indexes(keywords, doc_index):
         for char in normalized_keyword:
             __char_indexes.setdefault(char, [])
             if keyword not in __char_indexes[char]:
-                __char_indexes[char].append(normalized_keyword)
+                __char_indexes[char].append(keyword)
             
         pos += 1
 
