@@ -143,9 +143,8 @@ def calculate_most_matching_index(keyword):
             if score < min_score:
                 best_match = p_keyword
                 min_score = score
-
-    #is below the minimum levenshtein distance 
-    if min_score > (0.4 * len(keyword)):
+    #3 is the minimum levenshtein distance 
+    if min_score > (0.3 * len(keyword)):
         return None
 
     return IndexCalculationRes(best_match, normalize_distance(min_score))
