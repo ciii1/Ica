@@ -13,11 +13,11 @@ class test_query(unittest.TestCase):
     def test_query_basic(self):
         indexer.clear()
 
-        parsed = parser.parse("{seizure is a serious condition, }[if you're having one or seeing someone having it, call an ambulance]<help>")
+        parsed = parser.parse("{seizure is a serious condition, }[if you're having one or seeing someone having it, call an ambulance]<help im>")
         indexer.index(parsed)
         res = query.query('help i\'m having seizure')
         self.assertEqual(res, [
-            ResDocs(0, 0.4880952380952381) #help = 1, I'm = /2, having = /2, seizure = 1 divided by some proximity stuff
+            ResDocs(0, 1.466747618158042) #help = 1, I'm = 1, having = /2, seizure = 1 divided by some proximity stuff
         ])
 
     def test_query_freqs(self):
@@ -27,7 +27,7 @@ class test_query(unittest.TestCase):
         indexer.index(parsed)
         res = query.query('help i\'m having seizure')
         self.assertEqual(res, [
-            ResDocs(0, 1.952090270070292) #help = 1, I'm = /2, having = 1, seizure = 2 divided by some proximity stuff
+            ResDocs(0, 2.357934425914448) #help = 1, I'm = is = 1, having = 1, seizure = 2 divided by some proximity stuff
         ])
 
     def test_query_freqs_div(self):
@@ -37,7 +37,7 @@ class test_query(unittest.TestCase):
         indexer.index(parsed)
         res = query.query('help i\'m having seizure unrelated shit')
         self.assertEqual(res, [
-            ResDocs(0, 0.488022567517573) #help = 1, I'm = /2, having = 1, seizure = 2, unrelated = /2, shit = /2
+            ResDocs(0, 0.589483606478612) #help = 1, i'm = is = 1/2, having = 1, seizure = 2, unrelated = /2, shit = /2
         ])
 
     def test_query_multi_docs(self):

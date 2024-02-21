@@ -1,5 +1,6 @@
 from dataclasses import dataclass
 from parser import NodeType
+import Levenshtein
 import re
 import indexer
 
@@ -14,10 +15,12 @@ def query(text):
     
     last_docs = None
     for token in tokens:
-        most_matching_case_insensitive = calculate_most_matching_case_insensitive(token)
-        if most_matching_case_insensitive == None:
-            continue
-        docs = indexer.get_index(most_matching_case_insensitive.matched_index)
+        most_matching = calculate_most_matching_case_insensitive(token)
+        if most_matching == None:
+            most_matching = calculate_most_matching_index(token)
+            if most_matching == None:
+                continue
+        docs = indexer.get_index(most_matching.matched_index)
         for doc_index in docs:
             potential_docs.setdefault(doc_index, ResDocs(doc_index, 0)) 
             freq = docs[doc_index].freq
@@ -27,10 +30,11 @@ def query(text):
             if last_docs and doc_index in last_docs:
                 closest_pos = find_closest_elements(docs[doc_index].positions, last_docs[doc_index].positions)
                 raw_proximity = abs(closest_pos[0] - closest_pos[1])
-                proximity = (raw_proximity / 100)+1  
+                proximity = (raw_proximity / 100) + 1
             last_docs = docs
-
-            potential_docs[doc_index].score += freq / (most_matching_case_insensitive.distance + 1) / proximity
+                
+            #TODO: inspect, do we even need to take the freq into calculation??
+            potential_docs[doc_index].score += freq / (most_matching.distance + 1) / proximity
 
     #divide score of the docs by 2 for every token of the query they don't contain
     for doc_index in potential_docs:
@@ -87,6 +91,71 @@ def calculate_most_matching_case_insensitive(keyword):
             most_matching = index
     
     return IndexCalculationRes(most_matching, normalize_distance(least_distance))
+
+@dataclass
+class IndexCalculationResArray:
+    matched_indexes:list
+    score:float
+
+def calculate_most_matching_index(keyword):
+    normalized_keyword = keyword.lower()
+
+    #get all the possibilities
+    possible_keywords = []
+    for char in normalized_keyword:
+        indexes_pos = indexer.get_char_index(char)
+        if indexes_pos == None:
+            continue
+        possible_keywords.append(indexes_pos)
+
+    #narrow the possibilities
+    possibilities = []
+    for base_keyword in possible_keywords:
+        possibility = []
+        score = 0
+        for p_keyword2 in possible_keywords:
+            removed = remove_unique(base_keyword, p_keyword2)
+            if len(removed) > 0:
+                possibility = removed
+                score += 1
+        possibilities.append(IndexCalculationResArray(possibility, score))
+
+    #get max score
+    max_score = 0
+    for possibility in possibilities:
+        if possibility.score > max_score:
+            max_score = possibility.score
+    if max_score == 0:
+        return None
+
+    #get the best possibilities of possibility
+    final = []
+    for possibility in possibilities:
+        if possibility.score == max_score:
+            final.append(possibility.matched_indexes)
+   
+    #get the best keyword of keyword possibilities
+    min_score = float("inf")
+    best_match = ""
+    for possibility in final:
+        for p_keyword in possibility:
+            score = Levenshtein.distance(p_keyword, keyword)
+            if score < min_score:
+                best_match = p_keyword
+                min_score = score
+
+    #3 is the minimum levenshtein distance 
+    if min_score > 3:
+        return None
+
+    return IndexCalculationRes(best_match, normalize_distance(min_score))
+
+def remove_unique(base, target):
+    out = []
+    for elem in target:
+        if elem in base:
+            out.append(elem)
+    return out
 
 def normalize_distance(number):
     if number == 0:

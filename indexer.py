@@ -12,6 +12,12 @@ the global inverted index
 
 __case_insensitive_indexes = {}
 
+__char_indexes = {}
+"""
+the indexes are a-z, normalized.
+each index contains a map with the normalized keyword index as its key with its value as list of the index where the characters appear.
+"""
+
 #FIXME: use sqlite for this
 __docs = []
 """
@@ -44,6 +50,7 @@ def index(ast):
 def append_indexes(keywords, doc_index):
     global __indexes
     global __case_insensitive_indexes
+    global __char_indexes
     global __docs
 
     pos = 0
@@ -56,6 +63,12 @@ def append_indexes(keywords, doc_index):
         __case_insensitive_indexes.setdefault(normalized_keyword, [])
         if keyword not in __case_insensitive_indexes[normalized_keyword]:
             __case_insensitive_indexes[normalized_keyword].append(keyword)
+
+        for char in normalized_keyword:
+            __char_indexes.setdefault(char, [])
+            if keyword not in __char_indexes[char]:
+                __char_indexes[char].append(normalized_keyword)
+            
         pos += 1
 
 #FIXME: also remove words like and, then, etc. except if it's in the "header" or something
@@ -82,33 +95,50 @@ def get_case_insensitive_index(normalized_index):
     except KeyError:
         return None
 
+def get_char_index(normalized_char):
+    global __char_indexes
+    try: 
+        return __char_indexes[normalized_char]
+    except KeyError:
+        return None
+
 def clear():
     global __indexes
     global __docs
+    global __case_insensitive_indexes
+    global __char_indexes
     __indexes = {}
+    __case_insensitive_indexes = {}
+    __char_indexes = {}
     __docs = []
 
 def save(path):
     global __indexes
     global __docs
     global __case_insensitive_indexes
+    global __char_indexes
     with open(os.path.join(path, "index.pkl"), 'wb') as file:
         pickle.dump(__indexes, file)
     with open(os.path.join(path, "docs.pkl"), 'wb') as file:
         pickle.dump(__docs, file)
     with open(os.path.join(path, "ci_index.pkl"), 'wb') as file:
         pickle.dump(__case_insensitive_indexes, file)
+    with open(os.path.join(path, "ch_index.pkl"), 'wb') as file:
+        pickle.dump(__char_indexes, file)
 
 def load(path):
     global __indexes
     global __docs
     global __case_insensitive_indexes
+    global __char_indexes
     with open(os.path.join(path, "index.pkl"), 'rb') as file:
         __indexes = pickle.load(file)
     with open(os.path.join(path, "docs.pkl"), 'rb') as file:
         __docs = pickle.load(file)
     with open(os.path.join(path, "ci_index.pkl"), 'rb') as file:
         __case_insensitive_indexes = pickle.load(file)
+    with open(os.path.join(path, "ch_index.pkl"), 'rb') as file:
+        __char_indexes = pickle.load(file)
 
 def get_doc(index):
     global __docs
