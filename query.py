@@ -25,17 +25,16 @@ def query(text):
         for doc_index in docs:
             potential_docs.setdefault(doc_index, ResDocs(doc_index, 0)) 
             freq = docs[doc_index].freq
-            #FIXME:add fuzzy search
+            doc_length = docs[doc_index].doc_length
             #proximity scoring
-            proximity = 1
+            distance = 1
             if last_docs and doc_index in last_docs:
                 closest_pos = find_closest_elements(docs[doc_index].positions, last_docs[doc_index].positions)
-                raw_proximity = abs(closest_pos[0] - closest_pos[1])
-                proximity = (raw_proximity / 100) + 1
+                raw_distance = abs(closest_pos[0] - closest_pos[1])
+                distance = (raw_distance / 100) + 1
             last_docs = docs
                 
-            #TODO: inspect, do we even need to take the freq into calculation??
-            potential_docs[doc_index].score += freq / (most_matching.distance + 1) / proximity
+            potential_docs[doc_index].score += freq / (math.ceil(doc_length / 10) / 10) / (most_matching.distance + 1) / distance
 
     #divide score of the docs by 2 for every token of the query they don't contain
     for doc_index in potential_docs:
@@ -140,7 +139,7 @@ def calculate_most_matching_index(keyword):
     best_match = ""
     for possibility in final:
         for p_keyword in possibility:
-            score = Levenshtein.distance(p_keyword, keyword)
+            score = Levenshtein.distance(p_keyword.lower(), normalized_keyword)
             if score < min_score:
                 best_match = p_keyword
                 min_score = score

@@ -28,6 +28,7 @@ the documents/response templates
 class IndexValue:
     freq: int
     positions: list[int]
+    doc_length: int
 
 def index(ast):
     global __indexes
@@ -56,9 +57,10 @@ def append_indexes(keywords, doc_index):
     pos = 0
     for keyword in keywords:
         __indexes.setdefault(keyword, {})
-        __indexes[keyword].setdefault(doc_index, IndexValue(freq=0, positions=[]))
+        __indexes[keyword].setdefault(doc_index, IndexValue(freq=0, positions=[], doc_length=0))
         __indexes[keyword][doc_index].freq += 1
         __indexes[keyword][doc_index].positions.append(pos)
+        __indexes[keyword][doc_index].doc_length = len(keywords)
         normalized_keyword = keyword.lower()
         __case_insensitive_indexes.setdefault(normalized_keyword, [])
         if keyword not in __case_insensitive_indexes[normalized_keyword]:
@@ -71,7 +73,6 @@ def append_indexes(keywords, doc_index):
             
         pos += 1
 
-#FIXME: also remove words like and, then, etc. except if it's in the "header" or something
 def extract_keywords(text):
     cleaned = re.sub(r'[^a-zA-Z \t\n]', '', text)
     splitted = cleaned.split()

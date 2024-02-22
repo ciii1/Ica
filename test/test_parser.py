@@ -14,9 +14,9 @@ class test_parser(unittest.TestCase):
         parsed = parser.parse("{this is a content keyword}[pure content]<this is a keyword>")
         self.assertEqual(parsed, [
             [
-                Node(NodeType.CONTENT_KEYWORD, "this is a content keyword"),
-                Node(NodeType.CONTENT, "pure content"),
-                Node(NodeType.KEYWORD, "this is a keyword"),
+                Node(NodeType.CONTENT_KEYWORD, "this is a content keyword", 1),
+                Node(NodeType.CONTENT, "pure content", 1),
+                Node(NodeType.KEYWORD, "this is a keyword", 1),
             ]
         ])
 
@@ -24,9 +24,9 @@ class test_parser(unittest.TestCase):
         parsed = parser.parse("{this is a content\nkeyword}[pure\ncontent]\n<this is a keyword>")
         self.assertEqual(parsed, [
             [
-                Node(NodeType.CONTENT_KEYWORD, "this is a content\nkeyword"),
-                Node(NodeType.CONTENT, "pure\ncontent"),
-                Node(NodeType.KEYWORD, "this is a keyword"),
+                Node(NodeType.CONTENT_KEYWORD, "this is a content\nkeyword", 1),
+                Node(NodeType.CONTENT, "pure\ncontent", 1),
+                Node(NodeType.KEYWORD, "this is a keyword", 1),
             ]
         ])
 
@@ -34,13 +34,13 @@ class test_parser(unittest.TestCase):
         parsed = parser.parse("{this is a content keyword}[pure content]<this is a keyword>\n===\n<keyword2>[pure content]")
         self.assertEqual(parsed, [
             [
-                Node(NodeType.CONTENT_KEYWORD, "this is a content keyword"),
-                Node(NodeType.CONTENT, "pure content"),
-                Node(NodeType.KEYWORD, "this is a keyword"),
+                Node(NodeType.CONTENT_KEYWORD, "this is a content keyword", 1),
+                Node(NodeType.CONTENT, "pure content", 1),
+                Node(NodeType.KEYWORD, "this is a keyword", 1),
             ],
             [
-                Node(NodeType.KEYWORD, "keyword2"),
-                Node(NodeType.CONTENT, "pure content"),
+                Node(NodeType.KEYWORD, "keyword2", 1),
+                Node(NodeType.CONTENT, "pure content", 1),
             ]
         ])
 

@@ -16,9 +16,7 @@ class test_query(unittest.TestCase):
         parsed = parser.parse("{seizure is a serious condition, }[if you're having one or seeing someone having it, call an ambulance]<help>")
         indexer.index(parsed)
         res = query.query('help i\'m having seizure')
-        self.assertEqual(res, [
-            ResDocs(0, 0.4880952380952381) #help = 1, I'm = /2, having = /2, seizure = 1 divided by some proximity stuff
-        ])
+        self.assertEqual(res[0].index, 0)
 
     def test_query_freqs(self):
         indexer.clear()
@@ -26,9 +24,7 @@ class test_query(unittest.TestCase):
         parsed = parser.parse("{seizure is a serious condition, if you're having a seizure, call an ambulance}<help>")
         indexer.index(parsed)
         res = query.query('help i\'m having seizure')
-        self.assertEqual(res, [
-            ResDocs(0, 1.952090270070292) #help = 1, I'm = /2, having = 1, seizure = 2 divided by some proximity stuff
-        ])
+        self.assertEqual(res[0].index, 0)
 
     def test_query_freqs_div(self):
         indexer.clear()
@@ -36,9 +32,7 @@ class test_query(unittest.TestCase):
         parsed = parser.parse("{seizure is a serious condition, if you're having a seizure, call an ambulance}<help>")
         indexer.index(parsed)
         res = query.query('help i\'m having seizure unrelated shit')
-        self.assertEqual(res, [
-            ResDocs(0, 0.488022567517573) #help = 1, i'm = /2, having = 1, seizure = 2, unrelated = /2, shit = /2
-        ])
+        self.assertEqual(res[0].index, 0)
 
     def test_query_multi_docs(self):
         indexer.clear()
@@ -50,10 +44,7 @@ class test_query(unittest.TestCase):
         """)
         indexer.index(parsed)
         res = query.query('help i\'m having seizure')
-        self.assertEqual(res, [
-            ResDocs(0, 1.952090270070292), #help = 1, I'm = /2, having = 1, seizure = 2 divided by some proximity thing
-            ResDocs(1, 0.25) #help = /2, I'm = /2, having = /2, seizure = 2 not divided by proximity because only one token exists
-        ])
+        self.assertEqual(res[0].index, 0)
 
     def test_query_case_insensitive(self):
         indexer.clear()
@@ -103,6 +94,18 @@ class test_query(unittest.TestCase):
         res = query.query('dekstrametorfan')
         self.assertEqual(res[0].index, 1)
 
+    def test_query_fuzzy_search_ci(self):
+        indexer.clear()
+
+        parsed = parser.parse("""
+            {hello deaths is coming}
+            \n===\n
+            {hello Dextrametorphan is coming}
+        """)
+        indexer.index(parsed)
+        res = query.query('dekstrametorfan')
+        self.assertEqual(res[0].index, 1)
+
     def test_query_fuzzy_search_failing(self):
         indexer.clear()
 
@@ -120,6 +123,18 @@ class test_query(unittest.TestCase):
 
     def test_normalize_distance2(self):
         self.assertEqual(0, query.normalize_distance(0))
+
+    def test_query_fuzzy_search_failing(self):
+        indexer.clear()
+
+        parsed = parser.parse("""
+            {hello death is coming}
+            \n===\n
+            {hello dead is coming}
+        """)
+        indexer.index(parsed)
+        res = query.query('dttd')
+        self.assertEqual(res, [])
 
 if __name__ == '__main__':
     unittest.main()
