@@ -124,17 +124,17 @@ class test_query(unittest.TestCase):
     def test_normalize_distance2(self):
         self.assertEqual(0, query.normalize_distance(0))
 
-    def test_query_fuzzy_search_failing(self):
+    def test_query_weight_basic(self):
         indexer.clear()
 
         parsed = parser.parse("""
-            {hello death is coming}
+            {2 hello death is coming}
             \n===\n
             {hello dead is coming}
         """)
         indexer.index(parsed)
-        res = query.query('dttd')
-        self.assertEqual(res, [])
+        res = query.query('hello')
+        self.assertEqual(res[0].index, 0)
 
 if __name__ == '__main__':
     unittest.main()
