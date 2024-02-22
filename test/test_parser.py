@@ -52,6 +52,36 @@ class test_parser(unittest.TestCase):
         parsed = parser.parse("\n===\n===")
         self.assertEqual(parsed, [[],[]])
 
+    def test_parse_weight_basic(self):
+        parsed = parser.parse("{10 this is a content keyword}[pure content]<this is a keyword>")
+        self.assertEqual(parsed, [
+            [
+                Node(NodeType.CONTENT_KEYWORD, " this is a content keyword", 10),
+                Node(NodeType.CONTENT, "pure content", 1),
+                Node(NodeType.KEYWORD, "this is a keyword", 1),
+            ]
+        ])
+
+    def test_parse_weight_multi(self):
+        parsed = parser.parse("{10 this is a content 20keyword}[pure content]<2 this is a keyword>")
+        self.assertEqual(parsed, [
+            [
+                Node(NodeType.CONTENT_KEYWORD, " this is a content 20keyword", 10),
+                Node(NodeType.CONTENT, "pure content", 1),
+                Node(NodeType.KEYWORD, " this is a keyword", 2),
+            ]
+        ])
+
+    def test_parse_weight_float(self):
+        parsed = parser.parse("{10.212 this is a content keyword}[pure content]<2 this is a keyword>")
+        self.assertEqual(parsed, [
+            [
+                Node(NodeType.CONTENT_KEYWORD, " this is a content keyword", 10.212),
+                Node(NodeType.CONTENT, "pure content", 1),
+                Node(NodeType.KEYWORD, " this is a keyword", 2),
+            ]
+        ])
+
     def test_parse_error(self):
         try:
             parser.parse("{this is an errornous input")

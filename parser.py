@@ -44,11 +44,10 @@ def parse(text):
                 char_num += 1
             is_special_token = False
             if is_parsing_number:
-                if char.isdecimal():
+                if char.isdecimal() or char == ".":
                     number += char  
                 else:
                     is_parsing_number = False
-                    number = ""
                 
             for special_tokens in special_tokens_list:
                 if char in special_tokens and last_char != "\\":
@@ -57,6 +56,7 @@ def parse(text):
                         is_parsing_number = True
                         opening = char
                         curr_str = ""
+                        number = ""
                     elif special_tokens[1] == char and last_char != "\\": #if it's the closing
                         if opening == "":
                             raise ParseError(f"The closing '{char}' is not opened", line_num, char_num)
@@ -64,10 +64,10 @@ def parse(text):
                             raise ParseError(f"The closing '{char}' doesn't match the opening '{opening}'", line_num, char_num)
                         opening = ""
                         is_special_token = True
-                        try:
-                            appended_num = int(number)
-                        except Exception:
+                        if number == "":
                             appended_num = 1
+                        else:
+                            appended_num = float(number)
                         local_output.append(Node(special_tokens[2], curr_str, appended_num))
                         curr_str = ""
             if not is_special_token and not is_parsing_number:

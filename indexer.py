@@ -23,12 +23,21 @@ __docs = []
 """
 the documents/response templates
 """
+@dataclass
+class IndexPosition:
+    position:int
+    weight:float
 
 @dataclass
 class IndexValue:
     freq: int
-    positions: list[int]
+    positions: list[IndexPosition]
     doc_length: int
+
+@dataclass
+class Keyword:
+    text: str
+    weight: float
 
 def index(ast):
     global __indexes
@@ -39,10 +48,10 @@ def index(ast):
         keywords = []
         for token in doc: 
             if token._type == NodeType.KEYWORD:
-                keywords += extract_keywords(token.text)
+                keywords += extract_keywords(token.text, token.weight)
             elif token._type == NodeType.CONTENT_KEYWORD:
                 curr_doc += token.text
-                keywords += extract_keywords(token.text)
+                keywords += extract_keywords(token.text, token.weight)
             elif token._type == NodeType.CONTENT:
                 curr_doc += token.text
         __docs.append(curr_doc)
@@ -56,30 +65,31 @@ def append_indexes(keywords, doc_index):
 
     pos = 0
     for keyword in keywords:
-        __indexes.setdefault(keyword, {})
-        __indexes[keyword].setdefault(doc_index, IndexValue(freq=0, positions=[], doc_length=0))
-        __indexes[keyword][doc_index].freq += 1
-        __indexes[keyword][doc_index].positions.append(pos)
-        __indexes[keyword][doc_index].doc_length = len(keywords)
-        normalized_keyword = keyword.lower()
+        keyword_text = keyword.text
+        __indexes.setdefault(keyword_text, {})
+        __indexes[keyword_text].setdefault(doc_index, IndexValue(freq=0, positions=[], doc_length=0))
+        __indexes[keyword_text][doc_index].freq += 1
+        __indexes[keyword_text][doc_index].positions.append(IndexPosition(pos, keyword.weight))
+        __indexes[keyword_text][doc_index].doc_length = len(keywords)
+        normalized_keyword = keyword_text.lower()
         __case_insensitive_indexes.setdefault(normalized_keyword, [])
-        if keyword not in __case_insensitive_indexes[normalized_keyword]:
-            __case_insensitive_indexes[normalized_keyword].append(keyword)
+        if keyword_text not in __case_insensitive_indexes[normalized_keyword]:
+            __case_insensitive_indexes[normalized_keyword].append(keyword_text)
 
         for char in normalized_keyword:
             __char_indexes.setdefault(char, [])
-            if keyword not in __char_indexes[char]:
-                __char_indexes[char].append(keyword)
+            if keyword_text not in __char_indexes[char]:
+                __char_indexes[char].append(keyword_text)
             
         pos += 1
 
-def extract_keywords(text):
+def extract_keywords(text, weight):
     cleaned = re.sub(r'[^a-zA-Z \t\n]', '', text)
     splitted = cleaned.split()
     out = []
     for split in splitted:
         if split != "":
-            out.append(split)
+            out.append(Keyword(split, weight))
     return out
 
 def get_index(index):
