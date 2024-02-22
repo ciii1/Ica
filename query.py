@@ -34,7 +34,7 @@ def query(text):
                 distance = (raw_distance / 100) + 1
             last_docs = docs
                 
-            potential_docs[doc_index].score += freq / (math.ceil(doc_length / 10) / 10) / (most_matching.distance + 1) / distance
+            potential_docs[doc_index].score += freq / math.ceil(doc_length / 10) / (most_matching.distance + 1) / distance
 
     #divide score of the docs by 2 for every token of the query they don't contain
     for doc_index in potential_docs:

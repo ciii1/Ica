@@ -55,7 +55,7 @@ class test_query(unittest.TestCase):
         indexer.index(parsed)
         res = query.query('DIE')
         self.assertEqual(res, [
-            ResDocs(0, 1/1.3) #DiE = (D,E)1 / (i)1.1
+            ResDocs(0, 1/1.3)
         ])
 
     def test_query_proximity(self):
