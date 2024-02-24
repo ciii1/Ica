@@ -22,7 +22,7 @@ def query(text):
             is_non_stopwords_exist = True 
 
     if not is_non_stopwords_exist:
-        token.append("usage")
+        tokens.append("usage")
 
     last_docs = None
     for token in tokens:
