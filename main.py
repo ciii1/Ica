@@ -5,7 +5,8 @@ import sys
 import os
 import glob
 
-documents_file_path = "data/"
+documents_file_path = "data/doc"
+pkl_file_path = "data/pkl"
 
 if len(sys.argv) < 2:
     print(f"Usage: {sys.argv[0]} [mode]")
@@ -18,7 +19,7 @@ if len(sys.argv) < 2:
 mode = sys.argv[1]
 
 if mode == "run":
-    indexer.load(documents_file_path)
+    indexer.load(pkl_file_path)
     input_query = ""
     while True:
         input_query = input("ica>>>")
@@ -40,7 +41,7 @@ elif mode == "index":
         parsed = parser.parse(file.read())
         indexer.index(parsed)
 
-    indexer.save(documents_file_path)
+    indexer.save(pkl_file_path)
 else:
     print("Mode '" + mode + "' is unrecognizable")
     sys.exit(0)
