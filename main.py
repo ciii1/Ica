@@ -1,3 +1,4 @@
+from parser import ParseError
 import parser
 import indexer
 import query
@@ -38,7 +39,10 @@ elif mode == "index":
 
     for file_path in file_list:
         file = open(file_path, 'r')
-        parsed = parser.parse(file.read())
+        try:
+            parsed = parser.parse(file.read())
+        except ParseError as e:
+            print(file_path + ": " + e.message)
         indexer.index(parsed)
 
     indexer.save(pkl_file_path)
