@@ -1,5 +1,6 @@
 from dataclasses import dataclass
 from parser import NodeType
+import stopwords
 import Levenshtein
 import math
 import re
@@ -14,6 +15,15 @@ def query(text):
     tokens = tokenize(text)
     potential_docs = {}
     
+
+    is_non_stopwords_exist = False
+    for token in tokens:
+        if token not in stopwords.list_:
+            is_non_stopwords_exist = True 
+
+    if not is_non_stopwords_exist:
+        token.append("usage")
+
     last_docs = None
     for token in tokens:
         most_matching = calculate_most_matching_case_insensitive(token)

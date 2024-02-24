@@ -5,6 +5,7 @@ import re
 import os
 import pickle
 import math
+import stopwords
 
 __indexes = {}
 """
@@ -63,7 +64,7 @@ def append_indexes(keywords, doc_index):
     pos = 0
     for keyword in keywords:
         keyword_text = keyword.text
-        
+
         max_section_weights.setdefault(keyword_text, 0);
         if keyword.section_weight > max_section_weights[keyword_text]:
             max_section_weights[keyword_text] = keyword.section_weight
@@ -93,7 +94,9 @@ def extract_keywords(text, section_weight):
     splitted = cleaned.split()
     out = []
     for split in splitted:
-        if split != "":
+        if split in stopwords.list_ and section_weight < 2:
+            continue
+        elif split != "":
             out.append(Keyword(split, section_weight))
     return out
 

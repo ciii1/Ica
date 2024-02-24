@@ -1,4 +1,4 @@
-stopwords = [
+list_ = [
     'what',
     'that',
     'these',

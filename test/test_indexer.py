@@ -8,14 +8,15 @@ import indexer
 import parser
 from indexer import IndexValue
 from indexer import Keyword
+import stopwords
 
 class test_parser(unittest.TestCase):
     def test_extract_keyword(self):
         keywords = indexer.extract_keywords("test. this is the first keyword and yes this also keywords yay\n\t", 1)
-        self.assertEqual(keywords, [
+        correct0 = [
             Keyword("test", 1), 
             Keyword("this", 1), 
-            Keyword("is", 1),
+            Keyword("is", 1), 
             Keyword("the", 1),
             Keyword("first", 1),
             Keyword("keyword", 1),
@@ -25,7 +26,16 @@ class test_parser(unittest.TestCase):
             Keyword("also", 1),
             Keyword("keywords", 1),
             Keyword("yay", 1),
-        ])
+        ]
+
+        correct = []
+        for keyword in correct0:
+            if keyword.text in stopwords.list_ and keyword.section_weight < 2:
+                pass
+            else:
+                correct.append(keyword)
+
+        self.assertEqual(keywords, correct)
 
     def test_index_single(self):
         indexer.clear()
@@ -35,26 +45,21 @@ class test_parser(unittest.TestCase):
         correct = {
             'this': {
                 0: IndexValue(weight=2, positions=[
-                    0, 5
-                ])
-            }, 
-            'is': {
-                0: IndexValue(weight=2, positions=[
-                    1, 6, 
+                    0, 4
                 ])
             }, 
             'a': {
                 0: IndexValue(weight=2, positions=[
-                    2, 
-                    7])
+                    1, 
+                    5])
             },
             'content': {
-                0: IndexValue(weight=1, positions=[3]), 
+                0: IndexValue(weight=1, positions=[2]), 
             }, 
             'keyword': {
                 0: IndexValue(weight=2, positions=[
-                    4, 
-                    8]), 
+                    3, 
+                    6]), 
             }
         }
         for elem in correct:
@@ -70,27 +75,22 @@ class test_parser(unittest.TestCase):
             'this': {
                 0: IndexValue(weight=2, positions=[
                     0, 
-                    5
-                ])
-            }, 
-            'is': {
-                0: IndexValue(weight=2, positions=[
-                    1, 6
+                    4
                 ])
             }, 
             'a': {
                 0: IndexValue(weight=2, positions=[
-                    2, 
-                    7])
+                    1, 
+                    5])
                 },
             'content': {
-                0: IndexValue(weight=1, positions=[3]), 
+                0: IndexValue(weight=1, positions=[2]), 
                 1: IndexValue(weight=1, positions=[0])
             }, 
             'keyword': {
                 0: IndexValue(weight=2, positions=[
-                    4, 
-                    8]), 
+                    3, 
+                    6]), 
                 1: IndexValue(weight=1, positions=[1])
             }
         }
