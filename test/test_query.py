@@ -136,5 +136,17 @@ class test_query(unittest.TestCase):
         res = query.query('hello')
         self.assertEqual(res[0].index, 0)
 
+    def test_query_stopwords_basic(self):
+        indexer.clear()
+
+        parsed = parser.parse("""
+            {hello is you here}
+            \n===\n
+            {2 is here}{you are here}
+        """)
+        indexer.index(parsed)
+        res = query.query('you is')
+        self.assertEqual(res[0].index, 1)
+
 if __name__ == '__main__':
     unittest.main()
