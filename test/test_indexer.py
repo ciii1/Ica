@@ -7,7 +7,6 @@ sys.path.append(pathlib.Path(__file__).parent.resolve())
 import indexer
 import parser
 from indexer import IndexValue
-from indexer import IndexPosition
 from indexer import Keyword
 
 class test_parser(unittest.TestCase):
@@ -35,28 +34,27 @@ class test_parser(unittest.TestCase):
         indexer.index(parsed)
         correct = {
             'this': {
-                0: IndexValue(freq=2, positions=[
-                    IndexPosition(position=0, weight=1), 
-                    IndexPosition(position=5, weight=1)
-                ], doc_length=9)
+                0: IndexValue(weight=2, positions=[
+                    0, 5
+                ])
             }, 
             'is': {
-                0: IndexValue(freq=2, positions=[
-                    IndexPosition(position=1, weight=1), IndexPosition(position=6, weight=1)
-                ], doc_length=9)
+                0: IndexValue(weight=2, positions=[
+                    1, 6, 
+                ])
             }, 
             'a': {
-                0: IndexValue(freq=2, positions=[
-                    IndexPosition(position=2, weight=1), 
-                    IndexPosition(position=7, weight=1)], doc_length=9)
+                0: IndexValue(weight=2, positions=[
+                    2, 
+                    7])
             },
             'content': {
-                0: IndexValue(freq=1, positions=[IndexPosition(position=3, weight=1)], doc_length=9), 
+                0: IndexValue(weight=1, positions=[3]), 
             }, 
             'keyword': {
-                0: IndexValue(freq=2, positions=[
-                    IndexPosition(position=4, weight=1), 
-                    IndexPosition(position=8, weight=1)], doc_length=9), 
+                0: IndexValue(weight=2, positions=[
+                    4, 
+                    8]), 
             }
         }
         for elem in correct:
@@ -70,30 +68,30 @@ class test_parser(unittest.TestCase):
         indexer.index(parsed)
         correct = {
             'this': {
-                0: IndexValue(freq=2, positions=[
-                    IndexPosition(position=0, weight=1), 
-                    IndexPosition(position=5, weight=1)
-                ], doc_length=9)
+                0: IndexValue(weight=2, positions=[
+                    0, 
+                    5
+                ])
             }, 
             'is': {
-                0: IndexValue(freq=2, positions=[
-                    IndexPosition(position=1, weight=1), IndexPosition(position=6, weight=1)
-                ], doc_length=9)
+                0: IndexValue(weight=2, positions=[
+                    1, 6
+                ])
             }, 
             'a': {
-                0: IndexValue(freq=2, positions=[
-                    IndexPosition(position=2, weight=1), 
-                    IndexPosition(position=7, weight=1)], doc_length=9)
+                0: IndexValue(weight=2, positions=[
+                    2, 
+                    7])
                 },
             'content': {
-                0: IndexValue(freq=1, positions=[IndexPosition(position=3, weight=1)], doc_length=9), 
-                1: IndexValue(freq=1, positions=[IndexPosition(position=0, weight=1)], doc_length=2)
+                0: IndexValue(weight=1, positions=[3]), 
+                1: IndexValue(weight=1, positions=[0])
             }, 
             'keyword': {
-                0: IndexValue(freq=2, positions=[
-                    IndexPosition(position=4, weight=1), 
-                    IndexPosition(position=8, weight=1)], doc_length=9), 
-                1: IndexValue(freq=1, positions=[IndexPosition(position=1, weight=1)], doc_length=2)
+                0: IndexValue(weight=2, positions=[
+                    4, 
+                    8]), 
+                1: IndexValue(weight=1, positions=[1])
             }
         }
         for elem in correct:

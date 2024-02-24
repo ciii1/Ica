@@ -18,7 +18,7 @@ class test_query(unittest.TestCase):
         res = query.query('help i\'m having seizure')
         self.assertEqual(res[0].index, 0)
 
-    def test_query_freqs(self):
+    def test_query_weights(self):
         indexer.clear()
 
         parsed = parser.parse("{seizure is a serious condition, if you're having a seizure, call an ambulance}<help>")
@@ -26,7 +26,7 @@ class test_query(unittest.TestCase):
         res = query.query('help i\'m having seizure')
         self.assertEqual(res[0].index, 0)
 
-    def test_query_freqs_div(self):
+    def test_query_weights_div(self):
         indexer.clear()
 
         parsed = parser.parse("{seizure is a serious condition, if you're having a seizure, call an ambulance}<help>")

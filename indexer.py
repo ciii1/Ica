@@ -4,6 +4,7 @@ from dataclasses import dataclass
 import re
 import os
 import pickle
+import math
 
 __indexes = {}
 """
@@ -23,21 +24,16 @@ __docs = []
 """
 the documents/response templates
 """
-@dataclass
-class IndexPosition:
-    position:int
-    weight:float
 
 @dataclass
 class IndexValue:
-    freq: int
-    positions: list[IndexPosition]
-    doc_length: int
+    weight: int
+    positions: list[int]
 
 @dataclass
 class Keyword:
     text: str
-    weight: float
+    section_weight: float
 
 def index(ast):
     global __indexes
@@ -63,14 +59,19 @@ def append_indexes(keywords, doc_index):
     global __char_indexes
     global __docs
 
+    max_section_weights = {}
     pos = 0
     for keyword in keywords:
         keyword_text = keyword.text
+        
+        max_section_weights.setdefault(keyword_text, 0);
+        if keyword.section_weight > max_section_weights[keyword_text]:
+            max_section_weights[keyword_text] = keyword.section_weight
+
         __indexes.setdefault(keyword_text, {})
-        __indexes[keyword_text].setdefault(doc_index, IndexValue(freq=0, positions=[], doc_length=0))
-        __indexes[keyword_text][doc_index].freq += 1
-        __indexes[keyword_text][doc_index].positions.append(IndexPosition(pos, keyword.weight))
-        __indexes[keyword_text][doc_index].doc_length = len(keywords)
+        __indexes[keyword_text].setdefault(doc_index, IndexValue(weight=0, positions=[]))
+        __indexes[keyword_text][doc_index].weight += 1
+        __indexes[keyword_text][doc_index].positions.append(pos)
         normalized_keyword = keyword_text.lower()
         __case_insensitive_indexes.setdefault(normalized_keyword, [])
         if keyword_text not in __case_insensitive_indexes[normalized_keyword]:
@@ -82,14 +83,18 @@ def append_indexes(keywords, doc_index):
                 __char_indexes[char].append(keyword_text)
             
         pos += 1
+    for keyword in keywords:
+        keyword_text = keyword.text
+        __indexes[keyword_text][doc_index].weight /= math.ceil(len(keywords) / 10)
+        __indexes[keyword_text][doc_index].weight *= max_section_weights[keyword_text]
 
-def extract_keywords(text, weight):
+def extract_keywords(text, section_weight):
     cleaned = re.sub(r'[^a-zA-Z \t\n]', '', text)
     splitted = cleaned.split()
     out = []
     for split in splitted:
         if split != "":
-            out.append(Keyword(split, weight))
+            out.append(Keyword(split, section_weight))
     return out
 
 def get_index(index):

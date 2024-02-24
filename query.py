@@ -24,19 +24,17 @@ def query(text):
         docs = indexer.get_index(most_matching.matched_index)
         for doc_index in docs:
             potential_docs.setdefault(doc_index, ResDocs(doc_index, 0)) 
-            freq = docs[doc_index].freq
-            doc_length = docs[doc_index].doc_length
+            weight = docs[doc_index].weight
 
             #proximity scoring
             distance = 1
             if last_docs and doc_index in last_docs:
                 closest_pos = find_closest_elements(docs[doc_index].positions, last_docs[doc_index].positions)
-                raw_distance = abs(closest_pos[0].position - closest_pos[1].position)  
+                raw_distance = abs(closest_pos[0] - closest_pos[1])  
                 distance = (raw_distance / 100) + 1
             last_docs = docs
-            section_weight = max(docs[doc_index].positions, key=lambda k: k.weight).weight
             
-            potential_docs[doc_index].score += freq / math.ceil(doc_length / 10) * section_weight / (most_matching.distance + 1) / distance
+            potential_docs[doc_index].score += weight / (most_matching.distance + 1) / distance
 
     #divide score of the docs by 2 for every token of the query they don't contain
     for doc_index in potential_docs:
@@ -62,7 +60,7 @@ def find_closest_elements(arr1, arr2):
 
     for num1 in arr1:
         for num2 in arr2:
-            difference = abs(num1.position - num2.position)
+            difference = abs(num1 - num2)
             if difference < min_difference:
                 min_difference = difference
                 closest_pair = (num1, num2)
