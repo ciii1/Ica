@@ -71,7 +71,7 @@ def append_indexes(keywords, doc_index):
 
         __indexes.setdefault(keyword_text, {})
         __indexes[keyword_text].setdefault(doc_index, IndexValue(weight=0, positions=[]))
-        __indexes[keyword_text][doc_index].weight += 1
+        __indexes[keyword_text][doc_index].weight = 1
         __indexes[keyword_text][doc_index].positions.append(pos)
         normalized_keyword = keyword_text.lower()
         __case_insensitive_indexes.setdefault(normalized_keyword, [])
@@ -86,7 +86,6 @@ def append_indexes(keywords, doc_index):
         pos += 1
     for keyword in keywords:
         keyword_text = keyword.text
-        __indexes[keyword_text][doc_index].weight /= math.ceil(len(keywords) / 10)
         __indexes[keyword_text][doc_index].weight *= max_section_weights[keyword_text]
 
 def extract_keywords(text, section_weight):

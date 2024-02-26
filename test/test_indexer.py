@@ -47,7 +47,7 @@ class test_parser(unittest.TestCase):
                 0: IndexValue(weight=1, positions=[0]), 
             }, 
             'keyword': {
-                0: IndexValue(weight=2, positions=[1, 2]), 
+                0: IndexValue(weight=1, positions=[1, 2]), 
             }
         }
         for elem in correct:
@@ -65,7 +65,7 @@ class test_parser(unittest.TestCase):
                 1: IndexValue(weight=1, positions=[0])
             }, 
             'keyword': {
-                0: IndexValue(weight=2, positions=[1, 2]), 
+                0: IndexValue(weight=1, positions=[1, 2]), 
                 1: IndexValue(weight=1, positions=[1])
             }
         }
