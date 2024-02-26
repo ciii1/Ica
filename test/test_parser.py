@@ -82,6 +82,16 @@ class test_parser(unittest.TestCase):
             ]
         ])
 
+    def test_parse_escape1(self):
+        parsed = parser.parse("{10.\\212 this is a \\\\content\[ keyword}[pure content]<2 this is a keyword>")
+        self.assertEqual(parsed, [
+            [
+                Node(NodeType.CONTENT_KEYWORD, "212 this is a \content[ keyword", 10),
+                Node(NodeType.CONTENT, "pure content", 1),
+                Node(NodeType.KEYWORD, " this is a keyword", 2),
+            ]
+        ])
+
     def test_parse_error(self):
         try:
             parser.parse("{this is an errornous input")

@@ -14,7 +14,6 @@ class ResDocs:
 def query(text):
     tokens = tokenize(text)
     potential_docs = {}
-    
 
     is_non_stopwords_exist = False
     for token in tokens:
@@ -33,17 +32,16 @@ def query(text):
                 continue
         docs = indexer.get_index(most_matching.matched_index)
         for doc_index in docs:
-            potential_docs.setdefault(doc_index, ResDocs(doc_index, 0)) 
+            potential_docs.setdefault(doc_index, ResDocs(doc_index, 0))
             weight = docs[doc_index].weight
 
             #proximity scoring
             distance = 1
             if last_docs and doc_index in last_docs:
                 closest_pos = find_closest_elements(docs[doc_index].positions, last_docs[doc_index].positions)
-                raw_distance = abs(closest_pos[0] - closest_pos[1])  
+                raw_distance = abs(closest_pos[0] - closest_pos[1])
                 distance = (raw_distance / 100) + 1
             last_docs = docs
-            
             potential_docs[doc_index].score += weight / (most_matching.distance + 1) / distance
 
     #divide score of the docs by 2 for every token of the query they don't contain

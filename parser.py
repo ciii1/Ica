@@ -70,7 +70,9 @@ def parse(text):
                             appended_num = float(number)
                         local_output.append(Node(special_tokens[2], curr_str, appended_num))
                         curr_str = ""
-            if not is_special_token and not is_parsing_number:
+            if not is_special_token and not is_parsing_number and char != '\\':
+                curr_str += char
+            elif char == '\\' and last_char == '\\':
                 curr_str += char
             last_char = char
         if opening != "":
