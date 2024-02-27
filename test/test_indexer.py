@@ -38,7 +38,7 @@ class test_parser(unittest.TestCase):
         self.assertEqual(keywords, correct)
 
     def test_index_single(self):
-        indexer.clear()
+        indexer.init()
 
         parsed = parser.parse("{this is a content keyword}[pure content]<this is a keyword>")
         indexer.index(parsed)
@@ -55,7 +55,7 @@ class test_parser(unittest.TestCase):
             self.assertEqual(compare, correct[elem])
 
     def test_index_multiple(self):
-        indexer.clear()
+        indexer.init()
 
         parsed = parser.parse("{this is a content keyword}[pure content]<this is a keyword>\n===\n{content keyword}")
         indexer.index(parsed)

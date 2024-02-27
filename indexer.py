@@ -124,7 +124,7 @@ def append_docs(text):
     __cursor.execute("INSERT INTO docs (text) VALUES (?)", (text,))
     return __cursor.lastrowid-1
 
-def clear():
+def init():
     global __indexes
     global __docs
     global __case_insensitive_indexes

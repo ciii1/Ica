@@ -11,7 +11,7 @@ from query import ResDocs
 
 class test_query(unittest.TestCase):
     def test_query_basic(self):
-        indexer.clear()
+        indexer.init()
 
         parsed = parser.parse("{seizure is a serious condition, }[if you're having one or seeing someone having it, call an ambulance]<help>")
         indexer.index(parsed)
@@ -19,7 +19,7 @@ class test_query(unittest.TestCase):
         self.assertEqual(res[0].index, 0)
 
     def test_query_weights(self):
-        indexer.clear()
+        indexer.init()
 
         parsed = parser.parse("{seizure is a serious condition, if you're having a seizure, call an ambulance}<help>")
         indexer.index(parsed)
@@ -27,7 +27,7 @@ class test_query(unittest.TestCase):
         self.assertEqual(res[0].index, 0)
 
     def test_query_weights_div(self):
-        indexer.clear()
+        indexer.init()
 
         parsed = parser.parse("{seizure is a serious condition, if you're having a seizure, call an ambulance}<help>")
         indexer.index(parsed)
@@ -35,7 +35,7 @@ class test_query(unittest.TestCase):
         self.assertEqual(res[0].index, 0)
 
     def test_query_multi_docs(self):
-        indexer.clear()
+        indexer.init()
 
         parsed = parser.parse("""
             {seizure is a serious condition, if you're having a seizure, call an ambulance}<help>
@@ -47,7 +47,7 @@ class test_query(unittest.TestCase):
         self.assertEqual(res[0].index, 0)
 
     def test_query_case_insensitive(self):
-        indexer.clear()
+        indexer.init()
 
         parsed = parser.parse("""
             {die}
@@ -59,7 +59,7 @@ class test_query(unittest.TestCase):
         ])
 
     def test_query_proximity(self):
-        indexer.clear()
+        indexer.init()
 
         parsed = parser.parse("""
             {hello how are you}
@@ -71,7 +71,7 @@ class test_query(unittest.TestCase):
         self.assertEqual(res[0].index, 1)
 
     def test_query_fuzzy_search(self):
-        indexer.clear()
+        indexer.init()
 
         parsed = parser.parse("""
             {hello death is coming}
@@ -83,7 +83,7 @@ class test_query(unittest.TestCase):
         self.assertEqual(res[0].index, 0)
 
     def test_query_fuzzy_search2(self):
-        indexer.clear()
+        indexer.init()
 
         parsed = parser.parse("""
             {hello deaths is coming}
@@ -95,7 +95,7 @@ class test_query(unittest.TestCase):
         self.assertEqual(res[0].index, 1)
 
     def test_query_fuzzy_search_ci(self):
-        indexer.clear()
+        indexer.init()
 
         parsed = parser.parse("""
             {hello deaths is coming}
@@ -107,7 +107,7 @@ class test_query(unittest.TestCase):
         self.assertEqual(res[0].index, 1)
 
     def test_query_fuzzy_search_failing(self):
-        indexer.clear()
+        indexer.init()
 
         parsed = parser.parse("""
             {hello death is coming}
@@ -125,7 +125,7 @@ class test_query(unittest.TestCase):
         self.assertEqual(0, query.normalize_distance(0))
 
     def test_query_weight_basic(self):
-        indexer.clear()
+        indexer.init()
 
         parsed = parser.parse("""
             {2 hello death is coming}
@@ -137,7 +137,7 @@ class test_query(unittest.TestCase):
         self.assertEqual(res[0].index, 0)
 
     def test_query_stopwords_basic(self):
-        indexer.clear()
+        indexer.init()
 
         parsed = parser.parse("""
             {hello is you here}
