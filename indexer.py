@@ -1,6 +1,7 @@
 from parser import Node
 from parser import NodeType
 from dataclasses import dataclass
+import sqlite3
 import re
 import os
 import pickle
@@ -20,12 +21,6 @@ the indexes are a-z, normalized.
 each index contains a map with the normalized keyword index as its key with its value as list of the index where the characters appear.
 """
 
-#FIXME: use sqlite for this
-__docs = []
-"""
-the documents/response templates
-"""
-
 @dataclass
 class IndexValue:
     weight: int
@@ -35,6 +30,9 @@ class IndexValue:
 class Keyword:
     text: str
     section_weight: float
+
+__conn = sqlite3.connect('data/docs.db')
+__cursor = __conn.cursor()
 
 def index(ast):
     global __indexes
@@ -51,8 +49,8 @@ def index(ast):
                 keywords += extract_keywords(token.text, token.weight)
             elif token._type == NodeType.CONTENT:
                 curr_doc += token.text
-        __docs.append(curr_doc)
-        append_indexes(keywords, len(__docs)-1)
+        idx = append_docs(curr_doc)
+        append_indexes(keywords, idx)
 
 def append_indexes(keywords, doc_index):
     global __indexes
@@ -120,44 +118,59 @@ def get_char_index(normalized_char):
     except KeyError:
         return None
 
+def append_docs(text):
+    global __conn 
+    global __cursor
+    __cursor.execute("INSERT INTO docs (text) VALUES (?)", (text,))
+    return __cursor.lastrowid-1
+
 def clear():
     global __indexes
     global __docs
     global __case_insensitive_indexes
     global __char_indexes
+    global __cursor
+    global __conn
     __indexes = {}
     __case_insensitive_indexes = {}
     __char_indexes = {}
-    __docs = []
+    __cursor.execute("DROP TABLE IF EXISTS docs")
+    __cursor.execute('''
+        CREATE TABLE IF NOT EXISTS docs (
+            id INTEGER PRIMARY KEY,
+            text TEXT
+        )
+    ''')
 
 def save(path):
     global __indexes
-    global __docs
     global __case_insensitive_indexes
     global __char_indexes
+    global __conn
     with open(os.path.join(path, "index.pkl"), 'wb') as file:
         pickle.dump(__indexes, file)
-    with open(os.path.join(path, "docs.pkl"), 'wb') as file:
-        pickle.dump(__docs, file)
     with open(os.path.join(path, "ci_index.pkl"), 'wb') as file:
         pickle.dump(__case_insensitive_indexes, file)
     with open(os.path.join(path, "ch_index.pkl"), 'wb') as file:
         pickle.dump(__char_indexes, file)
 
+    __conn.commit()
+    __cursor.close()
+    __conn.close()
+
 def load(path):
     global __indexes
-    global __docs
     global __case_insensitive_indexes
     global __char_indexes
     with open(os.path.join(path, "index.pkl"), 'rb') as file:
         __indexes = pickle.load(file)
-    with open(os.path.join(path, "docs.pkl"), 'rb') as file:
-        __docs = pickle.load(file)
     with open(os.path.join(path, "ci_index.pkl"), 'rb') as file:
         __case_insensitive_indexes = pickle.load(file)
     with open(os.path.join(path, "ch_index.pkl"), 'rb') as file:
         __char_indexes = pickle.load(file)
 
 def get_doc(index):
-    global __docs
-    return __docs[index]
+    global __cursor
+    __cursor.execute("SELECT text FROM docs WHERE id=?", (index+1,))
+    result = __cursor.fetchone()
+    return result[0]
