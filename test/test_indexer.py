@@ -10,7 +10,11 @@ from indexer import IndexValue
 from indexer import Keyword
 import stopwords
 
-class test_parser(unittest.TestCase):
+class test_indexer(unittest.TestCase):
+    @classmethod
+    def tearDownClass(cls):
+        indexer.delete_docs()
+
     def test_extract_keyword(self):
         keywords = indexer.extract_keywords("test. this is the first keyword and yes this also keywords yay\n\t", 1)
         correct0 = [

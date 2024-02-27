@@ -31,8 +31,8 @@ class Keyword:
     text: str
     section_weight: float
 
-__conn = sqlite3.connect('data/docs.db')
-__cursor = __conn.cursor()
+__conn = None
+__cursor = None
 
 def index(ast):
     global __indexes
@@ -124,7 +124,7 @@ def append_docs(text):
     __cursor.execute("INSERT INTO docs (text) VALUES (?)", (text,))
     return __cursor.lastrowid-1
 
-def init():
+def init(path="data/"):
     global __indexes
     global __docs
     global __case_insensitive_indexes
@@ -134,6 +134,10 @@ def init():
     __indexes = {}
     __case_insensitive_indexes = {}
     __char_indexes = {}
+
+    __conn = sqlite3.connect(os.path.join(path, 'docs.db'))
+    __cursor = __conn.cursor()
+
     __cursor.execute("DROP TABLE IF EXISTS docs")
     __cursor.execute('''
         CREATE TABLE IF NOT EXISTS docs (
@@ -142,7 +146,7 @@ def init():
         )
     ''')
 
-def save(path):
+def save(path="data/"):
     global __indexes
     global __case_insensitive_indexes
     global __char_indexes
@@ -155,13 +159,14 @@ def save(path):
         pickle.dump(__char_indexes, file)
 
     __conn.commit()
-    __cursor.close()
-    __conn.close()
 
-def load(path):
+def load(path="data/"):
     global __indexes
     global __case_insensitive_indexes
     global __char_indexes
+    global __cursor
+    global __conn
+
     with open(os.path.join(path, "index.pkl"), 'rb') as file:
         __indexes = pickle.load(file)
     with open(os.path.join(path, "ci_index.pkl"), 'rb') as file:
@@ -169,8 +174,14 @@ def load(path):
     with open(os.path.join(path, "ch_index.pkl"), 'rb') as file:
         __char_indexes = pickle.load(file)
 
+    __conn = sqlite3.connect(os.path.join(path, 'docs.db'))
+    __cursor = __conn.cursor()
+
 def get_doc(index):
     global __cursor
     __cursor.execute("SELECT text FROM docs WHERE id=?", (index+1,))
     result = __cursor.fetchone()
     return result[0]
+
+def delete_docs(path="data/docs.db"):
+    os.remove(path)

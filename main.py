@@ -37,7 +37,7 @@ elif mode == "index":
     file_pattern = os.path.join(documents_file_path, f"*.doc")
     file_list = glob.glob(file_pattern)
     
-    indexer.clear()
+    indexer.init(pkl_file_path)
     for file_path in file_list:
         file = open(file_path, 'r')
         try:

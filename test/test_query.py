@@ -10,6 +10,10 @@ import query
 from query import ResDocs
 
 class test_query(unittest.TestCase):
+    @classmethod
+    def tearDownClass(cls):
+        indexer.delete_docs()
+
     def test_query_basic(self):
         indexer.init()
 
@@ -150,3 +154,4 @@ class test_query(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+    indexer.delete_docs()
