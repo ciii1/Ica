@@ -8,7 +8,6 @@ import indexer
 import parser
 from indexer import IndexValue
 from indexer import Keyword
-import stopwords
 
 class test_indexer(unittest.TestCase):
     @classmethod
@@ -17,7 +16,7 @@ class test_indexer(unittest.TestCase):
 
     def test_extract_keyword(self):
         keywords = indexer.extract_keywords("test. this is the first keyword and yes this also keywords yay\n\t", 1)
-        correct0 = [
+        correct = [
             Keyword("test", 1), 
             Keyword("this", 1), 
             Keyword("is", 1), 
@@ -32,13 +31,6 @@ class test_indexer(unittest.TestCase):
             Keyword("yay", 1),
         ]
 
-        correct = []
-        for keyword in correct0:
-            if keyword.text in stopwords.list_ and keyword.section_weight < 2:
-                pass
-            else:
-                correct.append(keyword)
-
         self.assertEqual(keywords, correct)
 
     def test_index_single(self):
@@ -48,10 +40,10 @@ class test_indexer(unittest.TestCase):
         indexer.index(parsed)
         correct = {
             'content': {
-                0: IndexValue(weight=1, positions=[0]), 
+                0: IndexValue(weight=1, positions=[3]), 
             }, 
             'keyword': {
-                0: IndexValue(weight=1, positions=[1, 2]), 
+                0: IndexValue(weight=1, positions=[4, 8]), 
             }
         }
         for elem in correct:
@@ -65,11 +57,11 @@ class test_indexer(unittest.TestCase):
         indexer.index(parsed)
         correct = {
             'content': {
-                0: IndexValue(weight=1, positions=[0]), 
+                0: IndexValue(weight=1, positions=[3]), 
                 1: IndexValue(weight=1, positions=[0])
             }, 
             'keyword': {
-                0: IndexValue(weight=1, positions=[1, 2]), 
+                0: IndexValue(weight=1, positions=[4, 8]), 
                 1: IndexValue(weight=1, positions=[1])
             }
         }

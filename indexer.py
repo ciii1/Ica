@@ -6,7 +6,6 @@ import re
 import os
 import pickle
 import math
-import stopwords
 
 __indexes = {}
 """
@@ -91,9 +90,7 @@ def extract_keywords(text, section_weight):
     splitted = cleaned.split()
     out = []
     for split in splitted:
-        if split in stopwords.list_ and section_weight < 2:
-            continue
-        elif split != "":
+        if split != "":
             out.append(Keyword(split, section_weight))
     return out
 
