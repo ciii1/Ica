@@ -88,7 +88,7 @@ def append_indexes(keywords, doc_index):
         for word in word_synonyms:
             __indexes.setdefault(word, {})
             __indexes[word].setdefault(doc_index, IndexValue(weight=0, positions=[]))
-            __indexes[word][doc_index].weight = 1
+            __indexes[word][doc_index].weight = 0.5
             __indexes[word][doc_index].positions.append(pos)
 
             normalized_word = word.lower()

@@ -79,7 +79,7 @@ class test_indexer(unittest.TestCase):
                 0: IndexValue(weight=1, positions=[0]), 
             }, 
             'stupid': {
-                0: IndexValue(weight=1, positions=[0]), 
+                0: IndexValue(weight=0.5, positions=[0]), 
             }, 
         }
         for elem in correct:
