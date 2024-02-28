@@ -6,6 +6,7 @@ import re
 import os
 import pickle
 import math
+import synonyms
 
 __indexes = {}
 """
@@ -70,7 +71,9 @@ def append_indexes(keywords, doc_index):
         __indexes[keyword_text].setdefault(doc_index, IndexValue(weight=0, positions=[]))
         __indexes[keyword_text][doc_index].weight = 1
         __indexes[keyword_text][doc_index].positions.append(pos)
+
         normalized_keyword = keyword_text.lower()
+
         __case_insensitive_indexes.setdefault(normalized_keyword, [])
         if keyword_text not in __case_insensitive_indexes[normalized_keyword]:
             __case_insensitive_indexes[normalized_keyword].append(keyword_text)
@@ -79,8 +82,28 @@ def append_indexes(keywords, doc_index):
             __char_indexes.setdefault(char, [])
             if keyword_text not in __char_indexes[char]:
                 __char_indexes[char].append(keyword_text)
-            
+
+
+        word_synonyms = synonyms.get(normalized_keyword)
+        for word in word_synonyms:
+            __indexes.setdefault(word, {})
+            __indexes[word].setdefault(doc_index, IndexValue(weight=0, positions=[]))
+            __indexes[word][doc_index].weight = 1
+            __indexes[word][doc_index].positions.append(pos)
+
+            normalized_word = word.lower()
+            __case_insensitive_indexes.setdefault(normalized_word, [])
+            if word not in __case_insensitive_indexes[normalized_word]:
+                __case_insensitive_indexes[normalized_word].append(word)
+
+            for char in word:
+                __char_indexes.setdefault(char, [])
+                if word not in __char_indexes[char]:
+                    __char_indexes[char].append(word)
+
         pos += 1
+            
+
     for keyword in keywords:
         keyword_text = keyword.text
         __indexes[keyword_text][doc_index].weight *= max_section_weights[keyword_text]
