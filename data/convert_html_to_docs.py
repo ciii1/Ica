@@ -36,11 +36,11 @@ def convert_to_html(html_doc):
             title = re.sub(r'\<', '\<', title)
             title = re.sub(r'\>', '\>', title)
             if not is_first_iter:
-                out += "}\n===\n"
+                out += "]\n===\n"
             else:
                 is_first_iter = False
             out += "{2" + title + "\n}"
-            out += "{"
+            out += "["
         else:
             i = 0
             p = paragraph.previous_element
@@ -66,7 +66,7 @@ def convert_to_html(html_doc):
         text = re.sub(r'\>', '\>', text)
         out += text + "\n"
         last_paragraph = paragraph
-    out += "}\n"
+    out += "]\n"
     print(out)
     return out
 

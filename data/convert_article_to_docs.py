@@ -10,7 +10,7 @@ def convert_to_docs(articles):
         for paragraph in paragraphs[1:]:
             if not is_first_iter:
                 output += "\n===\n"
-            output += "<2" + paragraphs[0] + ">" + "{" + paragraph + "}"
+            output += "<2" + paragraphs[0] + ">" + "[" + paragraph + "]"
             is_first_iter = False
     return output
 
