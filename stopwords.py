@@ -9,4 +9,8 @@ list_ = [
     'you',
     'me',
     'i',
+    'got',
+    'we'
+    'in',
+    'on',
 ]
