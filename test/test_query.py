@@ -66,12 +66,12 @@ class test_query(unittest.TestCase):
         indexer.init()
 
         parsed = parser.parse("""
-            {hello how are you}
+            {hello how are ya}
             \n===\n
-            {hello you are how}
+            {hello ya are how}
         """)
         indexer.index(parsed)
-        res = query.query('hello you')
+        res = query.query('hello ya')
         self.assertEqual(res[0].index, 1)
 
     def test_query_fuzzy_search(self):
@@ -146,11 +146,11 @@ class test_query(unittest.TestCase):
         parsed = parser.parse("""
             {hello is you here}
             \n===\n
-            {2 is here}{you are here}
+            {is here}{you are here}
         """)
         indexer.index(parsed)
         res = query.query('you is')
-        self.assertEqual(res[0].index, 1)
+        self.assertEqual(res[0].index, 0)
 
 if __name__ == '__main__':
     unittest.main()

@@ -5,6 +5,8 @@ import query
 import sys
 import os
 import glob
+import random
+import math
 
 documents_file_path = "data/doc"
 pkl_file_path = "data/pkl"
@@ -31,6 +33,7 @@ if mode == "run":
         if len(res_docs) == 0:
             print("")
         else:
+            random_range = random.randint(0, math.ceil(len(res_docs) / 2) - 1)
             print(indexer.get_doc(res_docs[0].index))
 
 elif mode == "index": 

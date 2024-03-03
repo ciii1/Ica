@@ -11,6 +11,10 @@ import sounddevice as sd
 import indexer
 import query
 import json
+import subprocess
+import time
+import math
+import random
 
 from vosk import Model, KaldiRecognizer
 
@@ -57,6 +61,11 @@ try:
     pkl_file_path = "data/pkl"
     indexer.load(pkl_file_path)
 
+    input_buffer = sys.stdin
+    output_buffer = sys.stdout
+    proc = subprocess.Popen(['festival', '--interactive'], stdin=subprocess.PIPE, stdout=subprocess.PIPE, text=True)
+    print("(voice_cmu_us_slt_arctic_hts)", file=proc.stdin, flush=True)  # forward the user input
+
     if args.samplerate is None:
         device_info = sd.query_devices(args.device, "input")
         # soundfile expects an int, sounddevice provides a float:
@@ -88,7 +97,8 @@ try:
                 if len(res_docs) == 0:
                     print("")
                 else:
-                    print(indexer.get_doc(res_docs[0].index))
+                    random_range = random.randint(0, math.ceil(len(res_docs) / 2) - 1)
+                    print("(SayText \"" + indexer.get_doc(res_docs[random_range].index) + "\")", file=proc.stdin, flush=True)  # forward the user input
             else:
                 #print(rec.PartialResult())
                 pass

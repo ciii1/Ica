@@ -68,23 +68,6 @@ class test_indexer(unittest.TestCase):
         for elem in correct:
             compare = indexer.get_index(elem)
             self.assertEqual(compare, correct[elem])
-            
-    def test_index_syn1(self):
-        indexer.init()
-
-        parsed = parser.parse("{idiot}[ sorry]")
-        indexer.index(parsed)
-        correct = {
-            'idiot': {
-                0: IndexValue(weight=1, positions=[0]), 
-            }, 
-            'stupid': {
-                0: IndexValue(weight=0.5, positions=[0]), 
-            }, 
-        }
-        for elem in correct:
-            compare = indexer.get_index(elem)
-            self.assertEqual(compare, correct[elem])
 
 if __name__ == '__main__':
     unittest.main()

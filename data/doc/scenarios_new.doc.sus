@@ -1,0 +1,1205 @@
+<2 Could you help me make a plane reservation ?>[ I would be happy to help you . Where do you plan on going ?]
+===
+< Could you help me make a plane reservation ?><2 I am going to go to Hawaii .>[ For that destination , you may leave from Los Angeles or Burbank Airport . Which would you prefer ?]
+===
+< Could you help me make a plane reservation ?>< I am going to go to Hawaii .><2 I think that I would rather leave from Los Angeles Airport .>[ Would you prefer a morning or afternoon departure ?]
+===
+< Could you help me make a plane reservation ?>< I am going to go to Hawaii .>< I think that I would rather leave from Los Angeles Airport .><2 I need to leave in the morning .>[ Fine . On your return flight , do you have a preference as to morning or afternoon ?]
+===
+< Could you help me make a plane reservation ?>< I am going to go to Hawaii .>< I think that I would rather leave from Los Angeles Airport .>< I need to leave in the morning .><2 I would prefer to return in the afternoon .>[ I have booked you on your flight at a great rate . Here are your tickets .]<2 I need to make a plane reservation .>[ That is what I am here for . What is your destination ?]
+===
+< I need to make a plane reservation .><2 I will be traveling to Aspen , Colorado .>[ Would you prefer to leave from Los Angeles or Burbank Airport ?]
+===
+< I need to make a plane reservation .>< I will be traveling to Aspen , Colorado .><2 Burbank Airport would be best for me .>[ You can leave in the morning of afternoon from that airport . Do you have a preference ?]
+===
+< I need to make a plane reservation .>< I will be traveling to Aspen , Colorado .>< Burbank Airport would be best for me .><2 I can only take a flight that leaves in the afternoon .>[ I can book that for you right now . When you return , would you prefer morning or afternoon ?]
+===
+< I need to make a plane reservation .>< I will be traveling to Aspen , Colorado .>< Burbank Airport would be best for me .>< I can only take a flight that leaves in the afternoon .><2 I think that I would like a morning return flight better .>[ I was able to book your flight , and I will print your tickets right now . Have a great trip !]<2 I am planning a trip and need help making my airline reservation .>[ Sure . Where are you traveling to on your trip ?]
+===
+< I am planning a trip and need help making my airline reservation .><2 I will be vacationing in Oregon .>[ You have an option of departing from Los Angeles or Burbank Airport . What is your preference ?]
+===
+< I am planning a trip and need help making my airline reservation .>< I will be vacationing in Oregon .><2 I live closer to Los Angeles Airport , so that would be the best choice .>[ Does it matter to you if you leave in the morning or afternoon ?]
+===
+< I am planning a trip and need help making my airline reservation .>< I will be vacationing in Oregon .>< I live closer to Los Angeles Airport , so that would be the best choice .><2 I can leave at either morning or afternoon .>[ I 'll put you on a morning flight . Is a morning or afternoon return flight preferable for you ?]
+===
+< I am planning a trip and need help making my airline reservation .>< I will be vacationing in Oregon .>< I live closer to Los Angeles Airport , so that would be the best choice .>< I can leave at either morning or afternoon .><2 Either morning or afternoon would work for me .>[ I 'll give you an afternoon flight . Here are your tickets .]<2 Have you ever booked a flight online ?>[ I have booked airline tickets online many times . It has worked out great for me !]
+===
+< Have you ever booked a flight online ?><2 How do you book airline tickets online ?>[ The best way is to go to a website like Travelocity or Expedia . They can help you find the best price .]
+===
+< Have you ever booked a flight online ?>< How do you book airline tickets online ?><2 What information do I need to provide to book a flight ?>[ You need to know where you are going and when you want to travel .]
+===
+< Have you ever booked a flight online ?>< How do you book airline tickets online ?>< What information do I need to provide to book a flight ?><2 How do I get the cheapest rate for the tickets ?>[ Usually you get the best price by having some flexibility in your travel time and dates .]
+===
+< Have you ever booked a flight online ?>< How do you book airline tickets online ?>< What information do I need to provide to book a flight ?>< How do I get the cheapest rate for the tickets ?><2 Can I fly on different airlines ?>[ You can choose the airline you prefer to fly with or let the website find you the best deal .]<2 Do you think it is a good idea to book airline tickets online ?>[ I think that booking airline tickets online is the only way to go .]
+===
+< Do you think it is a good idea to book airline tickets online ?><2 Can you help me figure out how to book airline tickets online ?>[ You can find the best price by using a website like Travelocity or Expedia .]
+===
+< Do you think it is a good idea to book airline tickets online ?>< Can you help me figure out how to book airline tickets online ?><2 What do I need to know to book a flight ?>[ You will need to type in the dates that you wish to travel and where you are going .]
+===
+< Do you think it is a good idea to book airline tickets online ?>< Can you help me figure out how to book airline tickets online ?>< What do I need to know to book a flight ?><2 How do I get the best price for the tickets ?>[ If you have some flexibility in when you can travel , that will usually get you a better rate .]
+===
+< Do you think it is a good idea to book airline tickets online ?>< Can you help me figure out how to book airline tickets online ?>< What do I need to know to book a flight ?>< How do I get the best price for the tickets ?><2 Can I choose which airline I fly with ?>[ These sites deal with a lot of different airlines , so you can choose whichever one you prefer .]<2 Is booking airline tickets online a good way to go ?>[ I have had really good luck booking airline tickets online .]
+===
+< Is booking airline tickets online a good way to go ?><2 How do you book airline tickets online ?>[ Usually you can find the best price by using a website like Travelocity or Expedia .]
+===
+< Is booking airline tickets online a good way to go ?>< How do you book airline tickets online ?><2 What are they going to ask me to book a flight ?>[ They will ask you when you will be traveling and what your destination will be .]
+===
+< Is booking airline tickets online a good way to go ?>< How do you book airline tickets online ?>< What are they going to ask me to book a flight ?><2 Is there anything special I can do to get the lowest price ?>[ You get a better rate if you are n't too particular about what time you travel .]
+===
+< Is booking airline tickets online a good way to go ?>< How do you book airline tickets online ?>< What are they going to ask me to book a flight ?>< Is there anything special I can do to get the lowest price ?><2 Do you have to fly with a particular airline ?>[ The travel sites deal with many different airlines . It is always up to you to choose who you will fly with .]<2 I would like to book a flight .>[ I can help you with that . Where are you traveling to ?]
+===
+< I would like to book a flight .><2 I am traveling to Singapore .>[ What date will you be traveling ?]
+===
+< I would like to book a flight .>< I am traveling to Singapore .><2 I want to fly on June 14th .>[ Do you want to fly out of Los Angeles International or Burbank Airport ?]
+===
+< I would like to book a flight .>< I am traveling to Singapore .>< I want to fly on June 14th .><2 I would like to fly out of Los Angeles International Airport .>[ Would you prefer a morning or an afternoon flight ?]
+===
+< I would like to book a flight .>< I am traveling to Singapore .>< I want to fly on June 14th .>< I would like to fly out of Los Angeles International Airport .><2 I would rather fly in the morning .>[ Well , I have you booked on a flight that will fit your schedule . The tickets will arrive by mail in a few days .]<2 I want to buy a plane ticket .>[ I can help you make your reservation . What is your destination ?]
+===
+< I want to buy a plane ticket .><2 My final destination is Sydney , Australia .>[ What is your travel date ?]
+===
+< I want to buy a plane ticket .>< My final destination is Sydney , Australia .><2 I am making a reservation for December 12th .>[ Would you prefer to leave from Los Angeles International or Burbank Airport ?]
+===
+< I want to buy a plane ticket .>< My final destination is Sydney , Australia .>< I am making a reservation for December 12th .><2 I want to fly out of Burbank Airport .>[ Would you rather fly in the morning or later in the day ?]
+===
+< I want to buy a plane ticket .>< My final destination is Sydney , Australia .>< I am making a reservation for December 12th .>< I want to fly out of Burbank Airport .><2 I need an afternoon flight .>[ I have you booked on a flight in the afternoon . Your tickets will arrive in the mail within 3 days .]<2 I need to make a plane reservation .>[ We can book your trip right now . What city are you flying to ?]
+===
+< I need to make a plane reservation .><2 I need to fly to New York City .>[ What date would you like me to book this plane ticket for ?]
+===
+< I need to make a plane reservation .>< I need to fly to New York City .><2 I need a flight on July 4th .>[ You can fly out of Los Angeles International or Burbank Airport . Which do you prefer ?]
+===
+< I need to make a plane reservation .>< I need to fly to New York City .>< I need a flight on July 4th .><2 I will fly out of whatever airport has the cheapest price .>[ If you have a choice , what time of day would you prefer to fly ?]
+===
+< I need to make a plane reservation .>< I need to fly to New York City .>< I need a flight on July 4th .>< I will fly out of whatever airport has the cheapest price .><2 I would like to be booked on the least expensive flight .>[ I was able to find an inexpensive flight for you . We are sending you your tickets in the mail .]<2 I would like to make a hotel reservation .>[ What day will you be arriving ?]
+===
+< I would like to make a hotel reservation .><2 I will be arriving on May 14th .>[ How long will you be staying ?]
+===
+< I would like to make a hotel reservation .>< I will be arriving on May 14th .><2 I need the room for 3 nights .>[ How many people will be staying in the room ?]
+===
+< I would like to make a hotel reservation .>< I will be arriving on May 14th .>< I need the room for 3 nights .><2 I will be staying in the room alone .>[ Would you like a smoking or nonsmoking room ?]
+===
+< I would like to make a hotel reservation .>< I will be arriving on May 14th .>< I need the room for 3 nights .>< I will be staying in the room alone .><2 We need a nonsmoking room .>[ We have booked a room for you . Please be sure to arrive before 4:00 on your check-in date .]<2 I would like to book a reservation at your hotel .>[ What date would you like to make that reservation for ?]
+===
+< I would like to book a reservation at your hotel .><2 I need the reservation for May 14th .>[ How many days do you need the reservation for ?]
+===
+< I would like to book a reservation at your hotel .>< I need the reservation for May 14th .><2 I will be staying for 3 nights .>[ Is that a single room , or will there be more guests ?]
+===
+< I would like to book a reservation at your hotel .>< I need the reservation for May 14th .>< I will be staying for 3 nights .><2 I need a double room .>[ We have smoking and nonsmoking rooms . Which do you prefer ?]
+===
+< I would like to book a reservation at your hotel .>< I need the reservation for May 14th .>< I will be staying for 3 nights .>< I need a double room .><2 We require a smoking room .>[ Your room is booked . You must arrive before 4:00 the day you are to check in .]<2 I need to book a room at your hotel .>[ On what day will you be beginning your stay ?]
+===
+< I need to book a room at your hotel .><2 Our stay will be beginning on May 14th .>[ Can you tell me how many days you need the room for ?]
+===
+< I need to book a room at your hotel .>< Our stay will be beginning on May 14th .><2 Please book the room for 3 nights .>[ Would you like a single or double room ?]
+===
+< I need to book a room at your hotel .>< Our stay will be beginning on May 14th .>< Please book the room for 3 nights .><2 I need a room for 3 people .>[ Do you need a nonsmoking room ?]
+===
+< I need to book a room at your hotel .>< Our stay will be beginning on May 14th .>< Please book the room for 3 nights .>< I need a room for 3 people .><2 We must have a nonsmoking room .>[ We have reserved your room . To secure the room , you must pre-pay with a credit card .]<2 I was wondering if you could help me use the Student Job Center .>[ There are many ways ; what kind of job would you like ?]
+===
+< I was wondering if you could help me use the Student Job Center .><2 I want to work in a restaurant .>[ Fine ! Will you need part-time or full-time work ?]
+===
+< I was wondering if you could help me use the Student Job Center .>< I want to work in a restaurant .><2 I want to work part-time .>[ Fine , the two best ways are to use our local listings binders over there or you can use the computers with the Internet job listing sites . See them over there ?]
+===
+< I was wondering if you could help me use the Student Job Center .>< I want to work in a restaurant .>< I want to work part-time .><2 Yes , I know what to do with those .>[ Well , in addition , you can schedule an appointment with a job counselor on this list . If you would like to do that , sign here , OK ?]
+===
+< I was wondering if you could help me use the Student Job Center .>< I want to work in a restaurant .>< I want to work part-time .>< Yes , I know what to do with those .><2 Yes , I will sign there and I hope that would help .>[ Fine , well the job search tools are all here for you to use . Feel free to look around and use what works best for you . Have fun with it !]<2 Could you help me figure out how to look for a job ?>[ We have lots of options , what type of job do you need ?]
+===
+< Could you help me figure out how to look for a job ?><2 I want to work in an office .>[ Do you want to work part-time or full-time ?]
+===
+< Could you help me figure out how to look for a job ?>< I want to work in an office .><2 I want to work full-time .>[ We have binders with local job listings or you can make use of the computers . OK ?]
+===
+< Could you help me figure out how to look for a job ?>< I want to work in an office .>< I want to work full-time .><2 I am confused a bit but I am sure that I can figure it out .>[ If you make an appointment with a job counselor , they can also provide you with a lot of information . Do you want to see a counselor ?]
+===
+< Could you help me figure out how to look for a job ?>< I want to work in an office .>< I want to work full-time .>< I am confused a bit but I am sure that I can figure it out .><2 No , I do n't think I need to see a counselor . I should be able to figure out everything by myself .>[ Well , you know that this job center is here for your use , so help yourself . Good luck !]<2 What is the best way to find a job here ?>[ There are different ways of conducting a job search . Do you know what you want to do ?]
+===
+< What is the best way to find a job here ?><2 I do n't know how to perform the job search .>[ Can you work part-time or full-time ?]
+===
+< What is the best way to find a job here ?>< I do n't know how to perform the job search .><2 It does n't matter right now , either one would be OK .>[ The binders have current local jobs listings and the computer jobs lists are good too . Understand ?]
+===
+< What is the best way to find a job here ?>< I do n't know how to perform the job search .>< It does n't matter right now , either one would be OK .><2 OK , I 'll go check it out . Thank you !>[ Schedule an appointment with a counselor and you can get more information . Would that work for you ?]
+===
+< What is the best way to find a job here ?>< I do n't know how to perform the job search .>< It does n't matter right now , either one would be OK .>< OK , I 'll go check it out . Thank you !><2 I am not sure . But I might try to see a counselor and see if that helps .>[ Everything that you need for a successful job search is here . Happy job searching !]<2 Could you help me try and figure out how to get ready for my job interview ?>[ The most important thing to do is to make sure you know the company and what services or products it provides . Do you know all about them ?]
+===
+< Could you help me try and figure out how to get ready for my job interview ?><2 Yes , I pretty much understand the company .>[ Well , after you 've done your research , you have to decide whether the company is casual or formal . Have you decided what they are yet ?]
+===
+< Could you help me try and figure out how to get ready for my job interview ?>< Yes , I pretty much understand the company .><2 Yes , I 've been observing them .>[ When you are choosing what to wear , keep all of that in mind . Have you chosen what to wear ?]
+===
+< Could you help me try and figure out how to get ready for my job interview ?>< Yes , I pretty much understand the company .>< Yes , I 've been observing them .><2 I already have something to wear .>[ I would always be ready to go shopping with you ! Should we talk about other basics ?]
+===
+< Could you help me try and figure out how to get ready for my job interview ?>< Yes , I pretty much understand the company .>< Yes , I 've been observing them .>< I already have something to wear .><2 I am ready to think of other things for the interview .>[ You need to make sure you arrive on time , smile , be pleasant and friendly , look the person in the eye and answer all questions to the best of your ability . You 'll do great !]<2 I am not sure what to do to get ready for my job interview .>[ Make sure that you understand the company . Do you understand what it is that they do ?]
+===
+< I am not sure what to do to get ready for my job interview .><2 No , I probably need to do some more research .>[ When you 've finished your research it will help you figure out whether your company is rigid in philosophy or kind of more relaxed . Does that make sense ?]
+===
+< I am not sure what to do to get ready for my job interview .>< No , I probably need to do some more research .><2 I think that their attitude is rather casual .>[ So all of that information will help you to pick out what to wear . Do you have something to wear ?]
+===
+< I am not sure what to do to get ready for my job interview .>< No , I probably need to do some more research .>< I think that their attitude is rather casual .><2 I have absolutely nothing so far . I might need to buy something .>[ I could go shopping with you sometime if you need it , but can we talk about other basics ?]
+===
+< I am not sure what to do to get ready for my job interview .>< No , I probably need to do some more research .>< I think that their attitude is rather casual .>< I have absolutely nothing so far . I might need to buy something .><2 Yes , where should we go from here ?>[ Focus on being relaxed and open , do n't forget to smile and shake hands and be genuinely interested in what their company is about . I 'm sure you 'll do well .]<2 What should I do to prepare for a job interview ?>[ An understanding of the basic workings of a company and the services or goods it provides is essential . Do you have that ?]
+===
+< What should I do to prepare for a job interview ?><2 Sort of , but I could know more , I guess .>[ With that understanding , you can figure out what your company is looking for in terms of basic attitude . Right ?]
+===
+< What should I do to prepare for a job interview ?>< Sort of , but I could know more , I guess .><2 I think that they are a very formal company .>[ What you wear is important . So keep in mind what is suitable for the company and type of work you will be doing . Need help ?]
+===
+< What should I do to prepare for a job interview ?>< Sort of , but I could know more , I guess .>< I think that they are a very formal company .><2 I need a lot of help in this area , especially how to dress properly .>[ In addition to clothes we need to think about other basics , OK ?]
+===
+< What should I do to prepare for a job interview ?>< Sort of , but I could know more , I guess .>< I think that they are a very formal company .>< I need a lot of help in this area , especially how to dress properly .><2 Yes , what else should we think of for an interview ?>[ Be prompt . Do n't forget to be friendly and interested . Listen carefully and listen to what they are really asking you . You 'll be a hit !]<2 Good morning , I am here for my interview .>[ Hello , nice to meet you . Have any trouble finding the place ?]
+===
+< Good morning , I am here for my interview .><2 No problem . It is very easy to get here for the interview .>[ So why do n't you tell me why you are interested in changing positions ?]
+===
+< Good morning , I am here for my interview .>< No problem . It is very easy to get here for the interview .><2 Unfortunately , our company is shutting down due to the economy .>[ What would you consider your strengths ?]
+===
+< Good morning , I am here for my interview .>< No problem . It is very easy to get here for the interview .>< Unfortunately , our company is shutting down due to the economy .><2 I am probably best at researching for marketing purposes .>[ What is your biggest weakness ?]
+===
+< Good morning , I am here for my interview .>< No problem . It is very easy to get here for the interview .>< Unfortunately , our company is shutting down due to the economy .>< I am probably best at researching for marketing purposes .><2 I tend to get bored easily and so love to keep myself challenged .>[ We have a position where that could work out well .]<2 Thank you for taking the time to interview me .>[ Hi there , I 'm Papaya , the owner of this company . Did you find your way here OK ?]
+===
+< Thank you for taking the time to interview me .><2 Your assistant gave wonderful directions .>[ Why are you switching jobs at this point in your career ?]
+===
+< Thank you for taking the time to interview me .>< Your assistant gave wonderful directions .><2 Our company is moving overseas and I wish to stay in the United States .>[ What are you best at ?]
+===
+< Thank you for taking the time to interview me .>< Your assistant gave wonderful directions .>< Our company is moving overseas and I wish to stay in the United States .><2 I am good at organizing systems that have been having problems .>[ What is your biggest challenge in terms of skills ?]
+===
+< Thank you for taking the time to interview me .>< Your assistant gave wonderful directions .>< Our company is moving overseas and I wish to stay in the United States .>< I am good at organizing systems that have been having problems .><2 I do n't like to sit around and so like to always find things to do to keep myself busy .>[ That is good to hear !]<2 Good afternoon . Thank you for the opportunity to interview for this position .>[ Hello , have a seat . I am assuming you found your way here with no trouble ?]
+===
+< Good afternoon . Thank you for the opportunity to interview for this position .><2 Actually , I am very familiar with the area so there was absolutely no problem .>[ I am curious as to why you want to leave your current employer .]
+===
+< Good afternoon . Thank you for the opportunity to interview for this position .>< Actually , I am very familiar with the area so there was absolutely no problem .><2 I am interested in switching fields .>[ Do you feel that you are exceptionally good at anything in particular ?]
+===
+< Good afternoon . Thank you for the opportunity to interview for this position .>< Actually , I am very familiar with the area so there was absolutely no problem .>< I am interested in switching fields .><2 I am good at pulling together teams of people to accomplish a task .>[ What are you not good at ?]
+===
+< Good afternoon . Thank you for the opportunity to interview for this position .>< Actually , I am very familiar with the area so there was absolutely no problem .>< I am interested in switching fields .>< I am good at pulling together teams of people to accomplish a task .><2 I am impatient with myself at times and am hard on myself .>[ We appreciate hearing that about you !]<2 May I ask you how much this position pays per year ?>[ This job pays sixty-five thousand dollars per year .]
+===
+< May I ask you how much this position pays per year ?><2 What kind of benefits does this job have ?>[ This job provides full medical , dental , and disability .]
+===
+< May I ask you how much this position pays per year ?>< What kind of benefits does this job have ?><2 What type of vacation time do we get ?>[ You get 3 weeks paid vacation that you may use as you wish .]
+===
+< May I ask you how much this position pays per year ?>< What kind of benefits does this job have ?>< What type of vacation time do we get ?><2 Do we have a 401K ?>[ We offer a 401K with some matching funds available depending on length of service .]
+===
+< May I ask you how much this position pays per year ?>< What kind of benefits does this job have ?>< What type of vacation time do we get ?>< Do we have a 401K ?><2 What type of professional development do you offer ?>[ We provide up-to-date training on state of the art equipment .]
+===
+< May I ask you how much this position pays per year ?>< What kind of benefits does this job have ?>< What type of vacation time do we get ?>< Do we have a 401K ?>< What type of professional development do you offer ?><2 Where do I sign up for my benefits package ?>[ Down the hall . I 'll show you when the interview is over .]<2 What is the annual salary for this job ?>[ The annual salary is sixty-five thousand dollars per year .]
+===
+< What is the annual salary for this job ?><2 What does the benefits package include ?>[ This job pays for half of your medical , dental , and disability .]
+===
+< What is the annual salary for this job ?>< What does the benefits package include ?><2 Do we get paid time off ?>[ You have a total of 21 days paid time off which can be used for vacation , personal , or sick leave .]
+===
+< What is the annual salary for this job ?>< What does the benefits package include ?>< Do we get paid time off ?><2 How about the retirement plan ?>[ We still offer a traditional retirement plan that pays out if you stay with the company for 5 years or more .]
+===
+< What is the annual salary for this job ?>< What does the benefits package include ?>< Do we get paid time off ?>< How about the retirement plan ?><2 Can I get company provided specialized training ?>[ We offer full tuition reimbursement for job related classes .]
+===
+< What is the annual salary for this job ?>< What does the benefits package include ?>< Do we get paid time off ?>< How about the retirement plan ?>< Can I get company provided specialized training ?><2 Where is the benefits office ?>[ It 's on the second floor in Suite 201 .]<2 What will I earn per year in this job ?>[ You can expect to earn sixty-five thousand dollars per year .]
+===
+< What will I earn per year in this job ?><2 Are we covered by a good benefits plan ?>[ The job has a menu plan where you are given a fixed amount of money and you choose what you most need in terms of benefits .]
+===
+< What will I earn per year in this job ?>< Are we covered by a good benefits plan ?><2 Can we take personal days off ?>[ You get 2 weeks paid vacation and an additional 10 days of sick leave .]
+===
+< What will I earn per year in this job ?>< Are we covered by a good benefits plan ?>< Can we take personal days off ?><2 What do you offer in terms of a retirement plan ?>[ We do not currently offer any retirement plan .]
+===
+< What will I earn per year in this job ?>< Are we covered by a good benefits plan ?>< Can we take personal days off ?>< What do you offer in terms of a retirement plan ?><2 Do you reimburse for education that relates to my job ?>[ We allow several weeks release time each year for our employees to attend job-related seminars and conferences .]
+===
+< What will I earn per year in this job ?>< Are we covered by a good benefits plan ?>< Can we take personal days off ?>< What do you offer in terms of a retirement plan ?>< Do you reimburse for education that relates to my job ?><2 Do you have a benefits brochure ?>[ Whoa ! Who said you got the job ?]<2 Excuse me for being late to work .>[ Where have you been ?]
+===
+< Excuse me for being late to work .><2 My car broke down .>[ That 's too bad . Please try to fix it so that it does n't happen again .]
+===
+< Excuse me for being late to work .>< My car broke down .><2 Yes , I 'll work on it .>[ Thank you , have a seat . We are working on the new project .]
+===
+< Excuse me for being late to work .>< My car broke down .>< Yes , I 'll work on it .><2 Great ! Fill me in for that project .>[ Let 's take a look at the Project .]
+===
+< Excuse me for being late to work .>< My car broke down .>< Yes , I 'll work on it .>< Great ! Fill me in for that project .><2 I do n't understand the projected revenues .>[ Let 's take another look at it for those of you who do n't understand .]<2 I am sorry I am so late to work .>[ What was the problem ?]
+===
+< I am sorry I am so late to work .><2 I lost track of time .>[ Things happen ; make sure it does n't become a habit .]
+===
+< I am sorry I am so late to work .>< I lost track of time .><2 It wo n't happen again . Let 's get back to work .>[ All right , please take this message and call this client .]
+===
+< I am sorry I am so late to work .>< I lost track of time .>< It wo n't happen again . Let 's get back to work .><2 No problem . I will make the phone call .>[ Now does everyone understand the diagram on the board ?]
+===
+< I am sorry I am so late to work .>< I lost track of time .>< It wo n't happen again . Let 's get back to work .>< No problem . I will make the phone call .><2 Yes , I understand the numbers .>[ I will explain it again ; especially for those of you who arrived late .]<2 I lost track of time , am I late ?>[ Yes . What kept you from arriving on time ?]
+===
+< I lost track of time , am I late ?><2 My friend needed me to help him .>[ I realize that everyone has emergencies ; just get here on time from now on .]
+===
+< I lost track of time , am I late ?>< My friend needed me to help him .><2 My apologies . I will make up the time .>[ I appreciate you saying that and would like you to join us in our meeting .]
+===
+< I lost track of time , am I late ?>< My friend needed me to help him .>< My apologies . I will make up the time .><2 Sure , I 'll sit right here .>[ Wonderful , does anyone have any questions about this project ?]
+===
+< I lost track of time , am I late ?>< My friend needed me to help him .>< My apologies . I will make up the time .>< Sure , I 'll sit right here .><2 I am confused about the projected revenues .>[ I 'm glad that some of you get it , but let 's go over it once more .]<2 Are you going to vote ?>[ Yes , are you ?]
+===
+< Are you going to vote ?><2 Yes , but what day are the elections ?>[ You do n't know what day the elections are ?]
+===
+< Are you going to vote ?>< Yes , but what day are the elections ?><2 That 's why I 'm asking you .>[ They 're this coming Tuesday .]
+===
+< Are you going to vote ?>< Yes , but what day are the elections ?>< That 's why I 'm asking you .><2 Really ?>[ Yes , I 'm serious .]
+===
+< Are you going to vote ?>< Yes , but what day are the elections ?>< That 's why I 'm asking you .>< Really ?><2 Good thing you told me .>[ I ca n't believe you did n't know that .]
+===
+< Are you going to vote ?>< Yes , but what day are the elections ?>< That 's why I 'm asking you .>< Really ?>< Good thing you told me .><2 It slipped my mind .>[ You should watch the news more often .]<2 Will you be voting ?>[ I will . Will you be voting ?]
+===
+< Will you be voting ?><2 When is the election ?>[ You do n't know that ?]
+===
+< Will you be voting ?>< When is the election ?><2 I just do n't know when .>[ It 's this Tuesday .]
+===
+< Will you be voting ?>< When is the election ?>< I just do n't know when .><2 You ca n't be serious .>[ Why would I joke ?]
+===
+< Will you be voting ?>< When is the election ?>< I just do n't know when .>< You ca n't be serious .><2 Thanks for telling me .>[ You should 've known already .]
+===
+< Will you be voting ?>< When is the election ?>< I just do n't know when .>< You ca n't be serious .>< Thanks for telling me .><2 I forgot the time for voting .>[ As long as you go vote , that 's all that matters .]<2 Are you going to vote ?>[ Of course ! Are you ?]
+===
+< Are you going to vote ?><2 I plan to , but what day is the election ?>[ You should know that .]
+===
+< Are you going to vote ?>< I plan to , but what day is the election ?><2 Can you just tell me about the election time ?>[ Yes , the election is this Tuesday .]
+===
+< Are you going to vote ?>< I plan to , but what day is the election ?>< Can you just tell me about the election time ?><2 Are you serious ?>[ I 'm not kidding .]
+===
+< Are you going to vote ?>< I plan to , but what day is the election ?>< Can you just tell me about the election time ?>< Are you serious ?><2 It 's a good thing I asked you .>[ That should 've been something you knew already .]
+===
+< Are you going to vote ?>< I plan to , but what day is the election ?>< Can you just tell me about the election time ?>< Are you serious ?>< It 's a good thing I asked you .><2 I could n't remember the date for voting .>[ Whatever . Just make sure you go vote .]<2 Will you be voting this year ?>[ Of course ! Will you ?]
+===
+< Will you be voting this year ?><2 This is going to be my first time voting .>[ Are you serious ?]
+===
+< Will you be voting this year ?>< This is going to be my first time voting .><2 I 'm not sure what I 'm doing .>[ Voting is easy .]
+===
+< Will you be voting this year ?>< This is going to be my first time voting .>< I 'm not sure what I 'm doing .><2 I do n't know anything about the bills or laws they 're trying to pass .>[ The ballot gives you all that information .]
+===
+< Will you be voting this year ?>< This is going to be my first time voting .>< I 'm not sure what I 'm doing .>< I do n't know anything about the bills or laws they 're trying to pass .><2 Nobody told me that before .>[ You have nothing to worry about .]
+===
+< Will you be voting this year ?>< This is going to be my first time voting .>< I 'm not sure what I 'm doing .>< I do n't know anything about the bills or laws they 're trying to pass .>< Nobody told me that before .><2 I 'm so glad you told me that .>[ Good luck on your first election .]<2 Do you plan on voting this Tuesday ?>[ Yes . What about you ?]
+===
+< Do you plan on voting this Tuesday ?><2 I already voted .>[ What do you mean you already voted ?]
+===
+< Do you plan on voting this Tuesday ?>< I already voted .><2 I had to mail in an absentee ballot .>[ Why 'd you have to do that ?]
+===
+< Do you plan on voting this Tuesday ?>< I already voted .>< I had to mail in an absentee ballot .><2 I 'm not going to be able to vote this Tuesday .>[ Why did you vote beforehand ?]
+===
+< Do you plan on voting this Tuesday ?>< I already voted .>< I had to mail in an absentee ballot .>< I 'm not going to be able to vote this Tuesday .><2 I have to work this Tuesday .>[ You can always go to work late .]
+===
+< Do you plan on voting this Tuesday ?>< I already voted .>< I had to mail in an absentee ballot .>< I 'm not going to be able to vote this Tuesday .>< I have to work this Tuesday .><2 That same morning I have some business to take care of .>[ Oh , I understand .]<2 What are you collecting donations for ?>[ We 're trying to raise money for the campaigns .]
+===
+< What are you collecting donations for ?><2 How much are you planning on raising ?>[ As much as possible .]
+===
+< What are you collecting donations for ?>< How much are you planning on raising ?><2 What kind of fundraisers are you doing ?>[ We are going door to door .]
+===
+< What are you collecting donations for ?>< How much are you planning on raising ?>< What kind of fundraisers are you doing ?><2 You should try actual fundraisers , too .>[ What else can we do ?]
+===
+< What are you collecting donations for ?>< How much are you planning on raising ?>< What kind of fundraisers are you doing ?>< You should try actual fundraisers , too .><2 Try having a car wash or selling candy .>[ I did n't think of that .]<2 What are you getting donations for ?>[ We 're getting donations for the campaigns .]
+===
+< What are you getting donations for ?><2 How much money are you looking to make ?>[ As much as we can .]
+===
+< What are you getting donations for ?>< How much money are you looking to make ?><2 Are you doing different fundraisers ?>[ We 're just going door to door .]
+===
+< What are you getting donations for ?>< How much money are you looking to make ?>< Are you doing different fundraisers ?><2 You should do something else .>[ Do you have any suggestions ?]
+===
+< What are you getting donations for ?>< How much money are you looking to make ?>< Are you doing different fundraisers ?>< You should do something else .><2 Try a car wash and selling candy .>[ That is a good idea .]<2 Donations for what ?>[ It 's for the campaigns .]
+===
+< Donations for what ?><2 How much money are you trying to raise ?>[ It does n't matter how much .]
+===
+< Donations for what ?>< How much money are you trying to raise ?><2 What are you doing to raise money ?>[ We go door to door asking for donations .]
+===
+< Donations for what ?>< How much money are you trying to raise ?>< What are you doing to raise money ?><2 You should try other fundraisers .>[ Like what ?]
+===
+< Donations for what ?>< How much money are you trying to raise ?>< What are you doing to raise money ?>< You should try other fundraisers .><2 You can always wash cars and sell candy .>[ That 's a great idea .]<2 It 's very nice to meet you .>[ Nice meeting you , too .]
+===
+< It 's very nice to meet you .><2 I ca n't believe I 'm actually speaking to a candidate .>[ You can ask me questions , if you 'd like .]
+===
+< It 's very nice to meet you .>< I ca n't believe I 'm actually speaking to a candidate .><2 I want to ask you what your policy is on gay marriage .>[ Everyone should be able to love who they want .]
+===
+< It 's very nice to meet you .>< I ca n't believe I 'm actually speaking to a candidate .>< I want to ask you what your policy is on gay marriage .><2 Would you make gay marriage legal ?>[ I sure would .]
+===
+< It 's very nice to meet you .>< I ca n't believe I 'm actually speaking to a candidate .>< I want to ask you what your policy is on gay marriage .>< Would you make gay marriage legal ?><2 I know a lot of people would n't agree with that .>[ That 's not my problem .]
+===
+< It 's very nice to meet you .>< I ca n't believe I 'm actually speaking to a candidate .>< I want to ask you what your policy is on gay marriage .>< Would you make gay marriage legal ?>< I know a lot of people would n't agree with that .><2 I think that is really cool of you .>[ I 'm glad to hear that .]<2 Nice to meet you .>[ It 's very nice meeting you , too .]
+===
+< Nice to meet you .><2 I 'm excited to speak to a candidate .>[ What would you like to ask me ?]
+===
+< Nice to meet you .>< I 'm excited to speak to a candidate .><2 What is your stand on gay marriage ?>[ I feel that people can love who they want .]
+===
+< Nice to meet you .>< I 'm excited to speak to a candidate .>< What is your stand on gay marriage ?><2 So , would you make gay marriage legal ?>[ Of course !]
+===
+< Nice to meet you .>< I 'm excited to speak to a candidate .>< What is your stand on gay marriage ?>< So , would you make gay marriage legal ?><2 I 'm sure plenty of people wo n't like that .>[ I ca n't help that .]
+===
+< Nice to meet you .>< I 'm excited to speak to a candidate .>< What is your stand on gay marriage ?>< So , would you make gay marriage legal ?>< I 'm sure plenty of people wo n't like that .><2 I like that .>[ I hope so .]<2 It 's nice meeting you .>[ It 's nice to meet you , too .]
+===
+< It 's nice meeting you .><2 I am happy to be speaking to a presidential candidate .>[ Would you like to ask me anything ?]
+===
+< It 's nice meeting you .>< I am happy to be speaking to a presidential candidate .><2 What do you feel about gay marriage ?>[ I think everyone has the right to love who they want .]
+===
+< It 's nice meeting you .>< I am happy to be speaking to a presidential candidate .>< What do you feel about gay marriage ?><2 Would you legalize gay marriage ?>[ Yes , I would .]
+===
+< It 's nice meeting you .>< I am happy to be speaking to a presidential candidate .>< What do you feel about gay marriage ?>< Would you legalize gay marriage ?><2 Many people wo n't like that .>[ I 'm sure they wo n't , but that 's my view on gay marriage .]
+===
+< It 's nice meeting you .>< I am happy to be speaking to a presidential candidate .>< What do you feel about gay marriage ?>< Would you legalize gay marriage ?>< Many people wo n't like that .><2 I really like you .>[ I really appreciate that .]<2 I would like to purchase some health insurance .>[ Have you ever purchased health insurance before ?]
+===
+< I would like to purchase some health insurance .><2 I have health insurance now , but I want to look into other choices .>[ Do you know if you are interested in an HMO or a PPO ?]
+===
+< I would like to purchase some health insurance .>< I have health insurance now , but I want to look into other choices .><2 Could you explain the difference between HMO and PPO ?>[ To clarify it for you , with a PPO you pay more but you get to choose your own doctor .]
+===
+< I would like to purchase some health insurance .>< I have health insurance now , but I want to look into other choices .>< Could you explain the difference between HMO and PPO ?><2 When I pay for a service , is the payment the same for a PPO or HMO ?>[ The payments are quite a bit higher for the PPO , but you can go anywhere you like .]
+===
+< I would like to purchase some health insurance .>< I have health insurance now , but I want to look into other choices .>< Could you explain the difference between HMO and PPO ?>< When I pay for a service , is the payment the same for a PPO or HMO ?><2 How much will an HMO cost me per month ?>[ Please go to our website and fill in the questionnaire . Once we have all of your information , we can give you a quote .]<2 I am calling to purchase health insurance .>[ Do you have health insurance now ?]
+===
+< I am calling to purchase health insurance .><2 I was on my parents ' policy , but I need to start buying my own .>[ You can purchase an HMO or a PPO . Do you know what you want ?]
+===
+< I am calling to purchase health insurance .>< I was on my parents ' policy , but I need to start buying my own .><2 I do n't know which I want , an HMO or a PPO .>[ Let me explain it to you . An HMO is a little cheaper , but you can only choose certain doctors .]
+===
+< I am calling to purchase health insurance .>< I was on my parents ' policy , but I need to start buying my own .>< I do n't know which I want , an HMO or a PPO .><2 When I go to the doctor , do I pay the same out-of-pocket expenses for a PPO ?>[ The payments are a little lower for an HMO as long as you go to their doctors .]
+===
+< I am calling to purchase health insurance .>< I was on my parents ' policy , but I need to start buying my own .>< I do n't know which I want , an HMO or a PPO .>< When I go to the doctor , do I pay the same out-of-pocket expenses for a PPO ?><2 How much will a PPO cost me per month ?>[ We need to factor in many things . Why do n't you come in , and we will have you fill out a questionnaire .]<2 I need information on purchasing health insurance .>[ Is this the first time you have had health insurance ?]
+===
+< I need information on purchasing health insurance .><2 This is my first time buying health insurance .>[ You have a choice of HMO or PPO . Do you understand the difference ?]
+===
+< I need information on purchasing health insurance .>< This is my first time buying health insurance .><2 I am not sure what HMO and PPO are .>[ Just so you understand completely : An HMO is a little cheaper , but you have limited choices of which doctor you choose .]
+===
+< I need information on purchasing health insurance .>< This is my first time buying health insurance .>< I am not sure what HMO and PPO are .><2 If I need to use my insurance , are the payments the same for a PPO and HMO ?>[ By going to the providers on the HMO list , you save money in out-of-pocket expenses .]
+===
+< I need information on purchasing health insurance .>< This is my first time buying health insurance .>< I am not sure what HMO and PPO are .>< If I need to use my insurance , are the payments the same for a PPO and HMO ?><2 Can you give me a comparison between a PPO and an HMO ?>[ We can mail you a questionnaire and when we have all of your information , we will mail you a quote .]<2 Good morning , is this Papaya ?>[ You are speaking with Papaya . How can I help you ?]
+===
+< Good morning , is this Papaya ?><2 Papaya , this is Malia , and I need to call in sick today .>[ What seems to be the problem ?]
+===
+< Good morning , is this Papaya ?>< Papaya , this is Malia , and I need to call in sick today .><2 I went hiking and have terrible poison oak .>[ When did you get that ?]
+===
+< Good morning , is this Papaya ?>< Papaya , this is Malia , and I need to call in sick today .>< I went hiking and have terrible poison oak .><2 I think I got it on Saturday , but it just showed up today .>[ What are you doing for it ?]
+===
+< Good morning , is this Papaya ?>< Papaya , this is Malia , and I need to call in sick today .>< I went hiking and have terrible poison oak .>< I think I got it on Saturday , but it just showed up today .><2 The doctor prescribed an ointment and gave me a shot .>[ Good . You probably should be much better by tomorrow .]<2 May I speak to Papaya , please ?>[ This is Papaya you are speaking with . What can I do for you ?]
+===
+< May I speak to Papaya , please ?><2 Hi , Papaya , this is Malia , and I will not be coming to work today .>[ What is wrong with you ?]
+===
+< May I speak to Papaya , please ?>< Hi , Papaya , this is Malia , and I will not be coming to work today .><2 I have really bad poison oak and ca n't stop itching .>[ How long have you had it ?]
+===
+< May I speak to Papaya , please ?>< Hi , Papaya , this is Malia , and I will not be coming to work today .>< I have really bad poison oak and ca n't stop itching .><2 I 've had it a few days , but the rash really got bad last night .>[ How have you been treating it ?]
+===
+< May I speak to Papaya , please ?>< Hi , Papaya , this is Malia , and I will not be coming to work today .>< I have really bad poison oak and ca n't stop itching .>< I 've had it a few days , but the rash really got bad last night .><2 I have some lotion that the doctor gave me , as well as an antihistamine .>[ That should work . I 'll see you tomorrow when you return to work .]<2 I would like to speak with Papaya .>[ This is Papaya . How may I help you ?]
+===
+< I would like to speak with Papaya .><2 Papaya , this is Malia , and I am afraid that I am feeling a bit under the weather .>[ Do you know what the problem is ?]
+===
+< I would like to speak with Papaya .>< Papaya , this is Malia , and I am afraid that I am feeling a bit under the weather .><2 I have a horrible rash from poison oak .>[ Have you had it a long time ?]
+===
+< I would like to speak with Papaya .>< Papaya , this is Malia , and I am afraid that I am feeling a bit under the weather .>< I have a horrible rash from poison oak .><2 The doctor said that I probably have had it a few days .>[ Have you been using anything for it ?]
+===
+< I would like to speak with Papaya .>< Papaya , this is Malia , and I am afraid that I am feeling a bit under the weather .>< I have a horrible rash from poison oak .>< The doctor said that I probably have had it a few days .><2 I bought some over-the-counter lotion , and I am taking an antihistamine .>[ That will probably take care of your symptoms . I 'll see you tomorrow .]<2 I have a doctor 's appointment scheduled with Dr. Smith , and I need to change it .>[ What day did you have it scheduled for ?]
+===
+< I have a doctor 's appointment scheduled with Dr. Smith , and I need to change it .><2 My appointment was on Tuesday .>[ What time was it scheduled for ?]
+===
+< I have a doctor 's appointment scheduled with Dr. Smith , and I need to change it .>< My appointment was on Tuesday .><2 It was for two o'clock in the afternoon .>[ I see your appointment . What day would you like to switch to ?]
+===
+< I have a doctor 's appointment scheduled with Dr. Smith , and I need to change it .>< My appointment was on Tuesday .>< It was for two o'clock in the afternoon .><2 I would like to switch it to next Friday .>[ What time would you like ?]
+===
+< I have a doctor 's appointment scheduled with Dr. Smith , and I need to change it .>< My appointment was on Tuesday .>< It was for two o'clock in the afternoon .>< I would like to switch it to next Friday .><2 I would like to come in at 10:00 in the morning .>[ Fine , I will pencil that in right now . We will see you then .]<2 I scheduled an appointment with Dr. Smith , and I ca n't make it on that day .>[ What day was your appointment on ?]
+===
+< I scheduled an appointment with Dr. Smith , and I ca n't make it on that day .><2 My appointment was on Monday .>[ What time had you chosen ?]
+===
+< I scheduled an appointment with Dr. Smith , and I ca n't make it on that day .>< My appointment was on Monday .><2 It was for 10:00 in the morning .>[ I am looking at your appointment right now . What day would you prefer ?]
+===
+< I scheduled an appointment with Dr. Smith , and I ca n't make it on that day .>< My appointment was on Monday .>< It was for 10:00 in the morning .><2 I would prefer next Thursday .>[ What time would be best for you ?]
+===
+< I scheduled an appointment with Dr. Smith , and I ca n't make it on that day .>< My appointment was on Monday .>< It was for 10:00 in the morning .>< I would prefer next Thursday .><2 I want to come in at 2:00 in the afternoon .>[ I am writing you down for that time . We look forward to seeing you .]<2 Good morning , I made an appointment with Dr. Smith , but I have to change it .>[ When you made your appointment , what day did you choose ?]
+===
+< Good morning , I made an appointment with Dr. Smith , but I have to change it .><2 My appointment was on Wednesday .>[ At what time was that appointment ?]
+===
+< Good morning , I made an appointment with Dr. Smith , but I have to change it .>< My appointment was on Wednesday .><2 It was for 4:00 in the afternoon .>[ I can see the appointment that you had . What day do you need to change to ?]
+===
+< Good morning , I made an appointment with Dr. Smith , but I have to change it .>< My appointment was on Wednesday .>< It was for 4:00 in the afternoon .><2 I want to change to next Tuesday .>[ What time would you prefer ?]
+===
+< Good morning , I made an appointment with Dr. Smith , but I have to change it .>< My appointment was on Wednesday .>< It was for 4:00 in the afternoon .>< I want to change to next Tuesday .><2 I would prefer three o'clock in the afternoon .>[ I will put you down for that time . Thank you for calling to reschedule .]<2 Sorry to bother you , but I was wondering if you could drive me to the emergency room .>[ Of course . What is the problem ?]
+===
+< Sorry to bother you , but I was wondering if you could drive me to the emergency room .><2 I am running a really high fever of 105 degrees , and I have a rash on my stomach .>[ If you can , go and unlock the back door , so I can get in when I get there if you fall asleep .]
+===
+< Sorry to bother you , but I was wondering if you could drive me to the emergency room .>< I am running a really high fever of 105 degrees , and I have a rash on my stomach .><2 I can do that when I get off of the phone .>[ Do you know where your driver 's license and insurance card are ?]
+===
+< Sorry to bother you , but I was wondering if you could drive me to the emergency room .>< I am running a really high fever of 105 degrees , and I have a rash on my stomach .>< I can do that when I get off of the phone .><2 I already had them out before I called you .>[ Where is your nearest emergency room ?]
+===
+< Sorry to bother you , but I was wondering if you could drive me to the emergency room .>< I am running a really high fever of 105 degrees , and I have a rash on my stomach .>< I can do that when I get off of the phone .>< I already had them out before I called you .><2 It 's just a few blocks away .>[ Fine , I am on my way . I 'll be there in about five minutes .]<2 I hate to call you this late at night , but could you possibly help me get to the emergency room ?>[ We will come right over . What happened ?]
+===
+< I hate to call you this late at night , but could you possibly help me get to the emergency room ?><2 My temperature went up to 105 , and I have a rash !>[ Make sure that someone unlocks the back door , so I can get in if you fall asleep before I get there .]
+===
+< I hate to call you this late at night , but could you possibly help me get to the emergency room ?>< My temperature went up to 105 , and I have a rash !><2 I will do that in a minute , and make sure you can get in .>[ Also make sure that you have your insurance card and driver 's license where we can grab them .]
+===
+< I hate to call you this late at night , but could you possibly help me get to the emergency room ?>< My temperature went up to 105 , and I have a rash !>< I will do that in a minute , and make sure you can get in .><2 I know right where they both are .>[ Is there an emergency room near you ?]
+===
+< I hate to call you this late at night , but could you possibly help me get to the emergency room ?>< My temperature went up to 105 , and I have a rash !>< I will do that in a minute , and make sure you can get in .>< I know right where they both are .><2 It is on the other side of town , next to city hall .>[ I am on my way . Give me ten minutes and I 'll get to you .]<2 I really need your help and want to know if you could drive me to the emergency room .>[ I will take you there right away . What is wrong ?]
+===
+< I really need your help and want to know if you could drive me to the emergency room .><2 I woke up with a rash and a temperature of 105 !>[ I want to be able to get to you when I get there . If you can unlock the back door right now , that would be great .]
+===
+< I really need your help and want to know if you could drive me to the emergency room .>< I woke up with a rash and a temperature of 105 !><2 I will make sure that I do that before you get here .>[ Also , make sure that we have your driver 's license and insurance card before we leave for the emergency room .]
+===
+< I really need your help and want to know if you could drive me to the emergency room .>< I woke up with a rash and a temperature of 105 !>< I will make sure that I do that before you get here .><2 I am getting them out while I am speaking to you .>[ Do you know where your nearest emergency room is ?]
+===
+< I really need your help and want to know if you could drive me to the emergency room .>< I woke up with a rash and a temperature of 105 !>< I will make sure that I do that before you get here .>< I am getting them out while I am speaking to you .><2 It is near the bridge that crosses over the river .>[ I am driving to you even as we speak . Hang in there !]<2 I 'm calling today about a bill that I never received .>[ Can you tell me which credit card it was for ?]
+===
+< I 'm calling today about a bill that I never received .><2 It was for my Master Card .>[ You should 've gotten that bill two weeks ago .]
+===
+< I 'm calling today about a bill that I never received .>< It was for my Master Card .><2 I have n't got it in the mail yet .>[ The computer is showing that all bills have been mailed .]
+===
+< I 'm calling today about a bill that I never received .>< It was for my Master Card .>< I have n't got it in the mail yet .><2 What am I supposed to do about my bill then ?>[ Maybe you should call your post office .]
+===
+< I 'm calling today about a bill that I never received .>< It was for my Master Card .>< I have n't got it in the mail yet .>< What am I supposed to do about my bill then ?><2 But if it 's their mistake , can I get an extension on my bill payment ?>[ Yes , but you will need to send us proof of their mistake .]
+===
+< I 'm calling today about a bill that I never received .>< It was for my Master Card .>< I have n't got it in the mail yet .>< What am I supposed to do about my bill then ?>< But if it 's their mistake , can I get an extension on my bill payment ?><2 Thank you very much for your help .>[ No problem . Enjoy the rest of your day .]<2 I have n't received my credit card bill yet .>[ Which credit card are you speaking of ?]
+===
+< I have n't received my credit card bill yet .><2 My Master Card .>[ We sent that bill out a couple of weeks ago .]
+===
+< I have n't received my credit card bill yet .>< My Master Card .><2 I never got it .>[ Your bill was mailed already .]
+===
+< I have n't received my credit card bill yet .>< My Master Card .>< I never got it .><2 What am I going to do since I have n't received the bill ?>[ If you have n't gotten it yet , then you should probably take that up with your post office .]
+===
+< I have n't received my credit card bill yet .>< My Master Card .>< I never got it .>< What am I going to do since I have n't received the bill ?><2 Can I get an extension on my bill if it does happen to be the post office 's fault ?>[ If that 's the case , you will need to provide proof of their mistake .]
+===
+< I have n't received my credit card bill yet .>< My Master Card .>< I never got it .>< What am I going to do since I have n't received the bill ?>< Can I get an extension on my bill if it does happen to be the post office 's fault ?><2 Thanks for everything .>[ Do n't mention it . Call back if you have any more problems .]<2 I was inquiring about a bill that I never got .>[ Which credit card was the bill for ?]
+===
+< I was inquiring about a bill that I never got .><2 The bill was for my Master Card .>[ That bill should have been mailed about two weeks ago .]
+===
+< I was inquiring about a bill that I never got .>< The bill was for my Master Card .><2 It never came in the mail .>[ My computer shows that it has already been mailed .]
+===
+< I was inquiring about a bill that I never got .>< The bill was for my Master Card .>< It never came in the mail .><2 I have not gotten my bill , so what should I do about that ?>[ You should try contacting your post office .]
+===
+< I was inquiring about a bill that I never got .>< The bill was for my Master Card .>< It never came in the mail .>< I have not gotten my bill , so what should I do about that ?><2 If it is the post office 's fault , may I have an extension on my bill ?>[ You 'll have to prove it was their error ; then you can get an extension .]
+===
+< I was inquiring about a bill that I never got .>< The bill was for my Master Card .>< It never came in the mail .>< I have not gotten my bill , so what should I do about that ?>< If it is the post office 's fault , may I have an extension on my bill ?><2 Thank you for all your help .>[ You are very welcome . Have a good day .]<2 There 's a problem with my credit card .>[ Tell me what the problem is .]
+===
+< There 's a problem with my credit card .><2 A charge came up on my bill that I did n't make .>[ What was the charge for ?]
+===
+< There 's a problem with my credit card .>< A charge came up on my bill that I did n't make .><2 The charge was for a $ 350 purse , but I did not buy it .>[ Are you sure that you did n't make that purchase ?]
+===
+< There 's a problem with my credit card .>< A charge came up on my bill that I did n't make .>< The charge was for a $ 350 purse , but I did not buy it .><2 I would know if I bought something that expensive .>[ I apologize . What day was this purchase made ?]
+===
+< There 's a problem with my credit card .>< A charge came up on my bill that I did n't make .>< The charge was for a $ 350 purse , but I did not buy it .>< I would know if I bought something that expensive .><2 It was bought on November 12th at 3:15 pm , while I was at work .>[ All right , we 'll do an investigation .]
+===
+< There 's a problem with my credit card .>< A charge came up on my bill that I did n't make .>< The charge was for a $ 350 purse , but I did not buy it .>< I would know if I bought something that expensive .>< It was bought on November 12th at 3:15 pm , while I was at work .><2 Until this investigation is finished , will I have to pay for the charge ?>[ No , you do n't . We 'll take care of it .]<2 I have a problem with my credit card .>[ What 's wrong with it ?]
+===
+< I have a problem with my credit card .><2 There is a charge on my card that I did n't make .>[ Can you tell me what the charge was ?]
+===
+< I have a problem with my credit card .>< There is a charge on my card that I did n't make .><2 It 's for a purse that cost $ 350 .>[ Are you positive that you did n't buy the purse ?]
+===
+< I have a problem with my credit card .>< There is a charge on my card that I did n't make .>< It 's for a purse that cost $ 350 .><2 I ca n't even afford a purse that expensive .>[ I 'm very sorry . When was this purchase made ?]
+===
+< I have a problem with my credit card .>< There is a charge on my card that I did n't make .>< It 's for a purse that cost $ 350 .>< I ca n't even afford a purse that expensive .><2 I was at work , but the purchase was made at 3:15 on November 12th .>[ We 're going to investigate this claim .]
+===
+< I have a problem with my credit card .>< There is a charge on my card that I did n't make .>< It 's for a purse that cost $ 350 .>< I ca n't even afford a purse that expensive .>< I was at work , but the purchase was made at 3:15 on November 12th .><2 Do I have to pay for this charge ?>[ You wo n't have to pay for anything .]<2 There is something wrong with my credit card .>[ What 's the problem ?]
+===
+< There is something wrong with my credit card .><2 There is a charge on here that I never made .>[ What charge was made ?]
+===
+< There is something wrong with my credit card .>< There is a charge on here that I never made .><2 It was a charge for a $ 350 purse that I never bought .>[ You did n't make this purchase ?]
+===
+< There is something wrong with my credit card .>< There is a charge on here that I never made .>< It was a charge for a $ 350 purse that I never bought .><2 I think I would remember if I made a purchase that large .>[ Sorry . When was this purse purchased ?]
+===
+< There is something wrong with my credit card .>< There is a charge on here that I never made .>< It was a charge for a $ 350 purse that I never bought .>< I think I would remember if I made a purchase that large .><2 It was purchased on the 12th of November at 3:15 pm , but I was at work .>[ We 'll do an investigation and get to the bottom of this .]
+===
+< There is something wrong with my credit card .>< There is a charge on here that I never made .>< It was a charge for a $ 350 purse that I never bought .>< I think I would remember if I made a purchase that large .>< It was purchased on the 12th of November at 3:15 pm , but I was at work .><2 In the meantime , do I have to pay for this charge ?>[ No . We 'll take care of everything .]<2 I would like to order cable .>[ Sure , what package do you want ?]
+===
+< I would like to order cable .><2 What kinds of packages do you offer ?>[ We have all kinds of movie channel packages .]
+===
+< I would like to order cable .>< What kinds of packages do you offer ?><2 What else do you have ?>[ There is a package for all sports channels .]
+===
+< I would like to order cable .>< What kinds of packages do you offer ?>< What else do you have ?><2 Do you have a package that includes all the movie channels with the basic channels also ?>[ Yes , we do offer that package .]
+===
+< I would like to order cable .>< What kinds of packages do you offer ?>< What else do you have ?>< Do you have a package that includes all the movie channels with the basic channels also ?><2 I want that .>[ Do you want anything else ?]
+===
+< I would like to order cable .>< What kinds of packages do you offer ?>< What else do you have ?>< Do you have a package that includes all the movie channels with the basic channels also ?>< I want that .><2 No , but is it possible for me to add channels later ?>[ You can always get rid of channels or add some later .]<2 I want to get some cable .>[ Do you know what package you want to get ?]
+===
+< I want to get some cable .><2 What packages do you have ?>[ We have movie channel packages .]
+===
+< I want to get some cable .>< What packages do you have ?><2 What else have you got ?>[ You can get the sports package .]
+===
+< I want to get some cable .>< What packages do you have ?>< What else have you got ?><2 Is there a package with basic and movie channels ?>[ We have that package .]
+===
+< I want to get some cable .>< What packages do you have ?>< What else have you got ?>< Is there a package with basic and movie channels ?><2 Let me get that package .>[ Is there anything else you would like ?]
+===
+< I want to get some cable .>< What packages do you have ?>< What else have you got ?>< Is there a package with basic and movie channels ?>< Let me get that package .><2 That 's everything , but can I add channels later ?>[ You will be able to add or get rid of channels another day .]<2 May I order some cable from you today ?>[ Okay , what package would you like to order ?]
+===
+< May I order some cable from you today ?><2 I 'm not sure of what packages you offer .>[ We offer packages with all the movie channels .]
+===
+< May I order some cable from you today ?>< I 'm not sure of what packages you offer .><2 Are there any other packages ?>[ We also have packages with all the sports channels .]
+===
+< May I order some cable from you today ?>< I 'm not sure of what packages you offer .>< Are there any other packages ?><2 I want a package that has the basic and movie channels .>[ We have that available .]
+===
+< May I order some cable from you today ?>< I 'm not sure of what packages you offer .>< Are there any other packages ?>< I want a package that has the basic and movie channels .><2 I would like to get that .>[ Would you like anything else with your package ?]
+===
+< May I order some cable from you today ?>< I 'm not sure of what packages you offer .>< Are there any other packages ?>< I want a package that has the basic and movie channels .>< I would like to get that .><2 That 's it , but will I be able to add more channels at another time ?>[ Yes , you can add or get rid of channels later on if you would like .]<2 I would like to order some internet today .>[ What kind would you like ?]
+===
+< I would like to order some internet today .><2 What kind of internet is there ?>[ You can get DSL or dial-up .]
+===
+< I would like to order some internet today .>< What kind of internet is there ?><2 Which of those two is best ?>[ I would recommend DSL .]
+===
+< I would like to order some internet today .>< What kind of internet is there ?>< Which of those two is best ?><2 Is that one better ?>[ It 's better because it does n't tie up your phone .]
+===
+< I would like to order some internet today .>< What kind of internet is there ?>< Which of those two is best ?>< Is that one better ?><2 What do you mean by that ?>[ DSL is n't connected through your phone line , but dial-up is .]
+===
+< I would like to order some internet today .>< What kind of internet is there ?>< Which of those two is best ?>< Is that one better ?>< What do you mean by that ?><2 So then I ca n't use my phone if I 'm on the internet ?>[ That 's correct . With DSL you can do both .]<2 I need to get internet .>[ Which kind of internet connection do you want to get ?]
+===
+< I need to get internet .><2 What kind of internet can I get ?>[ There is dial-up or DSL .]
+===
+< I need to get internet .>< What kind of internet can I get ?><2 Which one do you feel is best ?>[ I would get DSL if I were you .]
+===
+< I need to get internet .>< What kind of internet can I get ?>< Which one do you feel is best ?><2 DSL is better than dial-up ?>[ It 's the best choice ; plus , it wo n't tie up your phone line .]
+===
+< I need to get internet .>< What kind of internet can I get ?>< Which one do you feel is best ?>< DSL is better than dial-up ?><2 I 'm not sure what that means .>[ Dial-up is connected through your phone , unlike DSL .]
+===
+< I need to get internet .>< What kind of internet can I get ?>< Which one do you feel is best ?>< DSL is better than dial-up ?>< I 'm not sure what that means .><2 That 'll make it impossible for me to use .>[ Exactly . With DSL you do n't have that problem .]<2 I 'd like to have internet for my computer .>[ Do you know what kind of internet you would like to get ?]
+===
+< I 'd like to have internet for my computer .><2 What are my options for the internet ?>[ You can either get dial-up or DSL .]
+===
+< I 'd like to have internet for my computer .>< What are my options for the internet ?><2 Which one would you recommend ?>[ DSL is the best choice .]
+===
+< I 'd like to have internet for my computer .>< What are my options for the internet ?>< Which one would you recommend ?><2 Why is DSL better ?>[ It 's a lot better because it does n't tie up your phone line .]
+===
+< I 'd like to have internet for my computer .>< What are my options for the internet ?>< Which one would you recommend ?>< Why is DSL better ?><2 What exactly does that mean ?>[ Well , with dial-up your internet is connected by your phone line .]
+===
+< I 'd like to have internet for my computer .>< What are my options for the internet ?>< Which one would you recommend ?>< Why is DSL better ?>< What exactly does that mean ?><2 That means that I ca n't use my phone and the internet at the same time , right ?>[ That 's right . You wo n't have that problem with DSL .]<2 I am calling about my cable service .>[ What 's the problem ?]
+===
+< I am calling about my cable service .><2 For the past week my cable has n't been working .>[ I apologize , but the cable has been down lately .]
+===
+< I am calling about my cable service .>< For the past week my cable has n't been working .><2 Do you know when it is going to start working again ?>[ Give it a couple days , and it should be back on .]
+===
+< I am calling about my cable service .>< For the past week my cable has n't been working .>< Do you know when it is going to start working again ?><2 Will I still have to pay for the cable while it 's not working ?>[ Since it 's not working , I 'm going to give you a credit .]
+===
+< I am calling about my cable service .>< For the past week my cable has n't been working .>< Do you know when it is going to start working again ?>< Will I still have to pay for the cable while it 's not working ?><2 So I do n't have to pay anything ?>[ You wo n't pay anything until your service starts working again .]
+===
+< I am calling about my cable service .>< For the past week my cable has n't been working .>< Do you know when it is going to start working again ?>< Will I still have to pay for the cable while it 's not working ?>< So I do n't have to pay anything ?><2 Okay , thank you very much for your help .>[ No problem . Thank you for being so understanding .]<2 I have a question about my cable .>[ What do you need ?]
+===
+< I have a question about my cable .><2 I have n't been able to use my cable service for the past week .>[ Right now the cable is n't working .]
+===
+< I have a question about my cable .>< I have n't been able to use my cable service for the past week .><2 Could you tell me when the cable will be back on ?>[ The cable should be running again in a couple of days .]
+===
+< I have a question about my cable .>< I have n't been able to use my cable service for the past week .>< Could you tell me when the cable will be back on ?><2 In the meantime , do I still have to pay for the cable ?>[ We 'll just give you a credit for the inconvenience .]
+===
+< I have a question about my cable .>< I have n't been able to use my cable service for the past week .>< Could you tell me when the cable will be back on ?>< In the meantime , do I still have to pay for the cable ?><2 Does that mean I wo n't have to pay for it ?>[ It 'll be free until it comes back on .]
+===
+< I have a question about my cable .>< I have n't been able to use my cable service for the past week .>< Could you tell me when the cable will be back on ?>< In the meantime , do I still have to pay for the cable ?>< Does that mean I wo n't have to pay for it ?><2 Thanks , I appreciate your help .>[ Thank you for all your patience .]<2 I have a problem with my cable .>[ What about it ?]
+===
+< I have a problem with my cable .><2 My cable has been out for the past week or so .>[ The cable is down right now . I am very sorry .]
+===
+< I have a problem with my cable .>< My cable has been out for the past week or so .><2 When will it be working again ?>[ It should be back on in the next couple of days .]
+===
+< I have a problem with my cable .>< My cable has been out for the past week or so .>< When will it be working again ?><2 Do I still have to pay for the cable ?>[ We 're going to give you a credit while the cable is down .]
+===
+< I have a problem with my cable .>< My cable has been out for the past week or so .>< When will it be working again ?>< Do I still have to pay for the cable ?><2 So , I do n't have to pay for it ?>[ No , not until your cable comes back on .]
+===
+< I have a problem with my cable .>< My cable has been out for the past week or so .>< When will it be working again ?>< Do I still have to pay for the cable ?>< So , I do n't have to pay for it ?><2 Thanks for everything .>[ You 're welcome , and thank you for your understanding .]<2 I need somebody to come over and fix my internet .>[ What 's wrong with it ?]
+===
+< I need somebody to come over and fix my internet .><2 For some reason it 's just not connecting .>[ How long have you been having this problem ?]
+===
+< I need somebody to come over and fix my internet .>< For some reason it 's just not connecting .><2 It has n't been working the past few days .>[ Does the internet come up at all ?]
+===
+< I need somebody to come over and fix my internet .>< For some reason it 's just not connecting .>< It has n't been working the past few days .><2 It does , but it wo n't connect to anything .>[ Well , the internet is n't down , so there must be something wrong with your connection .]
+===
+< I need somebody to come over and fix my internet .>< For some reason it 's just not connecting .>< It has n't been working the past few days .>< It does , but it wo n't connect to anything .><2 Could you send someone to fix it today ?>[ I 'll send somebody over right away to fix it .]
+===
+< I need somebody to come over and fix my internet .>< For some reason it 's just not connecting .>< It has n't been working the past few days .>< It does , but it wo n't connect to anything .>< Could you send someone to fix it today ?><2 When will they be here ?>[ They should be there in the next hour .]<2 I need to get my internet fixed .>[ What 's the problem with your internet ?]
+===
+< I need to get my internet fixed .><2 It wo n't connect .>[ How long has this been happening ?]
+===
+< I need to get my internet fixed .>< It wo n't connect .><2 This connection problem has been happening for a few days now .>[ The internet does n't come up at all ?]
+===
+< I need to get my internet fixed .>< It wo n't connect .>< This connection problem has been happening for a few days now .><2 It just wo n't connect to a webpage , but it will pop up .>[ There 's obviously a problem with your connection .]
+===
+< I need to get my internet fixed .>< It wo n't connect .>< This connection problem has been happening for a few days now .>< It just wo n't connect to a webpage , but it will pop up .><2 I 'm going to need someone to come and fix it for me .>[ I can send somebody right now to fix it .]
+===
+< I need to get my internet fixed .>< It wo n't connect .>< This connection problem has been happening for a few days now .>< It just wo n't connect to a webpage , but it will pop up .>< I 'm going to need someone to come and fix it for me .><2 How long will it take for them to get here ?>[ They 'll be there in about an hour .]<2 Can you send someone to fix my internet ?>[ Are you having a problem with it ?]
+===
+< Can you send someone to fix my internet ?><2 My internet is having problems connecting .>[ Can you tell me how long your internet has been messing up ?]
+===
+< Can you send someone to fix my internet ?>< My internet is having problems connecting .><2 I 've been having this problem for the last few days .>[ Will the internet even pop up ?]
+===
+< Can you send someone to fix my internet ?>< My internet is having problems connecting .>< I 've been having this problem for the last few days .><2 It 'll pop up , but it wo n't connect to a webpage .>[ Since the internet is n't broken , your connection must be messed up .]
+===
+< Can you send someone to fix my internet ?>< My internet is having problems connecting .>< I 've been having this problem for the last few days .>< It 'll pop up , but it wo n't connect to a webpage .><2 Do you think you can send somebody over to fix it ?>[ If you 'd like , I can send someone to fix it right now .]
+===
+< Can you send someone to fix my internet ?>< My internet is having problems connecting .>< I 've been having this problem for the last few days .>< It 'll pop up , but it wo n't connect to a webpage .>< Do you think you can send somebody over to fix it ?><2 How long will it be till they get here ?>[ It should be no longer than an hour .]<2 I am interested in buying auto insurance .>[ Sure , I can help you . Did you bring all of your registration papers ?]
+===
+< I am interested in buying auto insurance .><2 Yes , I brought everything with me .>[ Is your car with you ?]
+===
+< I am interested in buying auto insurance .>< Yes , I brought everything with me .><2 Yes , it is out in the parking lot .>[ Wonderful . Let 's go out and check to see what shape it is in .]
+===
+< I am interested in buying auto insurance .>< Yes , I brought everything with me .>< Yes , it is out in the parking lot .><2 OK , can you help me figure out what I should insure my car for ?>[ I will look it up on the Blue Book list and we will factor in its condition .]
+===
+< I am interested in buying auto insurance .>< Yes , I brought everything with me .>< Yes , it is out in the parking lot .>< OK , can you help me figure out what I should insure my car for ?><2 What else do I need to consider for the auto insurance ?>[ Yes , you need to figure in liability for damage to the other car as well as injury issues as well .]<2 Good morning , I need to buy car insurance for the used car I just bought .>[ Yes , no problem . Do you have your registration and Certificate of Ownership with you ?]
+===
+< Good morning , I need to buy car insurance for the used car I just bought .><2 Yes , it is all right here .>[ Did you drive your car here ?]
+===
+< Good morning , I need to buy car insurance for the used car I just bought .>< Yes , it is all right here .><2 Yes , it is out in the back .>[ That 's great . We 'll go out and check the condition of your car .]
+===
+< Good morning , I need to buy car insurance for the used car I just bought .>< Yes , it is all right here .>< Yes , it is out in the back .><2 I understand , what should I insure my car for ?>[ There is a Blue Book price for your car and we will use that price .]
+===
+< Good morning , I need to buy car insurance for the used car I just bought .>< Yes , it is all right here .>< Yes , it is out in the back .>< I understand , what should I insure my car for ?><2 What other things do I need to insure for ?>[ We will factor in damage to the other car as well as property damage and injury .]<2 I just bought a used car and need to insure it .>[ We can take care of that right now . Do you have all of your paperwork with you ?]
+===
+< I just bought a used car and need to insure it .><2 Yes , I took care of all of that and have the papers with me .>[ Did you bring your car with you ?]
+===
+< I just bought a used car and need to insure it .>< Yes , I took care of all of that and have the papers with me .><2 Yes , it is parked on the street .>[ Fine , I need to go out with you to check your car for wear and tear .]
+===
+< I just bought a used car and need to insure it .>< Yes , I took care of all of that and have the papers with me .>< Yes , it is parked on the street .><2 Fine , how will I know how much I should insure my car for ?>[ After looking at your car , I will use the Blue Book price and we will consider the condition of the car .]
+===
+< I just bought a used car and need to insure it .>< Yes , I took care of all of that and have the papers with me .>< Yes , it is parked on the street .>< Fine , how will I know how much I should insure my car for ?><2 Are there other considerations when I insure my car ?>[ We always need to think about property damage , damage to other vehicles , and injury .]<2 What kind of car insurance do you have ?>[ I went with the Automobile Club .]
+===
+< What kind of car insurance do you have ?><2 Why did you choose that company ?>[ I looked at the price of the type of insurance that I wanted .]
+===
+< What kind of car insurance do you have ?>< Why did you choose that company ?><2 What should I think about in choosing services ?>[ There are websites that will figure out what coverage is right for you .]
+===
+< What kind of car insurance do you have ?>< Why did you choose that company ?>< What should I think about in choosing services ?><2 What did you end up buying for your auto insurance ?>[ Well , my car is very old , so I did n't worry so much about what it would cost to repair it . I did buy a lot of coverage for fixing someone else 's car .]
+===
+< What kind of car insurance do you have ?>< Why did you choose that company ?>< What should I think about in choosing services ?>< What did you end up buying for your auto insurance ?><2 Have you ever had to use your insurance ?>[ I never had to use my insurance .]<2 When you insured your car , what kind did you buy ?>[ I decided to buy from GEICO .]
+===
+< When you insured your car , what kind did you buy ?><2 What influenced your choice of companies ?>[ I looked at the customer satisfaction rating of the company .]
+===
+< When you insured your car , what kind did you buy ?>< What influenced your choice of companies ?><2 How did you figure out what services to buy ?>[ Every individual has different considerations . Your agent can help you understand what you need to think about .]
+===
+< When you insured your car , what kind did you buy ?>< What influenced your choice of companies ?>< How did you figure out what services to buy ?><2 What did you place an emphasis on when you bought your insurance ?>[ I carry a lot of liability insurance because I own a house and need to protect it from a lawsuit .]
+===
+< When you insured your car , what kind did you buy ?>< What influenced your choice of companies ?>< How did you figure out what services to buy ?>< What did you place an emphasis on when you bought your insurance ?><2 Did you ever get into an accident and need your insurance ?>[ I was in an accident and was happy that I had good insurance to cover it .]<2 What car insurance company did you decide to go with when you bought your new car ?>[ State Farm seemed like the best deal for me .]
+===
+< What car insurance company did you decide to go with when you bought your new car ?><2 How did you make that decision ?>[ I compared rates and services available .]
+===
+< What car insurance company did you decide to go with when you bought your new car ?>< How did you make that decision ?><2 Where can I get help in figuring out what I need to purchase for coverage ?>[ You can pick up a pamphlet at your insurance company that will explain the options to you .]
+===
+< What car insurance company did you decide to go with when you bought your new car ?>< How did you make that decision ?>< Where can I get help in figuring out what I need to purchase for coverage ?><2 What did you decide to cover yourself for ?>[ I pretty much carry the average amount in all categories as the agent recommended .]
+===
+< What car insurance company did you decide to go with when you bought your new car ?>< How did you make that decision ?>< Where can I get help in figuring out what I need to purchase for coverage ?>< What did you decide to cover yourself for ?><2 How many times have you actually used your insurance ?>[ I was in an accident , but it was the other person 's fault and their insurance covered it .]<2 I really like that car and I am thinking of buying it .>[ Yes , I agree . Do you want to take it to a mechanic to have it checked out ?]
+===
+< I really like that car and I am thinking of buying it .><2 I already took care of that yesterday .>[ That 's good . Have you discussed the price with the seller ?]
+===
+< I really like that car and I am thinking of buying it .>< I already took care of that yesterday .><2 Yes , I think we 've agreed upon a fair price .>[ Have you set up your financing to pay for this car ?]
+===
+< I really like that car and I am thinking of buying it .>< I already took care of that yesterday .>< Yes , I think we 've agreed upon a fair price .><2 Yes , my parents are going to loan me the money .>[ That 's good . Would you like me to go talk to the seller with you and drive your car home ?]
+===
+< I really like that car and I am thinking of buying it .>< I already took care of that yesterday .>< Yes , I think we 've agreed upon a fair price .>< Yes , my parents are going to loan me the money .><2 That would be a great help !>[ Glad to be of help .]<2 That car is exactly what I want , so I probably should buy it .>[ From what I see , it 's a good deal . Should a mechanic check it out for you ?]
+===
+< That car is exactly what I want , so I probably should buy it .><2 A mechanic looked at it for me on Tuesday when I first looked at it .>[ It 's good that you took care of that . Have you agreed upon a price with the seller ?]
+===
+< That car is exactly what I want , so I probably should buy it .>< A mechanic looked at it for me on Tuesday when I first looked at it .><2 Yes , he was willing to lower his price a bit and I 'm good with that .>[ Do you know how you are going to pay for this car ?]
+===
+< That car is exactly what I want , so I probably should buy it .>< A mechanic looked at it for me on Tuesday when I first looked at it .>< Yes , he was willing to lower his price a bit and I 'm good with that .><2 Yes , I have already pre-qualified for a loan with my credit union .>[ You are very well prepared ! I could go with you to talk to the seller and help you get your car home .]
+===
+< That car is exactly what I want , so I probably should buy it .>< A mechanic looked at it for me on Tuesday when I first looked at it .>< Yes , he was willing to lower his price a bit and I 'm good with that .>< Yes , I have already pre-qualified for a loan with my credit union .><2 I appreciate the offer of help !>[ It would be my pleasure to help you .]<2 I think that that car drove really well and is a good deal .>[ It seems to be a good choice for you . You might want to have a mechanic take a look at it just to be sure .]
+===
+< I think that that car drove really well and is a good deal .><2 My friend is a mechanic and he came and looked at it for me this morning .>[ That was smart of you to think ahead . Have you and the seller agreed upon a price ?]
+===
+< I think that that car drove really well and is a good deal .>< My friend is a mechanic and he came and looked at it for me this morning .><2 Yes , he is willing to accept the price that I offered him .>[ Have you thought about how to pay for your car ?]
+===
+< I think that that car drove really well and is a good deal .>< My friend is a mechanic and he came and looked at it for me this morning .>< Yes , he is willing to accept the price that I offered him .><2 I saved up enough money to pay cash for this car .>[ You 've really thought this through . Let me go with you to make the payment and drive your car home for you .]
+===
+< I think that that car drove really well and is a good deal .>< My friend is a mechanic and he came and looked at it for me this morning .>< Yes , he is willing to accept the price that I offered him .>< I saved up enough money to pay cash for this car .><2 That would make it a lot easier for me .>[ I am glad that can help . Let 's go take care of that right now .]<2 I am interested in selling my home and would like to know what is involved .>[ You have come to the right place . When were you interested in selling your home ?]
+===
+< I am interested in selling my home and would like to know what is involved .><2 I just received a job transfer and need to relocate right away .>[ How long have you been in your current home ?]
+===
+< I am interested in selling my home and would like to know what is involved .>< I just received a job transfer and need to relocate right away .><2 I have lived in my home for about 10 years .>[ As I am sure that you are aware , the market has fallen in the past year . People are more likely to make money if they have owned their home for a while .]
+===
+< I am interested in selling my home and would like to know what is involved .>< I just received a job transfer and need to relocate right away .>< I have lived in my home for about 10 years .><2 Will I be able to recover the money I paid for my home ?>[ It is hard to say , but whatever house you buy will also be costing you a lot less .]
+===
+< I am interested in selling my home and would like to know what is involved .>< I just received a job transfer and need to relocate right away .>< I have lived in my home for about 10 years .>< Will I be able to recover the money I paid for my home ?><2 What is the next step in selling my home ?>[ I would like to meet with you tomorrow to look at your property , and then you and I can figure out a contract .]<2 I am looking for a realtor to help me sell my home .>[ I would be happy to help you with any questions that you might have . When were you thinking of selling your home ?]
+===
+< I am looking for a realtor to help me sell my home .><2 I am interested in moving up to a bigger home , but first I need to sell the one I now own .>[ Have you owned your home for a long time ?]
+===
+< I am looking for a realtor to help me sell my home .>< I am interested in moving up to a bigger home , but first I need to sell the one I now own .><2 I just bought my home two years ago .>[ I think you probably know that the market is not all that great . You are more likely to see a profit if you have owned for 8 years or more .]
+===
+< I am looking for a realtor to help me sell my home .>< I am interested in moving up to a bigger home , but first I need to sell the one I now own .>< I just bought my home two years ago .><2 Will I be losing money if I sell right now ?>[ It is impossible to predict with certainty what will happen , but you can purchase a replacement home at a lower rate also .]
+===
+< I am looking for a realtor to help me sell my home .>< I am interested in moving up to a bigger home , but first I need to sell the one I now own .>< I just bought my home two years ago .>< Will I be losing money if I sell right now ?><2 What can I do next to get the ball rolling on this sale ?>[ If it works for you , I would like to come over and see your home . Then we can draw up a contract .]<2 I am considering selling my home and would like information on doing so .>[ It would be my pleasure to answer any questions that you might have . Were you interested in selling in the near future ?]
+===
+< I am considering selling my home and would like information on doing so .><2 I am just checking out the possibility of selling , as I am thinking of moving to Hawaii .>[ Is your home a recent purchase , or have you owned it for a while ?]
+===
+< I am considering selling my home and would like information on doing so .>< I am just checking out the possibility of selling , as I am thinking of moving to Hawaii .><2 The house has been in my family for years , but I just became the owner 6 months ago when my mother passed away .>[ Housing prices have fallen quite a bit . The longer you have owned your home , the greater the profit .]
+===
+< I am considering selling my home and would like information on doing so .>< I am just checking out the possibility of selling , as I am thinking of moving to Hawaii .>< The house has been in my family for years , but I just became the owner 6 months ago when my mother passed away .><2 Am I going to lose my shirt selling my home right now ?>[ It will all kind of even out . You may sell low , but you can also buy low .]
+===
+< I am considering selling my home and would like information on doing so .>< I am just checking out the possibility of selling , as I am thinking of moving to Hawaii .>< The house has been in my family for years , but I just became the owner 6 months ago when my mother passed away .>< Am I going to lose my shirt selling my home right now ?><2 What should we be doing to get the process started ?>[ If it fits into your schedule , I could meet you tomorrow morning and we could take a look at your property . The next step would be us both signing a contract .]<2 Thank you for coming to look at my house .>[ I really wanted to take a look and help give you an idea of what we need to do .]
+===
+< Thank you for coming to look at my house .><2 When will people come to look at my house ?>[ Basically , there are two ways people can view your home . They can come to an Open House or they can come with a Realtor to view it during a private appointment .]
+===
+< Thank you for coming to look at my house .>< When will people come to look at my house ?><2 Will people from other real estate offices be involved , or just from your office ?>[ Your house is going to be listed as a Multiple Listing so that it will have the maximum exposure to a variety of people .]
+===
+< Thank you for coming to look at my house .>< When will people come to look at my house ?>< Will people from other real estate offices be involved , or just from your office ?><2 Will I know when people are going to come see my house ?>[ We will set the parameters in the contract , but usually you will receive at least four hours of notification that someone is coming .]
+===
+< Thank you for coming to look at my house .>< When will people come to look at my house ?>< Will people from other real estate offices be involved , or just from your office ?>< Will I know when people are going to come see my house ?><2 What happens during an Open House day ?>[ You will be expected to be away during an Open House . I will take care of the details .]<2 I appreciate you dropping by to look at my home .>[ It is useful for us to take a walk through your home together , so that we make sure that we are on the same page .]
+===
+< I appreciate you dropping by to look at my home .><2 How do you show my home to potential buyers ?>[ We will have an Open House or two on a weekend and we also will show your home with private appointments during the week .]
+===
+< I appreciate you dropping by to look at my home .>< How do you show my home to potential buyers ?><2 Are you the only real estate office that will be showing my house ?>[ We are placing your house as a Multiple Listing . That way , people who do n't work for my particular office can show your home to their clients .]
+===
+< I appreciate you dropping by to look at my home .>< How do you show my home to potential buyers ?>< Are you the only real estate office that will be showing my house ?><2 How will I know when to expect prospective house buyers ?>[ That will be set in your contract . Usually , you will be given four hours notice .]
+===
+< I appreciate you dropping by to look at my home .>< How do you show my home to potential buyers ?>< Are you the only real estate office that will be showing my house ?>< How will I know when to expect prospective house buyers ?><2 Can I stay home during an Open House day ?>[ The seller is never at home during an Open House . I personally will handle the showing of your home .]<2 Thanks for stopping by to evaluate my home .>[ I want to make sure that you are very clear on what the steps are to selling a home .]
+===
+< Thanks for stopping by to evaluate my home .><2 When can people come and see my home ?>[ We will have several Open House weekends . Various realtors will also show your house during the week .]
+===
+< Thanks for stopping by to evaluate my home .>< When can people come and see my home ?><2 Will I know all of the realtors who will be showing my home , or will they be strangers ?>[ Your house will be listed on what we call a Multiple Listing . That way it will be shown by a variety of realtors .]
+===
+< Thanks for stopping by to evaluate my home .>< When can people come and see my home ?>< Will I know all of the realtors who will be showing my home , or will they be strangers ?><2 Can people just drop in anytime they feel like the house ?>[ We usually try and give you at least four hours of notification that someone is coming to look at your home .]
+===
+< Thanks for stopping by to evaluate my home .>< When can people come and see my home ?>< Will I know all of the realtors who will be showing my home , or will they be strangers ?>< Can people just drop in anytime they feel like the house ?><2 Will I have to go away during an Open House day ?>[ I will handle all of the work involved for the Open House . The only thing that you need to do is be somewhere else !]<2 How much do you think that I should ask for my house ?>[ Well , there are a lot of factors involved in setting an asking price .]
+===
+< How much do you think that I should ask for my house ?><2 What do you look at when setting an asking price for the house ?>[ We need to look at the selling prices for similar homes in the area . These will vary according to the condition of the home , specific location , and lot size .]
+===
+< How much do you think that I should ask for my house ?>< What do you look at when setting an asking price for the house ?><2 Do I have to use the comparisons as the asking price for my house ?>[ No , but a seller is not going to be able to get a loan if the selling price is a lot higher that what an appraiser feels the home is worth .]
+===
+< How much do you think that I should ask for my house ?>< What do you look at when setting an asking price for the house ?>< Do I have to use the comparisons as the asking price for my house ?><2 Is n't it better to price my house really high and see what I can get ?>[ You should n't set the price of the house unrealistically high . Oftentimes buyers are put off by this practice .]
+===
+< How much do you think that I should ask for my house ?>< What do you look at when setting an asking price for the house ?>< Do I have to use the comparisons as the asking price for my house ?>< Is n't it better to price my house really high and see what I can get ?><2 Can I change my mind and lower my price if the home does n't sell ?>[ Sure , you can always lower your asking price .]<2 I am not sure what the asking price for my house should be .>[ We have to take in a number of factors in setting an asking price .]
+===
+< I am not sure what the asking price for my house should be .><2 What do we need to consider in establishing an acceptable price for a home ?>[ The comparisons to other similar homes in your area give us a good indication of what your home is worth .]
+===
+< I am not sure what the asking price for my house should be .>< What do we need to consider in establishing an acceptable price for a home ?><2 Is the price that we get by looking at comparisons necessarily the asking price that I have to use for my home ?>[ You do n't have to use that particular asking price , but the buyer is going to have trouble getting a loan if the house is priced too high .]
+===
+< I am not sure what the asking price for my house should be .>< What do we need to consider in establishing an acceptable price for a home ?>< Is the price that we get by looking at comparisons necessarily the asking price that I have to use for my home ?><2 Should I just shoot for the moon and , if I have to lower the price , do it later ?>[ You should be realistic in your pricing . Otherwise , many potential buyers just walk away .]
+===
+< I am not sure what the asking price for my house should be .>< What do we need to consider in establishing an acceptable price for a home ?>< Is the price that we get by looking at comparisons necessarily the asking price that I have to use for my home ?>< Should I just shoot for the moon and , if I have to lower the price , do it later ?><2 Can we lower the asking price later if we need to ?>[ We can always re-evaluate the asking price in a few weeks , if we are n't getting any offers .]<2 What do you think the asking price of my home should be ?>[ There are many things to take into consideration when pricing a home .]
+===
+< What do you think the asking price of my home should be ?><2 What is involved in figuring out an asking price ?>[ We need to combine many factors regarding your home to come up with an accurate value for your home .]
+===
+< What do you think the asking price of my home should be ?>< What is involved in figuring out an asking price ?><2 When you look at comparisons , do I necessarily have to ask that price ?>[ You do n't have to use the price from the comparisons as your asking price . However , you must be realistic in what you ask .]
+===
+< What do you think the asking price of my home should be ?>< What is involved in figuring out an asking price ?>< When you look at comparisons , do I necessarily have to ask that price ?><2 I think that I am going to set the price really high so that I have room to bargain with the buyers .>[ Do n't go overboard in trying to get top dollar . More often than not , that strategy backfires .]
+===
+< What do you think the asking price of my home should be ?>< What is involved in figuring out an asking price ?>< When you look at comparisons , do I necessarily have to ask that price ?>< I think that I am going to set the price really high so that I have room to bargain with the buyers .><2 Is it okay to lower the asking price if the first price is n't bringing in any offers ?>[ If the market does n't support your asking price , we can always re-evaluate our pricing and adjust it .]<2 I am interested in buying a house and need some information .>[ Yes , of course . What area are you interested in ?]
+===
+< I am interested in buying a house and need some information .><2 I am interested in Pasadena or Arcadia .>[ What size house would you like ?]
+===
+< I am interested in buying a house and need some information .>< I am interested in Pasadena or Arcadia .><2 We need a medium-sized house with at least 3 bedrooms and 2 bathrooms .>[ Are you interested in being in a particular school district ?]
+===
+< I am interested in buying a house and need some information .>< I am interested in Pasadena or Arcadia .>< We need a medium-sized house with at least 3 bedrooms and 2 bathrooms .><2 Yes , we want to stay in the ABC School District .>[ Would you like a home near the lake or would you prefer a view ?]
+===
+< I am interested in buying a house and need some information .>< I am interested in Pasadena or Arcadia .>< We need a medium-sized house with at least 3 bedrooms and 2 bathrooms .>< Yes , we want to stay in the ABC School District .><2 I would love to have a home with a view .>[ Fine , I will begin a search for the perfect home for you . I will call you in a few days .]<2 I would like to discuss purchasing a home with you .>[ I can help you . What location are you looking for ?]
+===
+< I would like to discuss purchasing a home with you .><2 I would like to live in Pasadena or Arcadia .>[ Have you thought about what your needs are in terms of size ?]
+===
+< I would like to discuss purchasing a home with you .>< I would like to live in Pasadena or Arcadia .><2 We would like a smaller cozy cottage with 2 bedrooms and 1 bathroom .>[ Is living in a particular school district important to you ?]
+===
+< I would like to discuss purchasing a home with you .>< I would like to live in Pasadena or Arcadia .>< We would like a smaller cozy cottage with 2 bedrooms and 1 bathroom .><2 No , we do n't really care because they are all pretty good around here .>[ Are you interested in purchasing on the lake , or would you like a home with a view ?]
+===
+< I would like to discuss purchasing a home with you .>< I would like to live in Pasadena or Arcadia .>< We would like a smaller cozy cottage with 2 bedrooms and 1 bathroom .>< No , we do n't really care because they are all pretty good around here .><2 We really want to live in a lakeside home with a dock for our boat .>[ Now that I have an idea of what you want , I can begin my search .]<2 I have been thinking of buying a house and would like to speak with you .>[ I have time to speak with you . Where would you like to purchase your house ?]
+===
+< I have been thinking of buying a house and would like to speak with you .><2 I am most interested in Pasadena or Arcadia , but would be open to other suggestions .>[ How many bedrooms and bathrooms do you need ?]
+===
+< I have been thinking of buying a house and would like to speak with you .>< I am most interested in Pasadena or Arcadia , but would be open to other suggestions .><2 We have several generations of family living in our household and so need a very large home .>[ Do you need to be located in a particular school district ?]
+===
+< I have been thinking of buying a house and would like to speak with you .>< I am most interested in Pasadena or Arcadia , but would be open to other suggestions .>< We have several generations of family living in our household and so need a very large home .><2 It does n't matter , as we do not have any children .>[ Is a view important to you , or would you rather be located on a lakeshore lot ?]
+===
+< I have been thinking of buying a house and would like to speak with you .>< I am most interested in Pasadena or Arcadia , but would be open to other suggestions .>< We have several generations of family living in our household and so need a very large home .>< It does n't matter , as we do not have any children .><2 In a perfect world , we would like a home with a view of the lake .>[ Thank you for all of the information . I will help you find the perfect house for you .]<2 I 'd like to reserve a hotel room .>[ That should be no problem . May I have your full name , please ?]
+===
+< I 'd like to reserve a hotel room .><2 My name is John Sandals .>[ Hello , Mr. Sandals . My name is Papaya . What days do you need that reservation , sir ?]
+===
+< I 'd like to reserve a hotel room .>< My name is John Sandals .><2 I 'm planning to visit New York from Friday , April 14 until Monday , April 17 .>[ Our room rates recently went up . Is that okay with you , sir ?]
+===
+< I 'd like to reserve a hotel room .>< My name is John Sandals .>< I 'm planning to visit New York from Friday , April 14 until Monday , April 17 .><2 How much per night are we talking about ?>[ Each night will be $ 308 .]
+===
+< I 'd like to reserve a hotel room .>< My name is John Sandals .>< I 'm planning to visit New York from Friday , April 14 until Monday , April 17 .>< How much per night are we talking about ?><2 That price is perfectly acceptable .>[ Wonderful ! Do you prefer a smoking or nonsmoking room ?]
+===
+< I 'd like to reserve a hotel room .>< My name is John Sandals .>< I 'm planning to visit New York from Friday , April 14 until Monday , April 17 .>< How much per night are we talking about ?>< That price is perfectly acceptable .><2 Nonsmoking , please .>[ Next question : Is a queen-size bed okay ?]
+===
+< I 'd like to reserve a hotel room .>< My name is John Sandals .>< I 'm planning to visit New York from Friday , April 14 until Monday , April 17 .>< How much per night are we talking about ?>< That price is perfectly acceptable .>< Nonsmoking , please .><2 Queen-size sounds fine to me .>[ Okay , sir . Your reservation is in our computer . All we need now is a phone number .]
+===
+< I 'd like to reserve a hotel room .>< My name is John Sandals .>< I 'm planning to visit New York from Friday , April 14 until Monday , April 17 .>< How much per night are we talking about ?>< That price is perfectly acceptable .>< Nonsmoking , please .>< Queen-size sounds fine to me .><2 Certainly . My phone number is 305-555-1788 .>[ Thank you , sir . We look forward to seeing you here !]<2 Hi there , I want to reserve a hotel room .>[ No problem at all . Could I have your full name , please ?]
+===
+< Hi there , I want to reserve a hotel room .><2 Sure , My name is John Sandals .>[ Hi , Mr. Sandals . I 'm Papaya , at your service . When do you need the room ?]
+===
+< Hi there , I want to reserve a hotel room .>< Sure , My name is John Sandals .><2 My plans are to be there April 14th to the 17th .>[ We have new room rates , sir . Will that be acceptable to you ?]
+===
+< Hi there , I want to reserve a hotel room .>< Sure , My name is John Sandals .>< My plans are to be there April 14th to the 17th .><2 It depends on the price , of course . What is it ?>[ It 's $ 308 a night .]
+===
+< Hi there , I want to reserve a hotel room .>< Sure , My name is John Sandals .>< My plans are to be there April 14th to the 17th .>< It depends on the price , of course . What is it ?><2 I have no problem with that .>[ Great ! Would you prefer smoking or nonsmoking ?]
+===
+< Hi there , I want to reserve a hotel room .>< Sure , My name is John Sandals .>< My plans are to be there April 14th to the 17th .>< It depends on the price , of course . What is it ?>< I have no problem with that .><2 Definitely nonsmoking . I ca n't handle that smell .>[ Nonsmoking . Now , is a queen-size bed okay ?]
+===
+< Hi there , I want to reserve a hotel room .>< Sure , My name is John Sandals .>< My plans are to be there April 14th to the 17th .>< It depends on the price , of course . What is it ?>< I have no problem with that .>< Definitely nonsmoking . I ca n't handle that smell .><2 No problem . Queen-size sounds good to me .>[ Great , sir . Your reservation is confirmed . Now all I need is your phone number .]
+===
+< Hi there , I want to reserve a hotel room .>< Sure , My name is John Sandals .>< My plans are to be there April 14th to the 17th .>< It depends on the price , of course . What is it ?>< I have no problem with that .>< Definitely nonsmoking . I ca n't handle that smell .>< No problem . Queen-size sounds good to me .><2 Of course ! The phone number is 305-555-1788 .>[ Thank you so much , sir . We look forward to seeing you !]<2 I need to reserve a room .>[ Not a problem . May I have your name , please ?]
+===
+< I need to reserve a room .><2 Of course . I 'm John Sandals .>[ Hi , sir . My name is Papaya . Could you tell me when you need the room ?]
+===
+< I need to reserve a room .>< Of course . I 'm John Sandals .><2 Right now . I plan to be there in April from the 14th to the 17th .>[ Perhaps you did n't know that we have new room rates . Do you find that acceptable , sir ?]
+===
+< I need to reserve a room .>< Of course . I 'm John Sandals .>< Right now . I plan to be there in April from the 14th to the 17th .><2 Maybe . How much is a room ?>[ The price per night is $ 308 .]
+===
+< I need to reserve a room .>< Of course . I 'm John Sandals .>< Right now . I plan to be there in April from the 14th to the 17th .>< Maybe . How much is a room ?><2 That sounds fine to me .>[ Fantastic ! Would you like a smoking or nonsmoking room ?]
+===
+< I need to reserve a room .>< Of course . I 'm John Sandals .>< Right now . I plan to be there in April from the 14th to the 17th .>< Maybe . How much is a room ?>< That sounds fine to me .><2 I hate cigarettes ! Nonsmoking .>[ That 'll be nonsmoking . Now , do you approve of a single queen-size bed ?]
+===
+< I need to reserve a room .>< Of course . I 'm John Sandals .>< Right now . I plan to be there in April from the 14th to the 17th .>< Maybe . How much is a room ?>< That sounds fine to me .>< I hate cigarettes ! Nonsmoking .><2 That 'll be no problem .>[ I 'm happy to hear that , sir . Your reservation is all set except for your phone number .]
+===
+< I need to reserve a room .>< Of course . I 'm John Sandals .>< Right now . I plan to be there in April from the 14th to the 17th .>< Maybe . How much is a room ?>< That sounds fine to me .>< I hate cigarettes ! Nonsmoking .>< That 'll be no problem .><2 Sure ! My number is 305-555-1788 .>[ Thank you for doing business with us , and we look forward to seeing you !]<2 I need a hotel room .>[ That 's no problem at all . May I have your name , please ?]
+===
+< I need a hotel room .><2 Certainly . My name is John Sandals .>[ It 's a pleasure , Mr. Sandals . My name is Papaya . What days will you need a room ?]
+===
+< I need a hotel room .>< Certainly . My name is John Sandals .><2 Friday afternoon , April 14 through Monday morning , April 17 .>[ One minor problem , sir . Our prices are now slightly higher . Is that acceptable , sir ?]
+===
+< I need a hotel room .>< Certainly . My name is John Sandals .>< Friday afternoon , April 14 through Monday morning , April 17 .><2 Please tell me the price , so I can make a decision .>[ It 'll be $ 308 nightly .]
+===
+< I need a hotel room .>< Certainly . My name is John Sandals .>< Friday afternoon , April 14 through Monday morning , April 17 .>< Please tell me the price , so I can make a decision .><2 That 's a reasonable price .>[ Good ! Now , sir , do you have a preference for smoking or nonsmoking ?]
+===
+< I need a hotel room .>< Certainly . My name is John Sandals .>< Friday afternoon , April 14 through Monday morning , April 17 .>< Please tell me the price , so I can make a decision .>< That 's a reasonable price .><2 I quit smoking , so nonsmoking .>[ I hear you , sir . Nonsmoking . Now , about the bed , is a queen-size okay ?]
+===
+< I need a hotel room .>< Certainly . My name is John Sandals .>< Friday afternoon , April 14 through Monday morning , April 17 .>< Please tell me the price , so I can make a decision .>< That 's a reasonable price .>< I quit smoking , so nonsmoking .><2 A queen sounds great .>[ Okay , sir , let me reserve those dates , there . Now , if you 'll just tell me your phone number .]
+===
+< I need a hotel room .>< Certainly . My name is John Sandals .>< Friday afternoon , April 14 through Monday morning , April 17 .>< Please tell me the price , so I can make a decision .>< That 's a reasonable price .>< I quit smoking , so nonsmoking .>< A queen sounds great .><2 That would be 305-555-1788 .>[ Ok , I got it . Thank you so much for choosing our hotel , sir !]<2 I need a room for a few days .>[ That wo n't be a problem . Could you please tell me your name ?]
+===
+< I need a room for a few days .><2 My name is John Sandals .>[ Sir , I 'm Papaya , and I run the front desk . Please tell me the days you 'll be here .]
+===
+< I need a room for a few days .>< My name is John Sandals .><2 I 'll be there in April : Friday through Monday , the 14th through the 17th .>[ We recently changed many things here , sir , including our prices . Do you mind , sir ?]
+===
+< I need a room for a few days .>< My name is John Sandals .>< I 'll be there in April : Friday through Monday , the 14th through the 17th .><2 Possibly . What 's the actual price ?>[ The price will be $ 308 a night .]
+===
+< I need a room for a few days .>< My name is John Sandals .>< I 'll be there in April : Friday through Monday , the 14th through the 17th .>< Possibly . What 's the actual price ?><2 That price is not bad for me .>[ Very good . Now sir , about the room , do you prefer smoking or nonsmoking ?]
+===
+< I need a room for a few days .>< My name is John Sandals .>< I 'll be there in April : Friday through Monday , the 14th through the 17th .>< Possibly . What 's the actual price ?>< That price is not bad for me .><2 Nonsmoking , definitely !>[ Most of our clients prefer nonsmoking . Now , does a queen sound okay ?]
+===
+< I need a room for a few days .>< My name is John Sandals .>< I 'll be there in April : Friday through Monday , the 14th through the 17th .>< Possibly . What 's the actual price ?>< That price is not bad for me .>< Nonsmoking , definitely !><2 Yes , that 'll be just fine .>[ One more second , sir . Your reservation is now verified , so all I need is your phone number .]
+===
+< I need a room for a few days .>< My name is John Sandals .>< I 'll be there in April : Friday through Monday , the 14th through the 17th .>< Possibly . What 's the actual price ?>< That price is not bad for me .>< Nonsmoking , definitely !>< Yes , that 'll be just fine .><2 It 's 305-555-1788 .>[ Okay , sir , we look forward to seeing you in April !]<2 Can I reserve a hotel room ?>[ I assure you , that 's not a problem . What is your full name , please ?]
+===
+< Can I reserve a hotel room ?><2 My name 's John Sandals .>[ It 's a pleasure to assist you . Please tell me when you 'll be needing the room , sir .]
+===
+< Can I reserve a hotel room ?>< My name 's John Sandals .><2 If my plans do n't change , I 'll need a room April 14 till April 17 .>[ Sir , our room prices are slightly higher than you may have thought . Will that be okay ?]
+===
+< Can I reserve a hotel room ?>< My name 's John Sandals .>< If my plans do n't change , I 'll need a room April 14 till April 17 .><2 Tell me how much it will be , and I can tell you if it 's okay .>[ Only $ 308 per night , before taxes , of course .]
+===
+< Can I reserve a hotel room ?>< My name 's John Sandals .>< If my plans do n't change , I 'll need a room April 14 till April 17 .>< Tell me how much it will be , and I can tell you if it 's okay .><2 $ 308 a night ? That 's a fair price .>[ Now , as for the room , sir , do you prefer smoking or nonsmoking ?]
+===
+< Can I reserve a hotel room ?>< My name 's John Sandals .>< If my plans do n't change , I 'll need a room April 14 till April 17 .>< Tell me how much it will be , and I can tell you if it 's okay .>< $ 308 a night ? That 's a fair price .><2 Nonsmoking , please .>[ Nonsmoking . Now , sir , does a single queen-size bed meet your approval ?]
+===
+< Can I reserve a hotel room ?>< My name 's John Sandals .>< If my plans do n't change , I 'll need a room April 14 till April 17 .>< Tell me how much it will be , and I can tell you if it 's okay .>< $ 308 a night ? That 's a fair price .>< Nonsmoking , please .><2 I have absolutely no problem with that .>[ Queen , nonsmoking . Okay , sir , your room is reserved . Now if you 'll just give me your phone number .]
+===
+< Can I reserve a hotel room ?>< My name 's John Sandals .>< If my plans do n't change , I 'll need a room April 14 till April 17 .>< Tell me how much it will be , and I can tell you if it 's okay .>< $ 308 a night ? That 's a fair price .>< Nonsmoking , please .>< I have absolutely no problem with that .><2 Not a problem . The number is 305-555-1788 .>[ Thank you for making a reservation with us . We look forward to seeing you !]<2 The doctor sent me over here to have my blood drawn .>[ Certainly , please have a seat and roll up your left sleeve .]
+===
+< The doctor sent me over here to have my blood drawn .><2 What is this blood test for ?>[ Well , today your doctor wants us to check your white blood cell count .]
+===
+< The doctor sent me over here to have my blood drawn .>< What is this blood test for ?><2 What does the blood test result tell him ?>[ Well , if it is elevated , you might have an infection .]
+===
+< The doctor sent me over here to have my blood drawn .>< What is this blood test for ?>< What does the blood test result tell him ?><2 Will the blood test hurt ?>[ It is only a little pin stick . I am going to put a tourniquet on your arm to puff your veins up .]
+===
+< The doctor sent me over here to have my blood drawn .>< What is this blood test for ?>< What does the blood test result tell him ?>< Will the blood test hurt ?><2 Ouch !>[ There we go ! I got the blood that I needed .]<2 My doctor says that I need a blood test .>[ I can help you with that . Just have a seat and roll up your left sleeve .]
+===
+< My doctor says that I need a blood test .><2 What are you taking my blood for ?>[ Your doctor has requested a check of your white blood count .]
+===
+< My doctor says that I need a blood test .>< What are you taking my blood for ?><2 What information does the blood test give him ?>[ If your white blood cell count is off , it could signal an infection somewhere in your body .]
+===
+< My doctor says that I need a blood test .>< What are you taking my blood for ?>< What information does the blood test give him ?><2 Is a blood test painful ?>[ I am putting a tourniquet on your arm to plump up the vein . It will only feel like a little pin prick .]
+===
+< My doctor says that I need a blood test .>< What are you taking my blood for ?>< What information does the blood test give him ?>< Is a blood test painful ?><2 My God , that hurts !>[ That was it ! Thank you for coming in today .]<2 I came to this lab to have my blood drawn .>[ You are in the right place . Roll up your left sleeve and have a seat .]
+===
+< I came to this lab to have my blood drawn .><2 What am I being tested for ?>[ Your doctor wants to know what your white blood cell count is .]
+===
+< I came to this lab to have my blood drawn .>< What am I being tested for ?><2 What does my white blood cell count tell him ?>[ Usually if your white count is off , the doctor suspects an infection .]
+===
+< I came to this lab to have my blood drawn .>< What am I being tested for ?>< What does my white blood cell count tell him ?><2 How much will the blood test hurt ?>[ It is only a pin prick . I have to put this tourniquet on your arm to make the vein easier to find .]
+===
+< I came to this lab to have my blood drawn .>< What am I being tested for ?>< What does my white blood cell count tell him ?>< How much will the blood test hurt ?><2 Is that my blood going into that tube ?>[ That blood that just filled the tube is all that I needed . Thanks for coming in !]<2 I need to make an appointment to see the doctor .>[ What seems to be the problem ?]
+===
+< I need to make an appointment to see the doctor .><2 I have a rash that I need a doctor to look at .>[ Do you have a fever with that rash ?]
+===
+< I need to make an appointment to see the doctor .>< I have a rash that I need a doctor to look at .><2 No , it just itches a lot .>[ I have openings on Tuesday or Wednesday . Which would be best for you ?]
+===
+< I need to make an appointment to see the doctor .>< I have a rash that I need a doctor to look at .>< No , it just itches a lot .><2 I need an appointment on Tuesday .>[ Fine , I am putting you down for 9:00 AM on that day . Would you like to see Dr. Smith or Dr. Jones ?]
+===
+< I need to make an appointment to see the doctor .>< I have a rash that I need a doctor to look at .>< No , it just itches a lot .>< I need an appointment on Tuesday .><2 I would like to see Dr. Jones .>[ I can schedule you with him with no problem . We look forward to seeing you .]<2 Good morning , I would like to make a doctor 's appointment .>[ Can you describe your health concern ?]
+===
+< Good morning , I would like to make a doctor 's appointment .><2 I have been having skin problems that are n't going away .>[ Are you in any pain ?]
+===
+< Good morning , I would like to make a doctor 's appointment .>< I have been having skin problems that are n't going away .><2 No . Except for the rash , I feel fine .>[ Would Tuesday or Wednesday be best for you ?]
+===
+< Good morning , I would like to make a doctor 's appointment .>< I have been having skin problems that are n't going away .>< No . Except for the rash , I feel fine .><2 I would like to come in on Tuesday .>[ I will write you in for that day at 4:00 . You can see either Dr. Smith or Dr. Jones .]
+===
+< Good morning , I would like to make a doctor 's appointment .>< I have been having skin problems that are n't going away .>< No . Except for the rash , I feel fine .>< I would like to come in on Tuesday .><2 I would like to see Dr. Smith .>[ I will write you in on that doctor 's schedule . See you then .]<2 I need to come in and see the doctor .>[ Are you scheduling a check-up , or are you ill ?]
+===
+< I need to come in and see the doctor .><2 I have really itchy skin and think I may have to have it looked at .>[ Have you been feeling any joint aches with that rash ?]
+===
+< I need to come in and see the doctor .>< I have really itchy skin and think I may have to have it looked at .><2 No , but I have a low fever .>[ I have times available for Tuesday or Wednesday . Which one would work best for you ?]
+===
+< I need to come in and see the doctor .>< I have really itchy skin and think I may have to have it looked at .>< No , but I have a low fever .><2 I want to come in on Wednesday .>[ I can fit you in on that day at 10:00 . Dr. Smith or Dr. Jones is available .]
+===
+< I need to come in and see the doctor .>< I have really itchy skin and think I may have to have it looked at .>< No , but I have a low fever .>< I want to come in on Wednesday .><2 I would prefer Dr. Smith .>[ You can see the doctor of your choice then , and we will see you at your scheduled appointment time .]<2 I have a doctor 's appointment scheduled with Dr. Smith , and I need to change it .>[ What day did you have it scheduled for ?]
+===
+< I have a doctor 's appointment scheduled with Dr. Smith , and I need to change it .><2 My appointment was on Tuesday .>[ What time was it scheduled for ?]
+===
+< I have a doctor 's appointment scheduled with Dr. Smith , and I need to change it .>< My appointment was on Tuesday .><2 It was for two o'clock in the afternoon .>[ I see your appointment . What day would you like to switch to ?]
+===
+< I have a doctor 's appointment scheduled with Dr. Smith , and I need to change it .>< My appointment was on Tuesday .>< It was for two o'clock in the afternoon .><2 I would like to switch it to next Friday .>[ What time would you like for the appointment ?]
+===
+< I have a doctor 's appointment scheduled with Dr. Smith , and I need to change it .>< My appointment was on Tuesday .>< It was for two o'clock in the afternoon .>< I would like to switch it to next Friday .><2 I would like to come in at 10:00 in the morning .>[ Fine , I will pencil that in right now . We will see you then .]<2 I scheduled an appointment with Dr. Smith , and I ca n't make it on that day .>[ What day was your appointment on ?]
+===
+< I scheduled an appointment with Dr. Smith , and I ca n't make it on that day .><2 My appointment was on Monday .>[ What time had you chosen ?]
+===
+< I scheduled an appointment with Dr. Smith , and I ca n't make it on that day .>< My appointment was on Monday .><2 It was for 10:00 in the morning .>[ I am looking at your appointment right now . What day would you prefer ?]
+===
+< I scheduled an appointment with Dr. Smith , and I ca n't make it on that day .>< My appointment was on Monday .>< It was for 10:00 in the morning .><2 I would prefer next Thursday .>[ What time would be best for you ?]
+===
+< I scheduled an appointment with Dr. Smith , and I ca n't make it on that day .>< My appointment was on Monday .>< It was for 10:00 in the morning .>< I would prefer next Thursday .><2 I want to come in at 2:00 in the afternoon .>[ I am writing you down for that time . We look forward to seeing you .]<2 Good morning , I made an appointment with Dr. Smith , but I have to change it .>[ When you made your appointment , what day did you choose ?]
+===
+< Good morning , I made an appointment with Dr. Smith , but I have to change it .><2 My appointment was on Wednesday .>[ At what time was that appointment ?]
+===
+< Good morning , I made an appointment with Dr. Smith , but I have to change it .>< My appointment was on Wednesday .><2 It was for 4:00 in the afternoon .>[ I can see the appointment that you had . What day do you need to change to ?]
+===
+< Good morning , I made an appointment with Dr. Smith , but I have to change it .>< My appointment was on Wednesday .>< It was for 4:00 in the afternoon .><2 I want to change to next Tuesday .>[ What time would you prefer ?]
+===
+< Good morning , I made an appointment with Dr. Smith , but I have to change it .>< My appointment was on Wednesday .>< It was for 4:00 in the afternoon .>< I want to change to next Tuesday .><2 I would prefer three o'clock in the afternoon .>[ I will put you down for that time . Thank you for calling to reschedule .]<2 Good morning , how are you doing today ?>[ I have been feeling pretty good .]
+===
+< Good morning , how are you doing today ?><2 So , I can see by your chart that you are here for your annual physical .>[ Yes , I am playing on the tennis team this year , and they are requiring me to get a physical exam .]
+===
+< Good morning , how are you doing today ?>< So , I can see by your chart that you are here for your annual physical .><2 We are basically going to check your heart , lungs , blood sugar levels , and eyes , ears , and nose .>[ I 've kind of been having problems being out of breath . Can you look at that ?]
+===
+< Good morning , how are you doing today ?>< So , I can see by your chart that you are here for your annual physical .>< We are basically going to check your heart , lungs , blood sugar levels , and eyes , ears , and nose .><2 Yes , I will check you for asthma , and maybe we can check you for allergies later .>[ Thank you . What will the blood test tell you ?]
+===
+< Good morning , how are you doing today ?>< So , I can see by your chart that you are here for your annual physical .>< We are basically going to check your heart , lungs , blood sugar levels , and eyes , ears , and nose .>< Yes , I will check you for asthma , and maybe we can check you for allergies later .><2 We will be checking for blood sugar , cholesterol , and white blood cell count .>[ I have been working hard to stay healthy . I hope the tests turn out well .]<2 So how are we feeling today ?>[ Things are going well for me .]
+===
+< So how are we feeling today ?><2 Am I correct in thinking that you are here for your annual physical ?>[ Yes , I am applying for new health insurance , and I need a physical examination to qualify .]
+===
+< So how are we feeling today ?>< Am I correct in thinking that you are here for your annual physical ?><2 Your basic physical exam will include lungs , heart , blood levels , and eyes , ears , and nose .>[ I 've been having a little trouble breathing . Would you look into that , please ?]
+===
+< So how are we feeling today ?>< Am I correct in thinking that you are here for your annual physical ?>< Your basic physical exam will include lungs , heart , blood levels , and eyes , ears , and nose .><2 We can do an allergy test , and later I can send you for an asthma test .>[ I would appreciate it . When you give me a blood test , what are you looking for ?]
+===
+< So how are we feeling today ?>< Am I correct in thinking that you are here for your annual physical ?>< Your basic physical exam will include lungs , heart , blood levels , and eyes , ears , and nose .>< We can do an allergy test , and later I can send you for an asthma test .><2 I am going to check your cholesterol , blood sugar , and white blood cell count .>[ I am expecting the tests to go well . I have been taking good care of myself .]<2 Nice to see you . How have you been feeling lately ?>[ I have been feeling great .]
+===
+< Nice to see you . How have you been feeling lately ?><2 I am happy that you have decided to come in for your annual physical .>[ Yes , I am going on a cross-country bike ride on vacation and want to make sure that I do n't have any problems .]
+===
+< Nice to see you . How have you been feeling lately ?>< I am happy that you have decided to come in for your annual physical .><2 We are going to look at your heart and lungs , do a few blood tests , and see that your eyes , ears , and nose are all working as they should be .>[ I 've been having trouble with congestion in my chest . Can you give me some tests for that ?]
+===
+< Nice to see you . How have you been feeling lately ?>< I am happy that you have decided to come in for your annual physical .>< We are going to look at your heart and lungs , do a few blood tests , and see that your eyes , ears , and nose are all working as they should be .><2 I can do a chest X-ray to check for congestion .>[ That would be great . What is the blood test for ?]
+===
+< Nice to see you . How have you been feeling lately ?>< I am happy that you have decided to come in for your annual physical .>< We are going to look at your heart and lungs , do a few blood tests , and see that your eyes , ears , and nose are all working as they should be .>< I can do a chest X-ray to check for congestion .><2 The blood test is for cholesterol , white blood cell count , and blood sugar .>[ I have been feeling great . I do n't imagine that any of my tests will turn out badly .]<2 Hi , can I speak with the apartment manager , please ?>[ Yes , this is the apartment manager speaking .]
+===
+< Hi , can I speak with the apartment manager , please ?><2 I 'm calling about the apartment for rent on Main Street .>[ Would you be interested in seeing the apartment ?]
+===
+< Hi , can I speak with the apartment manager , please ?>< I 'm calling about the apartment for rent on Main Street .><2 I would love to see it .>[ Are you free today at around 6 pm ?]
+===
+< Hi , can I speak with the apartment manager , please ?>< I 'm calling about the apartment for rent on Main Street .>< I would love to see it .><2 Yes , I will be able to make it then .>[ Well , I 'll see you at 6 pm . Do you know how to get there ?]
+===
+< Hi , can I speak with the apartment manager , please ?>< I 'm calling about the apartment for rent on Main Street .>< I would love to see it .>< Yes , I will be able to make it then .><2 I used to live in that area .>[ I 'll give you an application form when I see you .]
+===
+< Hi , can I speak with the apartment manager , please ?>< I 'm calling about the apartment for rent on Main Street .>< I would love to see it .>< Yes , I will be able to make it then .>< I used to live in that area .><2 That sounds good . Do I need to bring anything ?>[ No . Just bring yourself .]<2 Hello , I was wondering if I could talk with the apartment manager .>[ I am the apartment manager . How can I help you ?]
+===
+< Hello , I was wondering if I could talk with the apartment manager .><2 I was wondering if the apartment on Main Street is still available .>[ Yes , it 's still vacant . Are you interested in seeing it ?]
+===
+< Hello , I was wondering if I could talk with the apartment manager .>< I was wondering if the apartment on Main Street is still available .><2 Yes , I would love to see the apartment .>[ I will be at the apartment today at 6:00 . Can you make it ?]
+===
+< Hello , I was wondering if I could talk with the apartment manager .>< I was wondering if the apartment on Main Street is still available .>< Yes , I would love to see the apartment .><2 Yes , I can be there at 6 .>[ Great . I 'll see you at 6 . Do you know where it is ?]
+===
+< Hello , I was wondering if I could talk with the apartment manager .>< I was wondering if the apartment on Main Street is still available .>< Yes , I would love to see the apartment .>< Yes , I can be there at 6 .><2 Yes , I have a friend who lives in that neighborhood .>[ I 'll be bringing an application form .]
+===
+< Hello , I was wondering if I could talk with the apartment manager .>< I was wondering if the apartment on Main Street is still available .>< Yes , I would love to see the apartment .>< Yes , I can be there at 6 .>< Yes , I have a friend who lives in that neighborhood .><2 OK , should I bring anything with me ?>[ No . I might need to see your ID card , but that 's about it .]<2 Could I speak to the apartment manager ?>[ I am the apartment manager . How can I help you ?]
+===
+< Could I speak to the apartment manager ?><2 I wanted to know if that apartment on Main Street is still for rent .>[ I have n't rented it out yet . Would you like to see it ?]
+===
+< Could I speak to the apartment manager ?>< I wanted to know if that apartment on Main Street is still for rent .><2 Yes , I want to see it .>[ How about today at 6 pm ?]
+===
+< Could I speak to the apartment manager ?>< I wanted to know if that apartment on Main Street is still for rent .>< Yes , I want to see it .><2 That time is okay with me .>[ Very good . We 'll meet at 6 . Do you need directions ?]
+===
+< Could I speak to the apartment manager ?>< I wanted to know if that apartment on Main Street is still for rent .>< Yes , I want to see it .>< That time is okay with me .><2 No , thank you . I go by there on my way to work .>[ If you 're interested , you can fill out an application form .]
+===
+< Could I speak to the apartment manager ?>< I wanted to know if that apartment on Main Street is still for rent .>< Yes , I want to see it .>< That time is okay with me .>< No , thank you . I go by there on my way to work .><2 That 's a good idea . Do I need to bring anything myself ?>[ No . The only thing I need to see is your driver 's license .]<2 I 'd like to speak with the apartment manager , please .>[ This is he . What can I do for you ?]
+===
+< I 'd like to speak with the apartment manager , please .><2 I 'm interested in the apartment on Main Street .>[ It 's still available . Do you want to see it ?]
+===
+< I 'd like to speak with the apartment manager , please .>< I 'm interested in the apartment on Main Street .><2 Yes , I would very much like to see it .>[ Does today at 6 pm . sound okay to you ?]
+===
+< I 'd like to speak with the apartment manager , please .>< I 'm interested in the apartment on Main Street .>< Yes , I would very much like to see it .><2 I have no problem with 6 pm .>[ Okay , I 'll see you at 6 o'clock . Do you need any directions ?]
+===
+< I 'd like to speak with the apartment manager , please .>< I 'm interested in the apartment on Main Street .>< Yes , I would very much like to see it .>< I have no problem with 6 pm .><2 No , thanks . I already drove by to see what the neighborhood looks like .>[ I 'll have an application form with me . You can fill it out if you 're interested .]
+===
+< I 'd like to speak with the apartment manager , please .>< I 'm interested in the apartment on Main Street .>< Yes , I would very much like to see it .>< I have no problem with 6 pm .>< No , thanks . I already drove by to see what the neighborhood looks like .><2 Should I bring anything with me ?>[ No . I only need to check your driver 's license .]<2 May I speak to the apartment building manager , please ?>[ I 'm the manager . How can I help you ?]
+===
+< May I speak to the apartment building manager , please ?><2 I was hoping that the apartment on Main Street was still available .>[ Yes , it is . Would you like to get a look inside the apartment ?]
+===
+< May I speak to the apartment building manager , please ?>< I was hoping that the apartment on Main Street was still available .><2 Yes , it would be nice to see the apartment .>[ How about today at 6 o'clock ?]
+===
+< May I speak to the apartment building manager , please ?>< I was hoping that the apartment on Main Street was still available .>< Yes , it would be nice to see the apartment .><2 Yes , I can be there at 6 .>[ Sounds good . I 'll see you at 6 . Do you want directions ?]
+===
+< May I speak to the apartment building manager , please ?>< I was hoping that the apartment on Main Street was still available .>< Yes , it would be nice to see the apartment .>< Yes , I can be there at 6 .><2 I 'm okay , thank you . I already checked out the address on Google .>[ If you like the place , you can fill out an application form . I 'll bring one with me .]
+===
+< May I speak to the apartment building manager , please ?>< I was hoping that the apartment on Main Street was still available .>< Yes , it would be nice to see the apartment .>< Yes , I can be there at 6 .>< I 'm okay , thank you . I already checked out the address on Google .><2 Is there anything that I need to bring with me ?>[ No . I wo n't need to see anything except your driver 's license .]<2 Can you give me a little more information about your apartment ?>[ Sure , what can I help you with ?]
+===
+< Can you give me a little more information about your apartment ?><2 What kind of public transportation is near your apartment ?>[ I 'm not sure , but I believe there is a bus stop about three blocks away .]
+===
+< Can you give me a little more information about your apartment ?>< What kind of public transportation is near your apartment ?><2 Do you know what direction that bus travels ?>[ I 'm sorry . If you check online , you can get that kind of information .]
+===
+< Can you give me a little more information about your apartment ?>< What kind of public transportation is near your apartment ?>< Do you know what direction that bus travels ?><2 Okay , I 'll just go online .>[ Okay . Good luck with your search .]<2 Hello , I was hoping you could give me more info about your apartment .>[ I can try to help you . What would you like to know ?]
+===
+< Hello , I was hoping you could give me more info about your apartment .><2 Is there access to public transportation near the apartment ?>[ I 'm pretty sure there 's a bus stop within walking distance .]
+===
+< Hello , I was hoping you could give me more info about your apartment .>< Is there access to public transportation near the apartment ?><2 Do you know anything about the buses that stop there ?>[ I do n't know , but I 'm pretty sure you can find out that stuff online .]
+===
+< Hello , I was hoping you could give me more info about your apartment .>< Is there access to public transportation near the apartment ?>< Do you know anything about the buses that stop there ?><2 I think the local library has bus info .>[ Good luck . The bus info should n't be too hard to find .]<2 Can you give me a little more information about your apartment ?>[ All right , what do you need to know ?]
+===
+< Can you give me a little more information about your apartment ?><2 What is the public transportation like near your apartment ?>[ I do n't use buses , but I think there 's a bus stop a few blocks away .]
+===
+< Can you give me a little more information about your apartment ?>< What is the public transportation like near your apartment ?><2 Which route does the bus travel ?>[ I wish I could help you , but I know nothing about the bus system .]
+===
+< Can you give me a little more information about your apartment ?>< What is the public transportation like near your apartment ?>< Which route does the bus travel ?><2 I 'll just check my phone book . It has lots of good information .>[ I 'm sorry I could n't help you on that .]<2 I was hoping you could give me more information about the apartment for rent .>[ I can certainly try .]
+===
+< I was hoping you could give me more information about the apartment for rent .><2 Do buses or trains run by the apartment ?>[ I ca n't swear to it , but I think a bus stop is a couple of blocks away .]
+===
+< I was hoping you could give me more information about the apartment for rent .>< Do buses or trains run by the apartment ?><2 Where does the bus take you ?>[ I do n't want to lead you astray . You should check online .]
+===
+< I was hoping you could give me more information about the apartment for rent .>< Do buses or trains run by the apartment ?>< Where does the bus take you ?><2 My neighbor takes the bus . I 'll ask him if he knows .>[ Bus line information should be pretty easy to find .]<2 Could you give me a little more information about the apartment ?>[ Sure , if I can . What do you want to know ?]
+===
+< Could you give me a little more information about the apartment ?><2 Is there a bus or train system near the apartment ?>[ I 'm pretty sure there 's a bus stop only a few blocks away .]
+===
+< Could you give me a little more information about the apartment ?>< Is there a bus or train system near the apartment ?><2 Do you know which buses stop there ?>[ I 'm sure there 's an 800 number or a website that could help you .]
+===
+< Could you give me a little more information about the apartment ?>< Is there a bus or train system near the apartment ?>< Do you know which buses stop there ?><2 I do n't have a computer . I 'll just look in my phone book .>[ Bus line information should be pretty easy to find .]<2 How did you find your apartment ?>[ You can check on the bulletin boards at school for local housing .]
+===
+< How did you find your apartment ?><2 What if I need a roommate ?>[ There are websites that can hook you up with a roommate .]
+===
+< How did you find your apartment ?>< What if I need a roommate ?><2 How much do apartments cost around here ?>[ It depends on what you want . Do you want a one or two-bedroom apartment ?]
+===
+< How did you find your apartment ?>< What if I need a roommate ?>< How much do apartments cost around here ?><2 I just need a one-bedroom apartment .>[ That will probably cost you around twelve hundred dollars a month .]
+===
+< How did you find your apartment ?>< What if I need a roommate ?>< How much do apartments cost around here ?>< I just need a one-bedroom apartment .><2 Would you come with me to look at apartments ?>[ I would be happy to look at apartments with you .]<2 When you need an apartment , where do you look for one ?>[ Our school has a link on its website for apartments .]
+===
+< When you need an apartment , where do you look for one ?><2 Can I share an apartment with someone ?>[ Some of the ads in the paper are from people looking for roommates .]
+===
+< When you need an apartment , where do you look for one ?>< Can I share an apartment with someone ?><2 Are apartments expensive in this city ?>[ Do you need a single apartment , or is this for two people ?]
+===
+< When you need an apartment , where do you look for one ?>< Can I share an apartment with someone ?>< Are apartments expensive in this city ?><2 I want a two-bedroom apartment .>[ You can get that type of apartment for around fifteen hundred dollars a month .]
+===
+< When you need an apartment , where do you look for one ?>< Can I share an apartment with someone ?>< Are apartments expensive in this city ?>< I want a two-bedroom apartment .><2 Would you have time to go look at apartments with me ?>[ I love apartment hunting . I 'll be happy to go with you .]<2 Can you tell me the best way to look for an apartment ?>[ The local newspaper has ads for housing .]
+===
+< Can you tell me the best way to look for an apartment ?><2 Is there any way to find a roommate to share an apartment with ?>[ Sometimes you can post an advertisement saying that you need a roommate .]
+===
+< Can you tell me the best way to look for an apartment ?>< Is there any way to find a roommate to share an apartment with ?><2 What do landlords charge for rent ?>[ Would you like an apartment for just yourself , or do you need it for two people ?]
+===
+< Can you tell me the best way to look for an apartment ?>< Is there any way to find a roommate to share an apartment with ?>< What do landlords charge for rent ?><2 There are two of us , but we only need a one-bedroom apartment .>[ You should be able to easily find that for twelve hundred dollars a month .]
+===
+< Can you tell me the best way to look for an apartment ?>< Is there any way to find a roommate to share an apartment with ?>< What do landlords charge for rent ?>< There are two of us , but we only need a one-bedroom apartment .><2 I really would appreciate it if you could come look at apartments with me .>[ Sure , I 'll go look at apartments with you anytime you want .]<2 How are you doing today ?>[ Great . Thanks for asking .]
+===
+< How are you doing today ?><2 Would you like our assistance with a move ?>[ Yes , actually I would .]
+===
+< How are you doing today ?>< Would you like our assistance with a move ?><2 What would you like us to move for you ?>[ I need you to move my furniture .]
+===
+< How are you doing today ?>< Would you like our assistance with a move ?>< What would you like us to move for you ?><2 Could you tell me what kind of residence that we will be picking the furniture up from ?>[ The furniture is in my apartment .]
+===
+< How are you doing today ?>< Would you like our assistance with a move ?>< What would you like us to move for you ?>< Could you tell me what kind of residence that we will be picking the furniture up from ?><2 Where will we be moving it to ?>[ You 'll be taking it to the house I just bought .]
+===
+< How are you doing today ?>< Would you like our assistance with a move ?>< What would you like us to move for you ?>< Could you tell me what kind of residence that we will be picking the furniture up from ?>< Where will we be moving it to ?><2 All right . I just need both addresses , and we will take care of the moving for you .>[ Excellent . Thank you very much .]<2 How are you today ?>[ I am doing well .]
+===
+< How are you today ?><2 Did you need us to move something for you ?>[ That 's exactly what I 'm calling about .]
+===
+< How are you today ?>< Did you need us to move something for you ?><2 What exactly do you need moved ?>[ All my furniture needs to be moved .]
+===
+< How are you today ?>< Did you need us to move something for you ?>< What exactly do you need moved ?><2 Where will we be moving your furniture from ?>[ I need it moved from my apartment .]
+===
+< How are you today ?>< Did you need us to move something for you ?>< What exactly do you need moved ?>< Where will we be moving your furniture from ?><2 Where would you like us to move the furniture to ?>[ I need the furniture moved to my new house .]
+===
+< How are you today ?>< Did you need us to move something for you ?>< What exactly do you need moved ?>< Where will we be moving your furniture from ?>< Where would you like us to move the furniture to ?><2 All I need is a little more information , and we 'll take care of the rest .>[ Sounds great . I 'm glad you could help me .]<2 How are you doing , Papaya ?>[ I 'm fine , thank you .]
+===
+< How are you doing , Papaya ?><2 Did you need our help with a move ?>[ Yes , I do need your help with a move .]
+===
+< How are you doing , Papaya ?>< Did you need our help with a move ?><2 What can we move for you ?>[ I need all my furniture moved .]
+===
+< How are you doing , Papaya ?>< Did you need our help with a move ?>< What can we move for you ?><2 Will we be picking the furniture up from an apartment or a house ?>[ You 'll be taking it from my old apartment .]
+===
+< How are you doing , Papaya ?>< Did you need our help with a move ?>< What can we move for you ?>< Will we be picking the furniture up from an apartment or a house ?><2 Are we moving the furniture to a house or an apartment ?>[ To my new house .]
+===
+< How are you doing , Papaya ?>< Did you need our help with a move ?>< What can we move for you ?>< Will we be picking the furniture up from an apartment or a house ?>< Are we moving the furniture to a house or an apartment ?><2 We can do the move for you , but first I 'm going to need some more information .>[ Thanks a lot . I 'll give you all the information you need .]<2 Where can I buy an inexpensive cashmere sweater ?>[ Maybe you should look around for an outlet .]
+===
+< Where can I buy an inexpensive cashmere sweater ?><2 That is a wonderful idea to check an outlet .>[ Outlets have more reasonable prices .]
+===
+< Where can I buy an inexpensive cashmere sweater ?>< That is a wonderful idea to check an outlet .><2 Thank you for your help .>[ No problem . Good luck .]<2 Where can I find a cheap cashmere sweater ?>[ How about an outlet ?]
+===
+< Where can I find a cheap cashmere sweater ?><2 Checking an outlet is a great idea !>[ Outlets give good deals .]
+===
+< Where can I find a cheap cashmere sweater ?>< Checking an outlet is a great idea !><2 Thank you so much .>[ You 're welcome .]<2 Do you know anywhere that sells cheap cashmere sweaters ?>[ Outlets have cheap cashmere sweaters .]
+===
+< Do you know anywhere that sells cheap cashmere sweaters ?><2 What a splendid idea !>[ Oh , hope that helps .]
+===
+< Do you know anywhere that sells cheap cashmere sweaters ?>< What a splendid idea !><2 Thanks for helping me .>[ You 're welcome .]<2 Do you know a place that sells cheap cashmere sweaters ?>[ An outlet carries cheap cashmere sweaters .]
+===
+< Do you know a place that sells cheap cashmere sweaters ?><2 That 's a good idea !>[ I would be happy if that helps .]
+===
+< Do you know a place that sells cheap cashmere sweaters ?>< That 's a good idea !><2 Thank you for the suggestion .>[ No problem .]<2 I 'm looking for a shop that sells inexpensive cashmere sweaters .>[ Have you tried an outlet ?]
+===
+< I 'm looking for a shop that sells inexpensive cashmere sweaters .><2 Why did n't I think of that ?>[ Oh , I hope that can help you .]
+===
+< I 'm looking for a shop that sells inexpensive cashmere sweaters .>< Why did n't I think of that ?><2 Thanks . That is a good suggestion .>[ You are very welcome .]<2 Pardon me . Could you help me ?>[ Of course . How can I help you ?]
+===
+< Pardon me . Could you help me ?><2 I am looking for a sweater .>[ What size do you wear ?]
+===
+< Pardon me . Could you help me ?>< I am looking for a sweater .><2 Medium , I think .>[ Here . How do you like this one ?]
+===
+< Pardon me . Could you help me ?>< I am looking for a sweater .>< Medium , I think .><2 It 's pretty . Can I try it on ?>[ Sure . You can try it on in the fitting room over there .]<2 Excuse me . Can you help me ?>[ Certainly . What can I do for you ?]
+===
+< Excuse me . Can you help me ?><2 I need to purchase a sweater .>[ What is your size ?]
+===
+< Excuse me . Can you help me ?>< I need to purchase a sweater .><2 Medium should be fine .>[ Is this one okay ?]
+===
+< Excuse me . Can you help me ?>< I need to purchase a sweater .>< Medium should be fine .><2 Can I try it on somewhere ?>[ The fitting room is in the left corner .]<2 May I ask you a question ?>[ Yes . How can I assist you ?]
+===
+< May I ask you a question ?><2 I want to buy a sweater .>[ What size do you need ?]
+===
+< May I ask you a question ?>< I want to buy a sweater .><2 I think a medium should fit me .>[ How about this one ?]
+===
+< May I ask you a question ?>< I want to buy a sweater .>< I think a medium should fit me .><2 The color 's nice . Do you have a dressing room ?>[ There 's a fitting room right over there .]<2 Do you have a second ?>[ Sure . What do you need ?]
+===
+< Do you have a second ?><2 I 'm here to buy a sweater .>[ What size do you wear ?]
+===
+< Do you have a second ?>< I 'm here to buy a sweater .><2 I usually wear medium .>[ What do you think about this one ?]
+===
+< Do you have a second ?>< I 'm here to buy a sweater .>< I usually wear medium .><2 It 's nice . Where is your fitting room ?>[ The dressing room is in that corner .]<2 Excuse me . Could you help me with something ?>[ I 'll certainly try .]
+===
+< Excuse me . Could you help me with something ?><2 I 'm looking for a nice sweater .>[ What size do you wear in a sweater ?]
+===
+< Excuse me . Could you help me with something ?>< I 'm looking for a nice sweater .><2 Medium is my size for shirts and sweaters .>[ Here 's a medium . What do you think ?]
+===
+< Excuse me . Could you help me with something ?>< I 'm looking for a nice sweater .>< Medium is my size for shirts and sweaters .><2 I like it . Where can I try it on ?>[ We have a large fitting room in that corner .]<2 I really need to go shopping .>[ What do you need to buy ?]
+===
+< I really need to go shopping .><2 I need to look for a new bedroom set .>[ Where are you going to go look for one ?]
+===
+< I really need to go shopping .>< I need to look for a new bedroom set .><2 I have absolutely no idea .>[ You do n't know where you want to look for one ?]
+===
+< I really need to go shopping .>< I need to look for a new bedroom set .>< I have absolutely no idea .><2 I 'm not sure where they sell nice bedroom sets .>[ Do you want to know where I got mine from ?]
+===
+< I really need to go shopping .>< I need to look for a new bedroom set .>< I have absolutely no idea .>< I 'm not sure where they sell nice bedroom sets .><2 Yes , because I love your bedroom set .>[ I purchased mine from IKEA .]
+===
+< I really need to go shopping .>< I need to look for a new bedroom set .>< I have absolutely no idea .>< I 'm not sure where they sell nice bedroom sets .>< Yes , because I love your bedroom set .><2 Is IKEA affordable ?>[ Not at all , but you get what you pay for .]<2 I have to do some shopping .>[ What are you going to look for ?]
+===
+< I have to do some shopping .><2 I 'm trying to buy a new bedroom set .>[ What store are you going to ?]
+===
+< I have to do some shopping .>< I 'm trying to buy a new bedroom set .><2 I 'm not sure .>[ You do n't know ?]
+===
+< I have to do some shopping .>< I 'm trying to buy a new bedroom set .>< I 'm not sure .><2 I have no idea where to find one .>[ Would you like me to tell you where I got mine ?]
+===
+< I have to do some shopping .>< I 'm trying to buy a new bedroom set .>< I 'm not sure .>< I have no idea where to find one .><2 I would appreciate that if you could tell me where you got yours .>[ I went to get mine from IKEA .]
+===
+< I have to do some shopping .>< I 'm trying to buy a new bedroom set .>< I 'm not sure .>< I have no idea where to find one .>< I would appreciate that if you could tell me where you got yours .><2 Is the furniture at IKEA cheap ?>[ They 're not cheap , but neither is their furniture .]<2 I 'm going to have to do some shopping today .>[ Oh yeah ? What do you need to go shopping for ?]
+===
+< I 'm going to have to do some shopping today .><2 I want to find a new bedroom set .>[ Do you know where you 're going to find your bedroom set ?]
+===
+< I 'm going to have to do some shopping today .>< I want to find a new bedroom set .><2 I have no clue where to check that .>[ There 's no particular place that you want to look at ?]
+===
+< I 'm going to have to do some shopping today .>< I want to find a new bedroom set .>< I have no clue where to check that .><2 I do n't know where to go to find a nice bedroom set .>[ I can tell you where I got mine , if you 'd like .]
+===
+< I 'm going to have to do some shopping today .>< I want to find a new bedroom set .>< I have no clue where to check that .>< I do n't know where to go to find a nice bedroom set .><2 Please do let me know where you got yours .>[ I bought mine from IKEA .]
+===
+< I 'm going to have to do some shopping today .>< I want to find a new bedroom set .>< I have no clue where to check that .>< I do n't know where to go to find a nice bedroom set .>< Please do let me know where you got yours .><2 Are the bedroom sets at IKEA affordable ?>[ Not really , but you 're paying for quality .]<2 I need some flowers for my wife . It 's her birthday .>[ Very well . We have some fresh red roses .]
+===
+< I need some flowers for my wife . It 's her birthday .><2 How much are the roses ?>[ $ 20 per dozen .]
+===
+< I need some flowers for my wife . It 's her birthday .>< How much are the roses ?><2 That sounds like a good deal .>[ Yes , they 're on sale today .]
+===
+< I need some flowers for my wife . It 's her birthday .>< How much are the roses ?>< That sounds like a good deal .><2 I 'll take a dozen .>[ Splendid . Will there be anything else ?]
+===
+< I need some flowers for my wife . It 's her birthday .>< How much are the roses ?>< That sounds like a good deal .>< I 'll take a dozen .><2 No , the roses will be fine .>[ I 'm sure your wife will love them .]<2 My wife 's birthday is today . I need some flowers .>[ We have lots of fresh red roses .]
+===
+< My wife 's birthday is today . I need some flowers .><2 How much do the roses cost ?>[ $ 20 a dozen .]
+===
+< My wife 's birthday is today . I need some flowers .>< How much do the roses cost ?><2 That sounds good . Last year I paid $ 30 .>[ Yes , you came here on the right day . They 're on sale today .]
+===
+< My wife 's birthday is today . I need some flowers .>< How much do the roses cost ?>< That sounds good . Last year I paid $ 30 .><2 Give me a dozen .>[ Very good . Would you like anything else ?]
+===
+< My wife 's birthday is today . I need some flowers .>< How much do the roses cost ?>< That sounds good . Last year I paid $ 30 .>< Give me a dozen .><2 No , I 'll just give her the roses and a card .>[ She should be very pleased with these roses .]<2 I need to buy some flowers for my wife .>[ Perhaps you 'd be interested in red roses .]
+===
+< I need to buy some flowers for my wife .><2 What would the roses cost me ?>[ They 're only $ 20 a dozen .]
+===
+< I need to buy some flowers for my wife .>< What would the roses cost me ?><2 I like the sound of that .>[ Yes , that is today 's sale price .]
+===
+< I need to buy some flowers for my wife .>< What would the roses cost me ?>< I like the sound of that .><2 A dozen will be fine .>[ Is there anything else you 'd like to get ?]
+===
+< I need to buy some flowers for my wife .>< What would the roses cost me ?>< I like the sound of that .>< A dozen will be fine .><2 No , thank you . That 's good enough .>[ Your gift should make your wife very happy .]<2 I want to buy some flowers for my wife 's birthday .>[ Red roses are always a popular gift for birthdays .]
+===
+< I want to buy some flowers for my wife 's birthday .><2 What are the roses going for ?>[ They 're only $ 20 a dozen .]
+===
+< I want to buy some flowers for my wife 's birthday .>< What are the roses going for ?><2 That sounds nice and cheap .>[ Yes , you 're saving money because they 're on sale today .]
+===
+< I want to buy some flowers for my wife 's birthday .>< What are the roses going for ?>< That sounds nice and cheap .><2 Give me the roses , please .>[ Could I interest you in anything else ?]
+===
+< I want to buy some flowers for my wife 's birthday .>< What are the roses going for ?>< That sounds nice and cheap .>< Give me the roses , please .><2 No , but thanks anyway . These should be good enough .>[ Your wife will be thrilled with your gift .]<2 It 's my wife 's birthday . I need to buy some flowers for her .>[ Most women love red roses for their birthday .]
+===
+< It 's my wife 's birthday . I need to buy some flowers for her .><2 How much will the roses be ?>[ You can get a dozen for only $ 20 .]
+===
+< It 's my wife 's birthday . I need to buy some flowers for her .>< How much will the roses be ?><2 Now , that 's a price that I like .>[ You 're in luck today because the roses are on sale .]
+===
+< It 's my wife 's birthday . I need to buy some flowers for her .>< How much will the roses be ?>< Now , that 's a price that I like .><2 I 'll take the roses .>[ Very good . Perhaps you 'd like something else to go with the roses ?]
+===
+< It 's my wife 's birthday . I need to buy some flowers for her .>< How much will the roses be ?>< Now , that 's a price that I like .>< I 'll take the roses .><2 No , the roses are good enough .>[ Women love roses , so your wife will be very happy .]

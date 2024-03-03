@@ -4,6 +4,7 @@ import Levenshtein
 import math
 import re
 import indexer
+import stopwords
 
 @dataclass
 class ResDocs:
@@ -14,8 +15,15 @@ def query(text):
     tokens = tokenize(text)
     potential_docs = {}
 
+    is_all_stopwords = True
+    for token in tokens:
+        if token not in stopwords.list_:
+           is_all_stopwords = False 
+
     last_docs = None
     for token in tokens:
+        if token in stopwords.list_ and not is_all_stopwords:
+            continue
         most_matching = calculate_most_matching_case_insensitive(token)
         if most_matching == None:
             most_matching = calculate_most_matching_index(token)
@@ -32,12 +40,14 @@ def query(text):
                 closest_pos = find_closest_elements(docs[doc_index].positions, last_docs[doc_index].positions)
                 raw_distance = abs(closest_pos[0] - closest_pos[1])
                 distance = (raw_distance / 100) + 1
-            last_docs = docs
             potential_docs[doc_index].score += weight / (most_matching.distance + 1) / distance
+        last_docs = docs
 
     #divide score of the docs by 2 for every token of the query they don't contain
     for doc_index in potential_docs:
         for token in tokens:
+            if token in stopwords.list_ and not is_all_stopwords:
+                continue
             most_matching_case_insensitive = calculate_most_matching_case_insensitive(token)
             if most_matching_case_insensitive == None:
                 potential_docs[doc_index].score /= 2
