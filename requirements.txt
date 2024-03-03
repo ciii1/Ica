@@ -1,2 +1,5 @@
-python-Levenshtein
-beautifulsoup4
+beautifulsoup4==4.10.0
+python_Levenshtein==0.23.0
+python_Levenshtein==0.25.0
+sounddevice==0.4.6
+vosk==0.3.45
