@@ -1,3 +1,5 @@
+# Currently, this file only supports html files from wikipedia.org
+
 import bs4
 from bs4 import BeautifulSoup
 import re
